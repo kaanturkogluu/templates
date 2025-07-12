@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Diş Kliniği</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><i class="fas fa-tooth"></i> Acboztech</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>İletişim</h1>
+                <p>Bizimle iletişime geçin ve randevu alın</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-section">
+                    <h2>İletişim Bilgilerimiz</h2>
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Adres</h3>
+                                <p>Atatürk Caddesi No:123<br>Şişli / İstanbul<br>34360 Türkiye</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telefon</h3>
+                                <p>+90 (212) 555 0123<br>+90 (212) 555 0124</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>E-posta</h3>
+                                <p>info@acboztech.com<br>randevu@acboztech.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Çalışma Saatleri</h3>
+                                <p>Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 09:00 - 15:00<br>Pazar: Kapalı</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-section">
+                    <h2>Randevu ve İletişim Formu</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Hizmet Türü</label>
+                            <select id="service" name="service">
+                                <option value="">Hizmet seçiniz</option>
+                                <option value="diş-beyazlatma">Diş Beyazlatma</option>
+                                <option value="porselen-kaplama">Porselen Kaplama</option>
+                                <option value="ortodonti">Ortodonti</option>
+                                <option value="implant">İmplant</option>
+                                <option value="kanal-tedavisi">Kanal Tedavisi</option>
+                                <option value="çocuk-diş-hekimliği">Çocuk Diş Hekimliği</option>
+                                <option value="genel-muayene">Genel Muayene</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Randevu talebiniz veya sorularınız için lütfen detaylı bilgi veriniz..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Kişisel verilerimin işlenmesine izin veriyorum *
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Konumumuz</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt fa-4x"></i>
+                    <h3>Harita</h3>
+                    <p>Atatürk Caddesi No:123, Şişli / İstanbul</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">Haritada Görüntüle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Randevu nasıl alabilirim?</h3>
+                    <p>Randevu almak için telefon, e-posta veya web sitemizdeki iletişim formunu kullanabilirsiniz. En kısa sürede size dönüş yapacağız.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>İlk muayene ücretli mi?</h3>
+                    <p>İlk muayene ücretimiz 200 TL'dir. Detaylı muayene ve tedavi planı bu ücrete dahildir.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Ödeme seçenekleri nelerdir?</h3>
+                    <p>Nakit, kredi kartı ve taksitli ödeme seçeneklerimiz mevcuttur. Ayrıca sağlık sigortası anlaşmalarımız bulunmaktadır.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Acil durumlarda ne yapmalıyım?</h3>
+                    <p>Acil durumlar için 7/24 hizmet veren acil diş hekimliği hizmetimiz bulunmaktadır. Acil numaramız: +90 (212) 555 0125</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Çocuk hastalar için özel hizmetleriniz var mı?</h3>
+                    <p>Evet, çocuk diş hekimliği uzmanımız bulunmaktadır. Çocuk dostu ortamımızda korkusuz tedavi hizmeti sunuyoruz.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Garanti süreleri nedir?</h3>
+                    <p>Her tedavi türü için farklı garanti sürelerimiz bulunmaktadır. Detaylı bilgi için kliniğimizle iletişime geçebilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="emergency-text">
+                    <h2>Acil Durumlar İçin</h2>
+                    <p>7/24 acil diş hekimliği hizmeti için bizi arayın</p>
+                    <a href="tel:+902125550125" class="emergency-phone">+90 (212) 555 0125</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-tooth"></i> Acboztech</h3>
+                    <p>Modern diş sağlığı hizmetleri ile gülüşünüzü yeniden tasarlıyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li><a href="services.html">Diş Beyazlatma</a></li>
+                        <li><a href="services.html">Porselen Kaplama</a></li>
+                        <li><a href="services.html">Ortodonti</a></li>
+                        <li><a href="services.html">İmplant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Atatürk Cad. No:123, İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 (212) 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Diş Kliniği. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

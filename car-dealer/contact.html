@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Premium Otomotiv</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="inventory.html" class="nav-link">Araç Envanteri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin, size yardımcı olmaktan mutluluk duyarız.</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Merkez Mahallesi, Otomotiv Caddesi No: 123<br>Şişli / İstanbul</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 212 555 0123<br>+90 532 555 0123</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com<br>satis@acboztech.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cumartesi: 09:00 - 19:00<br>Pazar: 10:00 - 17:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Bize Mesaj Gönderin</h2>
+                    <p>Herhangi bir sorunuz veya talebiniz varsa, aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz.</p>
+                    <form class="contact-form-element">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Konu Seçiniz</option>
+                                <option value="arac-satisi">Araç Satışı</option>
+                                <option value="arac-alimi">Araç Alımı</option>
+                                <option value="finansman">Finansman</option>
+                                <option value="sigorta">Sigorta</option>
+                                <option value="teknik-servis">Teknik Servis</option>
+                                <option value="genel">Genel Bilgi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Kişisel verilerimin işlenmesine izin veriyorum. *
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <h2>Konumumuz</h2>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Harita burada görüntülenecek</p>
+                            <p>Merkez Mahallesi, Otomotiv Caddesi No: 123<br>Şişli / İstanbul</p>
+                        </div>
+                    </div>
+                    <div class="map-info">
+                        <h3>Nasıl Ulaşırız?</h3>
+                        <div class="directions">
+                            <div class="direction-item">
+                                <h4><i class="fas fa-car"></i> Araç ile</h4>
+                                <p>Şişli merkezden 5 dakika, E-5'ten 10 dakika mesafede.</p>
+                            </div>
+                            <div class="direction-item">
+                                <h4><i class="fas fa-subway"></i> Toplu Taşıma</h4>
+                                <p>M2 Şişli-Mecidiyeköy metro hattı, Şişli durağından 3 dakika yürüme mesafesi.</p>
+                            </div>
+                            <div class="direction-item">
+                                <h4><i class="fas fa-bus"></i> Otobüs</h4>
+                                <p>54, 74, 129 numaralı otobüs hatları ile ulaşabilirsiniz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches -->
+    <section class="branches">
+        <div class="container">
+            <h2 class="section-title">Şubelerimiz</h2>
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <h3>Merkez Şube</h3>
+                        <span class="branch-badge">Ana Şube</span>
+                    </div>
+                    <div class="branch-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Merkez Mahallesi, Otomotiv Caddesi No: 123, Şişli / İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-clock"></i> Pazartesi - Cumartesi: 09:00 - 19:00</p>
+                    </div>
+                    <div class="branch-services">
+                        <h4>Hizmetler:</h4>
+                        <ul>
+                            <li>Araç Alım-Satım</li>
+                            <li>Finansman</li>
+                            <li>Sigorta</li>
+                            <li>Teknik Servis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <h3>Kadıköy Şubesi</h3>
+                        <span class="branch-badge">Yeni</span>
+                    </div>
+                    <div class="branch-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Fenerbahçe Mahallesi, Sahil Caddesi No: 45, Kadıköy / İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 216 555 0123</p>
+                        <p><i class="fas fa-clock"></i> Pazartesi - Cumartesi: 09:00 - 19:00</p>
+                    </div>
+                    <div class="branch-services">
+                        <h4>Hizmetler:</h4>
+                        <ul>
+                            <li>Araç Alım-Satım</li>
+                            <li>Finansman</li>
+                            <li>Sigorta</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <h3>Ankara Şubesi</h3>
+                        <span class="branch-badge">Yeni</span>
+                    </div>
+                    <div class="branch-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Çankaya Mahallesi, Atatürk Bulvarı No: 78, Çankaya / Ankara</p>
+                        <p><i class="fas fa-phone"></i> +90 312 555 0123</p>
+                        <p><i class="fas fa-clock"></i> Pazartesi - Cumartesi: 09:00 - 19:00</p>
+                    </div>
+                    <div class="branch-services">
+                        <h4>Hizmetler:</h4>
+                        <ul>
+                            <li>Araç Alım-Satım</li>
+                            <li>Finansman</li>
+                            <li>Sigorta</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Araç alımında hangi belgeler gerekli?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kimlik fotokopisi, ehliyet fotokopisi, gelir belgesi ve kredi onayı için gerekli diğer belgeler gereklidir. Detaylı bilgi için bizimle iletişime geçebilirsiniz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kredi onayı ne kadar sürer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kredi başvurunuz genellikle 24-48 saat içinde değerlendirilir. Gerekli belgeler tamamlandığında hızlı onay süreci sağlıyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Araç takası yapıyor musunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, mevcut aracınızı değerlendirip yeni araç alımında avantaj sağlıyoruz. Adil değerleme ve şeffaf süreç garantisi veriyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Garanti kapsamı nedir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tüm araçlarımız detaylı kontrol sürecinden geçer ve uygun garanti kapsamı sunulur. Garanti süreleri araç modeline göre değişiklik gösterir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Türkiye'nin en güvenilir otomotiv galerisi. 20 yıllık deneyimimizle sizlere en kaliteli hizmeti sunuyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li>Araç Alım-Satım</li>
+                        <li>Finansman</li>
+                        <li>Sigorta</li>
+                        <li>Teknik Servis</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

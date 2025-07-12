@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler - Acboztech Kuaför Salonu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Acboztech</h2>
+                    <span>Profesyonel Kuaför Salonu</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link active">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <h1>Hizmetlerimiz</h1>
+                <p>Profesyonel saç bakım ve güzellik hizmetlerimizle sizlere en iyi deneyimi sunuyoruz</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Categories -->
+    <section class="services-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="hair-cutting">Saç Kesimi</button>
+                <button class="tab-btn" data-category="hair-coloring">Saç Boyama</button>
+                <button class="tab-btn" data-category="hair-care">Saç Bakımı</button>
+                <button class="tab-btn" data-category="styling">Şekillendirme</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair Cutting Services -->
+    <section class="services-section active" id="hair-cutting">
+        <div class="container">
+            <h2 class="section-title">Saç Kesimi Hizmetleri</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Kadın Saç Kesimi</h3>
+                            <p>Yüz şeklinize uygun modern saç kesim modelleri</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Yüz analizi ve öneriler</li>
+                            <li>Modern kesim teknikleri</li>
+                            <li>Saç yıkama ve kurutma dahil</li>
+                            <li>Şekillendirme önerileri</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺120</span>
+                            <span class="duration">60 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Erkek Saç Kesimi</h3>
+                            <p>Profesyonel erkek saç kesimi ve şekillendirme</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Modern erkek saç modelleri</li>
+                            <li>Fade ve undercut teknikleri</li>
+                            <li>Saç yıkama ve kurutma dahil</li>
+                            <li>Şekillendirme ürünleri dahil</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺80</span>
+                            <span class="duration">45 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Çocuk Saç Kesimi</h3>
+                            <p>Çocuklar için özel saç kesimi hizmeti</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Çocuk dostu ortam</li>
+                            <li>Eğlenceli kesim deneyimi</li>
+                            <li>Saç yıkama dahil</li>
+                            <li>Özel şekillendirme</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺60</span>
+                            <span class="duration">30 dk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair Coloring Services -->
+    <section class="services-section" id="hair-coloring">
+        <div class="container">
+            <h2 class="section-title">Saç Boyama Hizmetleri</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Tam Boyama</h3>
+                            <p>Profesyonel tam saç boyama hizmeti</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Renk analizi ve öneriler</li>
+                            <li>Kaliteli boya ürünleri</li>
+                            <li>Saç yıkama ve kurutma dahil</li>
+                            <li>Renk koruma önerileri</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺250</span>
+                            <span class="duration">120 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Foil Boyama</h3>
+                            <p>Modern foil boyama tekniği ile highlight</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Profesyonel foil tekniği</li>
+                            <li>Doğal görünüm</li>
+                            <li>Saç yıkama ve kurutma dahil</li>
+                            <li>Bakım önerileri</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺350</span>
+                            <span class="duration">150 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Ombre Boyama</h3>
+                            <p>Trend ombre boyama tekniği</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Gradient renk geçişi</li>
+                            <li>Modern ombre tekniği</li>
+                            <li>Saç yıkama ve kurutma dahil</li>
+                            <li>Renk koruma ürünleri</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺400</span>
+                            <span class="duration">180 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Kök Boyama</h3>
+                            <p>Kök boyama ve touch-up hizmeti</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Sadece kök boyama</li>
+                            <li>Hızlı işlem</li>
+                            <li>Saç yıkama dahil</li>
+                            <li>Renk eşleştirme</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺150</span>
+                            <span class="duration">90 dk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair Care Services -->
+    <section class="services-section" id="hair-care">
+        <div class="container">
+            <h2 class="section-title">Saç Bakım Hizmetleri</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Keratin Bakımı</h3>
+                            <p>Profesyonel keratin bakım tedavisi</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Saç düzleştirme</li>
+                            <li>Nemlendirme tedavisi</li>
+                            <li>3-6 ay etkili</li>
+                            <li>Doğal keratin ürünleri</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺800</span>
+                            <span class="duration">240 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Protein Bakımı</h3>
+                            <p>Saç onarımı için protein tedavisi</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Saç onarımı</li>
+                            <li>Güçlendirme</li>
+                            <li>Nemlendirme</li>
+                            <li>Haftalık bakım önerileri</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺200</span>
+                            <span class="duration">90 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Saç Yıkama & Kurutma</h3>
+                            <p>Profesyonel saç yıkama ve kurutma</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Kaliteli şampuan</li>
+                            <li>Saç kremi uygulaması</li>
+                            <li>Profesyonel kurutma</li>
+                            <li>Şekillendirme dahil</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺80</span>
+                            <span class="duration">45 dk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Styling Services -->
+    <section class="services-section" id="styling">
+        <div class="container">
+            <h2 class="section-title">Şekillendirme Hizmetleri</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Fön & Şekillendirme</h3>
+                            <p>Profesyonel fön ve şekillendirme</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Isı koruma ürünleri</li>
+                            <li>Profesyonel fön</li>
+                            <li>Şekillendirme</li>
+                            <li>Saç spreyi dahil</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺100</span>
+                            <span class="duration">60 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Özel Gün Saçı</h3>
+                            <p>Düğün, nişan ve özel günler için saç tasarımı</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Özel tasarım</li>
+                            <li>Kalıcı şekillendirme</li>
+                            <li>Aksesuar dahil</li>
+                            <li>Deneme seansı</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺300</span>
+                            <span class="duration">120 dk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="service-info">
+                            <h3>Saç Örgü</h3>
+                            <p>Modern saç örgü teknikleri</p>
+                        </div>
+                    </div>
+                    <div class="service-details">
+                        <ul>
+                            <li>Farklı örgü teknikleri</li>
+                            <li>Aksesuar kullanımı</li>
+                            <li>Uzun süreli şekil</li>
+                            <li>Bakım önerileri</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">₺150</span>
+                            <span class="duration">90 dk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">Özel Paketler</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-header">
+                        <h3>Güzellik Paketi</h3>
+                        <div class="offer-price">
+                            <span class="original-price">₺450</span>
+                            <span class="discount-price">₺350</span>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <ul>
+                            <li>Saç Kesimi</li>
+                            <li>Saç Yıkama & Fön</li>
+                            <li>Kök Boyama</li>
+                            <li>Ücretsiz Çay/Kahve</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Randevu Al</a>
+                    </div>
+                </div>
+
+                <div class="offer-card featured">
+                    <div class="offer-badge">Popüler</div>
+                    <div class="offer-header">
+                        <h3>Premium Paket</h3>
+                        <div class="offer-price">
+                            <span class="original-price">₺800</span>
+                            <span class="discount-price">₺600</span>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <ul>
+                            <li>Saç Kesimi</li>
+                            <li>Tam Boyama</li>
+                            <li>Keratin Bakımı</li>
+                            <li>Özel Gün Saçı</li>
+                            <li>Ücretsiz İkram</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Randevu Al</a>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-header">
+                        <h3>Bakım Paketi</h3>
+                        <div class="offer-price">
+                            <span class="original-price">₺300</span>
+                            <span class="discount-price">₺250</span>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <ul>
+                            <li>Saç Yıkama & Fön</li>
+                            <li>Protein Bakımı</li>
+                            <li>Saç Ucu Kesimi</li>
+                            <li>Bakım Ürünleri</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Randevu Al</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Profesyonel kuaför salonu olarak 2015 yılından beri hizmet vermekteyiz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim Bilgileri</h4>
+                    <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                    <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kadıköy, İstanbul</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Çalışma Saatleri</h4>
+                    <p>Pazartesi - Cuma: 09:00 - 20:00</p>
+                    <p>Cumartesi - Pazar: 10:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

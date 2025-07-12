@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araç Envanteri - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Premium Otomotiv</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="inventory.html" class="nav-link active">Araç Envanteri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Araç Envanterimiz</h1>
+            <p>Geniş araç koleksiyonumuzdan size en uygun olanını bulun.</p>
+        </div>
+    </section>
+
+    <!-- Advanced Filters -->
+    <section class="advanced-filters">
+        <div class="container">
+            <div class="filter-panel">
+                <div class="filter-group">
+                    <label>Marka</label>
+                    <select id="brand-filter">
+                        <option value="">Tüm Markalar</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="tesla">Tesla</option>
+                        <option value="range-rover">Range Rover</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Kategori</label>
+                    <select id="category-filter">
+                        <option value="">Tüm Kategoriler</option>
+                        <option value="luxury">Lüks</option>
+                        <option value="suv">SUV</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="electric">Elektrikli</option>
+                        <option value="sports">Spor</option>
+                        <option value="family">Aile</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Fiyat Aralığı</label>
+                    <select id="price-filter">
+                        <option value="">Tüm Fiyatlar</option>
+                        <option value="0-500000">0 - 500.000 ₺</option>
+                        <option value="500000-1000000">500.000 - 1.000.000 ₺</option>
+                        <option value="1000000-2000000">1.000.000 - 2.000.000 ₺</option>
+                        <option value="2000000+">2.000.000 ₺+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Yakıt Tipi</label>
+                    <select id="fuel-filter">
+                        <option value="">Tüm Yakıt Tipleri</option>
+                        <option value="benzin">Benzin</option>
+                        <option value="dizel">Dizel</option>
+                        <option value="elektrik">Elektrik</option>
+                        <option value="hibrit">Hibrit</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Vites</label>
+                    <select id="transmission-filter">
+                        <option value="">Tüm Vites Tipleri</option>
+                        <option value="otomatik">Otomatik</option>
+                        <option value="manuel">Manuel</option>
+                        <option value="yarı-otomatik">Yarı Otomatik</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Durum</label>
+                    <select id="condition-filter">
+                        <option value="">Tüm Durumlar</option>
+                        <option value="yeni">Yeni</option>
+                        <option value="ikinci-el">İkinci El</option>
+                    </select>
+                </div>
+                <div class="filter-actions">
+                    <button class="btn btn-primary" id="apply-filters">
+                        <i class="fas fa-search"></i>
+                        Filtrele
+                    </button>
+                    <button class="btn btn-secondary" id="clear-filters">
+                        <i class="fas fa-times"></i>
+                        Temizle
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Results -->
+    <section class="inventory-results">
+        <div class="container">
+            <div class="results-header">
+                <div class="results-info">
+                    <h2>Araç Bulundu: <span id="car-count">24</span></h2>
+                    <p>Filtrelerinize uygun araçlar</p>
+                </div>
+                <div class="sort-options">
+                    <label>Sırala:</label>
+                    <select id="sort-select">
+                        <option value="newest">En Yeni</option>
+                        <option value="price-low">Fiyat (Düşük-Yüksek)</option>
+                        <option value="price-high">Fiyat (Yüksek-Düşük)</option>
+                        <option value="mileage-low">Kilometre (Düşük-Yüksek)</option>
+                        <option value="mileage-high">Kilometre (Yüksek-Düşük)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="inventory-grid" id="inventory-grid">
+                <!-- BMW 7 Serisi -->
+                <div class="car-listing" data-brand="bmw" data-category="luxury" data-price="2850000" data-fuel="benzin" data-transmission="otomatik" data-condition="yeni" data-year="2024" data-mileage="0">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">Yeni</div>
+                        <div class="car-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <h3>BMW 7 Serisi</h3>
+                            <span class="car-year">2024 Model</span>
+                        </div>
+                        <div class="car-price-section">
+                            <p class="car-price">₺2.850.000</p>
+                            <span class="price-note">KDV Dahil</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Deri Koltuk</span>
+                            <span>Panoramik Tavan</span>
+                            <span>Adaptif Hız Sabitleyici</span>
+                            <span>Laser Far</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-sm">Detayları Gör</button>
+                            <button class="btn btn-secondary btn-sm">İletişime Geç</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mercedes GLE -->
+                <div class="car-listing" data-brand="mercedes" data-category="suv" data-price="2100000" data-fuel="dizel" data-transmission="otomatik" data-condition="ikinci-el" data-year="2023" data-mileage="15000">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                        <div class="car-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <h3>Mercedes GLE</h3>
+                            <span class="car-year">2023 Model</span>
+                        </div>
+                        <div class="car-price-section">
+                            <p class="car-price">₺2.100.000</p>
+                            <span class="price-note">KDV Dahil</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 15.000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>4MATIC</span>
+                            <span>AMG Paket</span>
+                            <span>Burmester Ses Sistemi</span>
+                            <span>Air Suspension</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-sm">Detayları Gör</button>
+                            <button class="btn btn-secondary btn-sm">İletişime Geç</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audi A6 -->
+                <div class="car-listing" data-brand="audi" data-category="sedan" data-price="1650000" data-fuel="benzin" data-transmission="otomatik" data-condition="ikinci-el" data-year="2023" data-mileage="25000">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                        <div class="car-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <h3>Audi A6</h3>
+                            <span class="car-year">2023 Model</span>
+                        </div>
+                        <div class="car-price-section">
+                            <p class="car-price">₺1.650.000</p>
+                            <span class="price-note">KDV Dahil</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 25.000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Quattro</span>
+                            <span>S-Line Paket</span>
+                            <span>Virtual Cockpit</span>
+                            <span>Matrix LED</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-sm">Detayları Gör</button>
+                            <button class="btn btn-secondary btn-sm">İletişime Geç</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tesla Model 3 -->
+                <div class="car-listing" data-brand="tesla" data-category="electric" data-price="1950000" data-fuel="elektrik" data-transmission="otomatik" data-condition="yeni" data-year="2024" data-mileage="0">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">Yeni</div>
+                        <div class="car-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <h3>Tesla Model 3</h3>
+                            <span class="car-year">2024 Model</span>
+                        </div>
+                        <div class="car-price-section">
+                            <p class="car-price">₺1.950.000</p>
+                            <span class="price-note">KDV Dahil</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                            <span><i class="fas fa-bolt"></i> Elektrik</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Autopilot</span>
+                            <span>500 km Menzil</span>
+                            <span>Supercharger</span>
+                            <span>Glass Roof</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-sm">Detayları Gör</button>
+                            <button class="btn btn-secondary btn-sm">İletişime Geç</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Porsche 911 -->
+                <div class="car-listing" data-brand="porsche" data-category="sports" data-price="3200000" data-fuel="benzin" data-transmission="otomatik" data-condition="ikinci-el" data-year="2022" data-mileage="8500">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                        <div class="car-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <h3>Porsche 911</h3>
+                            <span class="car-year">2022 Model</span>
+                        </div>
+                        <div class="car-price-section">
+                            <p class="car-price">₺3.200.000</p>
+                            <span class="price-note">KDV Dahil</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 8.500 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                            <span><i class="fas fa-cog"></i> PDK</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Carrera S</span>
+                            <span>Sport Chrono</span>
+                            <span>PASM</span>
+                            <span>PCCB</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-sm">Detayları Gör</button>
+                            <button class="btn btn-secondary btn-sm">İletişime Geç</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Range Rover Sport -->
+                <div class="car-listing" data-brand="range-rover" data-category="suv" data-price="2750000" data-fuel="dizel" data-transmission="otomatik" data-condition="ikinci-el" data-year="2023" data-mileage="12000">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                        <div class="car-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <h3>Range Rover Sport</h3>
+                            <span class="car-year">2023 Model</span>
+                        </div>
+                        <div class="car-price-section">
+                            <p class="car-price">₺2.750.000</p>
+                            <span class="price-note">KDV Dahil</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 12.000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Terrain Response</span>
+                            <span>Meridian Ses</span>
+                            <span>Adaptive Dynamics</span>
+                            <span>All-Terrain Progress</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-sm">Detayları Gör</button>
+                            <button class="btn btn-secondary btn-sm">İletişime Geç</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volkswagen Golf GTI -->
+                <div class="car-listing" data-brand="volkswagen" data-category="family" data-price="850000" data-fuel="benzin" data-transmission="otomatik" data-condition="ikinci-el" data-year="2022" data-mileage="35000">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                        <div class="car-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <h3>Volkswagen Golf GTI</h3>
+                            <span class="car-year">2022 Model</span>
+                        </div>
+                        <div class="car-price-section">
+                            <p class="car-price">₺850.000</p>
+                            <span class="price-note">KDV Dahil</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 35.000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>GTI Paket</span>
+                            <span>Sport Suspension</span>
+                            <span>DCC</span>
+                            <span>XDS</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-sm">Detayları Gör</button>
+                            <button class="btn btn-secondary btn-sm">İletişime Geç</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volvo XC90 -->
+                <div class="car-listing" data-brand="volvo" data-category="suv" data-price="1800000" data-fuel="hibrit" data-transmission="otomatik" data-condition="yeni" data-year="2024" data-mileage="0">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">Yeni</div>
+                        <div class="car-favorite">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="car-details">
+                        <div class="car-header">
+                            <h3>Volvo XC90</h3>
+                            <span class="car-year">2024 Model</span>
+                        </div>
+                        <div class="car-price-section">
+                            <p class="car-price">₺1.800.000</p>
+                            <span class="price-note">KDV Dahil</span>
+                        </div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                            <span><i class="fas fa-leaf"></i> Hibrit</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Recharge</span>
+                            <span>Pilot Assist</span>
+                            <span>Bowers & Wilkins</span>
+                            <span>CleanZone</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-sm">Detayları Gör</button>
+                            <button class="btn btn-secondary btn-sm">İletişime Geç</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-primary" id="load-more">
+                    <i class="fas fa-plus"></i>
+                    Daha Fazla Araç Yükle
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-content">
+                <div class="quick-contact-text">
+                    <h2>İstediğiniz Araç Bulunamadı mı?</h2>
+                    <p>Özel araç arama hizmetimizle size uygun aracı bulalım. İhtiyaçlarınızı belirtin, biz sizin için en uygun seçenekleri sunalım.</p>
+                </div>
+                <div class="quick-contact-form">
+                    <form class="search-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Adınız Soyadınız" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Telefon Numaranız" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Aradığınız araç özelliklerini belirtin (marka, model, fiyat aralığı vb.)" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                            Araç Ara
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Türkiye'nin en güvenilir otomotiv galerisi. 20 yıllık deneyimimizle sizlere en kaliteli hizmeti sunuyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="inventory.html">Araç Envanteri</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li>Araç Alım-Satım</li>
+                        <li>Finansman</li>
+                        <li>Sigorta</li>
+                        <li>Teknik Servis</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Premium Otomotiv</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link active">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="inventory.html" class="nav-link">Araç Envanteri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hizmetlerimiz</h1>
+            <p>Kapsamlı otomotiv çözümleri ile ihtiyaçlarınızı karşılıyoruz.</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Araç Alım-Satım</h3>
+                    <p>Yeni ve ikinci el araç alım-satım hizmetlerimizle, size en uygun araçları sunuyoruz. Detaylı araç kontrolü ve şeffaf fiyatlandırma garantisi.</p>
+                    <ul>
+                        <li>Yeni araç satışı</li>
+                        <li>İkinci el araç alım-satım</li>
+                        <li>Araç değerleme</li>
+                        <li>Takas hizmeti</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Finansman</h3>
+                    <p>Esnek ödeme seçenekleri ve uygun faiz oranları ile araç sahibi olmanızı kolaylaştırıyoruz. Kredi ve leasing seçenekleri.</p>
+                    <ul>
+                        <li>Araç kredisi</li>
+                        <li>Leasing seçenekleri</li>
+                        <li>Esnek ödeme planları</li>
+                        <li>Hızlı kredi onayı</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sigorta</h3>
+                    <p>Kapsamlı sigorta çözümleri ile aracınızı ve kendinizi güvence altına alın. En uygun fiyatlarla en iyi koruma.</p>
+                    <ul>
+                        <li>Kasko sigortası</li>
+                        <li>Trafik sigortası</li>
+                        <li>Hayat sigortası</li>
+                        <li>Özel sigorta paketleri</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Teknik Servis</h3>
+                    <p>Uzman teknisyenlerimiz ve modern ekipmanlarımızla aracınızın bakım ve onarım ihtiyaçlarını karşılıyoruz.</p>
+                    <ul>
+                        <li>Periyodik bakım</li>
+                        <li>Arıza tespiti ve onarım</li>
+                        <li>Yedek parça değişimi</li>
+                        <li>Garanti hizmetleri</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Inventory -->
+    <section class="car-inventory">
+        <div class="container">
+            <h2 class="section-title">Araç Envanterimiz</h2>
+            <div class="inventory-filters">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="luxury">Lüks</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+                <button class="filter-btn" data-filter="sedan">Sedan</button>
+                <button class="filter-btn" data-filter="electric">Elektrikli</button>
+            </div>
+            <div class="inventory-grid">
+                <div class="car-listing" data-category="luxury">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">Yeni</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>BMW 7 Serisi</h3>
+                        <p class="car-year">2024 Model</p>
+                        <p class="car-price">₺2.850.000</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Deri Koltuk</span>
+                            <span>Panoramik Tavan</span>
+                            <span>Adaptif Hız Sabitleyici</span>
+                        </div>
+                        <button class="btn btn-primary">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="car-listing" data-category="suv">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Mercedes GLE</h3>
+                        <p class="car-year">2023 Model</p>
+                        <p class="car-price">₺2.100.000</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 15.000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>4MATIC</span>
+                            <span>AMG Paket</span>
+                            <span>Burmester Ses Sistemi</span>
+                        </div>
+                        <button class="btn btn-primary">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="car-listing" data-category="sedan">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Audi A6</h3>
+                        <p class="car-year">2023 Model</p>
+                        <p class="car-price">₺1.650.000</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 25.000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Quattro</span>
+                            <span>S-Line Paket</span>
+                            <span>Virtual Cockpit</span>
+                        </div>
+                        <button class="btn btn-primary">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="car-listing" data-category="electric">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">Yeni</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Tesla Model 3</h3>
+                        <p class="car-year">2024 Model</p>
+                        <p class="car-price">₺1.950.000</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 0 km</span>
+                            <span><i class="fas fa-bolt"></i> Elektrik</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Autopilot</span>
+                            <span>500 km Menzil</span>
+                            <span>Supercharger</span>
+                        </div>
+                        <button class="btn btn-primary">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="car-listing" data-category="luxury">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Porsche 911</h3>
+                        <p class="car-year">2022 Model</p>
+                        <p class="car-price">₺3.200.000</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 8.500 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Benzin</span>
+                            <span><i class="fas fa-cog"></i> PDK</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Carrera S</span>
+                            <span>Sport Chrono</span>
+                            <span>PASM</span>
+                        </div>
+                        <button class="btn btn-primary">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="car-listing" data-category="suv">
+                    <div class="car-image">
+                        <i class="fas fa-car-side"></i>
+                        <div class="car-badge">İkinci El</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Range Rover Sport</h3>
+                        <p class="car-year">2023 Model</p>
+                        <p class="car-price">₺2.750.000</p>
+                        <div class="car-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 12.000 km</span>
+                            <span><i class="fas fa-gas-pump"></i> Dizel</span>
+                            <span><i class="fas fa-cog"></i> Otomatik</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Terrain Response</span>
+                            <span>Meridian Ses</span>
+                            <span>Adaptive Dynamics</span>
+                        </div>
+                        <button class="btn btn-primary">Detayları Gör</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <h2 class="section-title">Ek Hizmetlerimiz</h2>
+            <div class="additional-grid">
+                <div class="additional-card">
+                    <div class="additional-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Araç Takası</h3>
+                    <p>Mevcut aracınızı değerlendirip, yeni araç alımında avantaj sağlıyoruz. Adil değerleme ve hızlı işlem süreci.</p>
+                </div>
+                <div class="additional-card">
+                    <div class="additional-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Araç Arama</h3>
+                    <p>İstediğiniz özelliklerdeki aracı bulamadıysanız, özel arama hizmetimizle size uygun araç buluyoruz.</p>
+                </div>
+                <div class="additional-card">
+                    <div class="additional-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Teslimat</h3>
+                    <p>Türkiye'nin her yerine araç teslimatı yapıyoruz. Güvenli ve hızlı teslimat garantisi.</p>
+                </div>
+                <div class="additional-card">
+                    <div class="additional-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Sürüş Eğitimi</h3>
+                    <p>Yeni araç sahiplerine ücretsiz sürüş eğitimi veriyoruz. Araç özelliklerini tanıma ve güvenli sürüş teknikleri.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Türkiye'nin en güvenilir otomotiv galerisi. 20 yıllık deneyimimizle sizlere en kaliteli hizmeti sunuyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li>Araç Alım-Satım</li>
+                        <li>Finansman</li>
+                        <li>Sigorta</li>
+                        <li>Teknik Servis</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,586 @@
+Türkiye'deki bir kafe işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri kafe sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `cafe-business` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir kuaför işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri kuaför sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `hair-salon` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir güzellik salonu işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri güzellik salonu sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `beauty-salon` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir emlak işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri emlak sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `real-estate` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir otomotiv galerisi işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri otomotiv galerisi sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `car-dealer` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir düğün salonu işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri düğün salonu sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `wedding-hall` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir fotoğrafçı işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri fotoğrafçı sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `photographer` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir diş kliniği işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri diş kliniği sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `dentist-clinic` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir veteriner işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri veteriner sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `veterinary-clinic` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir fitness salonu işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri fitness salonu sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `fitness-club` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir psikolog işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri psikolog sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `psychologist` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir avukat işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri avukat sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `law-firm` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir muhasebeci işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri muhasebeci sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `accountant` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir mimar işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri mimar sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `architect` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir iç mimar işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri iç mimar sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `interior-designer` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir yazılım firması işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri yazılım firması sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `software-company` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir mobil uygulama işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri mobil uygulama sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `mobile-app-company` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir butik işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri butik sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `boutique-store` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir giyim mağazası işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri giyim mağazası sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `clothing-store` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir elektronik mağazası işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri elektronik mağazası sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `electronics-store` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir çocuk giyim işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri çocuk giyim sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `kids-wear-store` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir oyuncakçı işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri oyuncakçı sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `toy-store` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir spor malzemeleri işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri spor malzemeleri sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `sports-equipment` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir kamp ekipmanları işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri kamp ekipmanları sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `camping-gear-store` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir tekne kiralama işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri tekne kiralama sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `boat-rental` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir otel işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri otel sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `hotel` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir pansiyon işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri pansiyon sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `guesthouse` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir tatil köyü işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri tatil köyü sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `resort` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir dönerci işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri dönerci sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `doner-restaurant` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir pastane işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri pastane sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `bakery` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir kahveci işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri kahveci sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `coffee-shop` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir tatlıcı işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri tatlıcı sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `dessert-shop` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir kebapçı işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri kebapçı sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `kebab-restaurant` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir sürücü kursu işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri sürücü kursu sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `driving-school` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir özel okul işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri özel okul sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `private-school` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir etüt merkezi işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri etüt merkezi sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `study-center` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir anaokulu işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri anaokulu sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `kindergarten` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir çocuk gelişim merkezi işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri çocuk gelişim merkezi sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `child-development-center` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir dans okulu işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri dans okulu sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `dance-school` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir müzik okulu işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri müzik okulu sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `music-school` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir sanat atölyesi işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri sanat atölyesi sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `art-studio` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir dil kursu işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri dil kursu sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `language-school` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir yabancı dil merkezi işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri yabancı dil merkezi sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `foreign-language-center` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir özel hastane işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri özel hastane sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `private-hospital` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir göz hastanesi işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri göz hastanesi sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `eye-hospital` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir ortopedi merkezi işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri ortopedi merkezi sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `orthopedic-center` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir kozmetik markası işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri kozmetik markası sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `cosmetics-brand` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir organik ürün satışı işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri organik ürün satışı sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `organic-products-store` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.
+
+
+Türkiye'deki bir bal üreticisi işletmesi için modern ve duyarlı bir web şablonu oluşturun.
+
+- HTML5 ve CSS3 teknolojilerini kullanın. Minimum düzeyde JavaScript kullanılmalı.
+- Sayfa yapısı: Ana Sayfa, Hakkımızda, Hizmetler, İletişim.
+- Her sayfa ayrı bir `.html` dosyası olacak şekilde oluşturulmalı.
+- Sayfa içerikleri bal üreticisi sektörüne özel, dolu ve özgün olmalı. Boş bırakılmamalı.
+- Mobil uyumluluk ve modern kullanıcı deneyimi öncelikli olmalı.
+- Renk paleti sektöre uygun şekilde AI tarafından belirlenecek.
+- Şirket adı: **Acboztech**
+- Bu proje, `honey-producer` adlı bir klasörde yer almalı. Tüm HTML dosyaları bu klasör içinde düzenlenmeli.

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Kafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-coffee"></i>
+                <span>Acboztech</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Hizmetler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">İletişim</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin, size yardımcı olmaktan mutluluk duyarız</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Bağdat Caddesi No: 123<br>Kadıköy, İstanbul<br>34710</p>
+                    <a href="https://maps.google.com" target="_blank" class="contact-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        Haritada Göster
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 (212) 555 0123<br>+90 (532) 555 0123</p>
+                    <a href="tel:+902125550123" class="contact-link">
+                        <i class="fas fa-phone"></i>
+                        Hemen Ara
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com<br>rezervasyon@acboztech.com</p>
+                    <a href="mailto:info@acboztech.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        E-posta Gönder
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Pazar<br>07:00 - 23:00</p>
+                    <span class="status-open">Şu anda Açık</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <div class="form-header">
+                        <h2>Mesaj Gönderin</h2>
+                        <p>Rezervasyon, özel etkinlikler veya herhangi bir sorunuz için bizimle iletişime geçebilirsiniz.</p>
+                    </div>
+                    <form id="contactForm" class="contact-form-element">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ad Soyad *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Konu *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Konu Seçin</option>
+                                    <option value="rezervasyon">Rezervasyon</option>
+                                    <option value="etkinlik">Etkinlik Organizasyonu</option>
+                                    <option value="siparis">Sipariş</option>
+                                    <option value="oneri">Öneri/Şikayet</option>
+                                    <option value="diger">Diğer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span class="checkmark"></span>
+                                E-posta listemize katılmak istiyorum
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Mesaj Gönder
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-details">
+                    <div class="details-header">
+                        <h2>İletişim Bilgilerimiz</h2>
+                        <p>Size en iyi şekilde hizmet verebilmek için buradayız.</p>
+                    </div>
+                    <div class="details-content">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-info">
+                                <h4>Konum</h4>
+                                <p>İstanbul'un en merkezi lokasyonlarından biri olan Kadıköy'de, Bağdat Caddesi üzerinde yer almaktayız. Toplu taşıma araçları ile kolayca ulaşabilirsiniz.</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="detail-info">
+                                <h4>Ulaşım</h4>
+                                <p>Marmaray, Metro ve otobüs hatları ile kolayca ulaşabilirsiniz. Ayrıca özel araç park alanımız da mevcuttur.</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="detail-info">
+                                <h4>Kapasite</h4>
+                                <p>80 kişilik kapasitemiz ile hem bireysel hem de grup etkinlikleriniz için uygun ortam sağlıyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Konumumuz</h2>
+                <p>Bizi kolayca bulabilirsiniz</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <h3>Google Harita</h3>
+                    <p>Bağdat Caddesi No: 123, Kadıköy, İstanbul</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i>
+                        Haritayı Aç
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sık Sorulan Sorular</h2>
+                <p>En çok merak edilen konular hakkında bilgi alın</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Rezervasyon yapabilir miyim?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, telefon, e-posta veya web sitemiz üzerinden rezervasyon yapabilirsiniz. Özel etkinlikler için en az 24 saat önceden haber vermenizi rica ederiz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>WiFi şifresi nedir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>WiFi şifremiz masalarda bulunan QR kod ile veya personelimizden öğrenebilirsiniz. Ücretsiz ve hızlı internet hizmetimizden yararlanabilirsiniz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Özel etkinlikler düzenleyebilir misiniz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, doğum günü, iş toplantısı, workshop gibi özel etkinlikler için özel menüler ve düzenlemeler yapabiliriz. Detaylar için bizimle iletişime geçin.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Paket servis hizmetiniz var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, paket servis hizmetimiz mevcuttur. Telefon veya mobil uygulamamız üzerinden sipariş verebilirsiniz. Teslimat süresi yaklaşık 30-45 dakikadır.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Öğrenci indirimi var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, öğrenci kimliği gösteren müşterilerimize %20 indirim uyguluyoruz. Bu indirim hafta içi geçerlidir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sosyal Medyada Bizi Takip Edin</h2>
+                <p>Güncel haberler ve özel kampanyalar için sosyal medya hesaplarımızı takip edin</p>
+            </div>
+            <div class="social-grid">
+                <div class="social-card">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Günlük menülerimizi ve etkinliklerimizi takip edin</p>
+                    <a href="#" class="social-link">@acboztech_kafe</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Topluluğumuzun bir parçası olun</p>
+                    <a href="#" class="social-link">Acboztech Kafe</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3>Twitter</h3>
+                    <p>Anlık güncellemeler ve haberler</p>
+                    <a href="#" class="social-link">@acboztech_kafe</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Kurumsal haberler ve iş fırsatları</p>
+                    <a href="#" class="social-link">Acboztech Kafe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-coffee"></i>
+                        <span>Acboztech</span>
+                    </div>
+                    <p>Teknoloji ve lezzetin buluşma noktası. Modern kafe deneyimi için bizi tercih edin.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li><a href="services.html">Özel Kahveler</a></li>
+                        <li><a href="services.html">Günlük Menü</a></li>
+                        <li><a href="services.html">Çalışma Alanı</a></li>
+                        <li><a href="services.html">Etkinlik Mekanı</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Bağdat Caddesi No: 123, Kadıköy</p>
+                    <p><i class="fas fa-phone"></i> +90 (212) 555 0123</p>
+                    <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Kafe. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

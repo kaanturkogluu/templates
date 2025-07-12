@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Kuaför Salonu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Acboztech</h2>
+                    <span>Profesyonel Kuaför Salonu</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>İletişim</h1>
+                <p>Bizimle iletişime geçin, size en iyi hizmeti sunalım</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 212 555 0123</p>
+                    <p>+90 532 555 0123</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com</p>
+                    <p>randevu@acboztech.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Kadıköy Mahallesi</p>
+                    <p>Güzellik Caddesi No:123</p>
+                    <p>Kadıköy/İstanbul</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cuma: 09:00 - 20:00</p>
+                    <p>Cumartesi - Pazar: 10:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-form-map">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Bize Mesaj Gönderin</h2>
+                    <p>Herhangi bir sorunuz veya öneriniz varsa, aşağıdaki formu kullanarak bizimle iletişime geçebilirsiniz.</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Hizmet Türü</label>
+                            <select id="service" name="service">
+                                <option value="">Hizmet seçiniz</option>
+                                <option value="hair-cutting">Saç Kesimi</option>
+                                <option value="hair-coloring">Saç Boyama</option>
+                                <option value="hair-care">Saç Bakımı</option>
+                                <option value="styling">Şekillendirme</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+                
+                <div class="map-section">
+                    <h2>Konumumuz</h2>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Kadıköy, İstanbul</p>
+                            <span>Harita yükleniyor...</span>
+                        </div>
+                    </div>
+                    <div class="directions">
+                        <h3>Nasıl Ulaşırım?</h3>
+                        <div class="direction-item">
+                            <i class="fas fa-train"></i>
+                            <div>
+                                <h4>Metro</h4>
+                                <p>Kadıköy Metro İstasyonu'ndan 5 dakika yürüme mesafesinde</p>
+                            </div>
+                        </div>
+                        <div class="direction-item">
+                            <i class="fas fa-bus"></i>
+                            <div>
+                                <h4>Otobüs</h4>
+                                <p>Kadıköy Otobüs Durağı'ndan 3 dakika yürüme mesafesinde</p>
+                            </div>
+                        </div>
+                        <div class="direction-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h4>Araç</h4>
+                                <p>Salonumuzun önünde ücretsiz otopark bulunmaktadır</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Randevu nasıl alabilirim?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Telefon, e-posta veya sosyal medya hesaplarımızdan randevu alabilirsiniz. Ayrıca web sitemizdeki iletişim formunu da kullanabilirsiniz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Hangi ödeme yöntemlerini kabul ediyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nakit, kredi kartı, banka kartı ve mobil ödeme yöntemlerini kabul ediyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Hangi marka ürünler kullanıyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sadece en kaliteli ve güvenilir markaların ürünlerini kullanıyoruz. L'Oréal, Wella, Schwarzkopf gibi profesyonel markalar tercih ediyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>İptal politikası nedir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Randevunuzu en az 24 saat önceden iptal etmenizi rica ediyoruz. Geç iptaller için ücret alınabilir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Çocuklar için özel hizmet var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, çocuklar için özel saç kesimi hizmetimiz bulunmaktadır. Çocuk dostu ortamımızda güvenli ve eğlenceli bir deneyim sunuyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Özel günler için özel hizmet var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Düğün, nişan, mezuniyet gibi özel günler için özel saç tasarımı ve makyaj hizmetlerimiz bulunmaktadır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Profesyonel kuaför salonu olarak 2015 yılından beri hizmet vermekteyiz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim Bilgileri</h4>
+                    <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                    <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kadıköy, İstanbul</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Çalışma Saatleri</h4>
+                    <p>Pazartesi - Cuma: 09:00 - 20:00</p>
+                    <p>Cumartesi - Pazar: 10:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
