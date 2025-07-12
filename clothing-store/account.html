@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesabım - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Modern Giyim</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="account.html" class="nav-icon active"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hesabım</h1>
+            <p>Hesap bilgileriniz ve siparişleriniz</p>
+        </div>
+    </section>
+
+    <!-- Account Section -->
+    <section class="account-section">
+        <div class="container">
+            <div class="account-container">
+                <!-- Account Sidebar -->
+                <div class="account-sidebar">
+                    <div class="user-profile">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Ahmet Yılmaz</h3>
+                        <p>ahmet.yilmaz@email.com</p>
+                        <span class="member-since">Üye: Ocak 2023</span>
+                    </div>
+                    <nav class="account-nav">
+                        <a href="#profile" class="nav-link active" data-tab="profile">
+                            <i class="fas fa-user"></i>
+                            Profil Bilgileri
+                        </a>
+                        <a href="#orders" class="nav-link" data-tab="orders">
+                            <i class="fas fa-shopping-bag"></i>
+                            Siparişlerim
+                        </a>
+                        <a href="#wishlist" class="nav-link" data-tab="wishlist">
+                            <i class="fas fa-heart"></i>
+                            Favorilerim
+                        </a>
+                        <a href="#addresses" class="nav-link" data-tab="addresses">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Adreslerim
+                        </a>
+                        <a href="#settings" class="nav-link" data-tab="settings">
+                            <i class="fas fa-cog"></i>
+                            Hesap Ayarları
+                        </a>
+                        <a href="#logout" class="nav-link logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Çıkış Yap
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Account Content -->
+                <div class="account-content">
+                    <!-- Profile Tab -->
+                    <div class="tab-content active" id="profile">
+                        <div class="content-header">
+                            <h2>Profil Bilgileri</h2>
+                            <button class="edit-btn">Düzenle</button>
+                        </div>
+                        <div class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Ad</label>
+                                    <input type="text" value="Ahmet" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label>Soyad</label>
+                                    <input type="text" value="Yılmaz" readonly>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>E-posta</label>
+                                    <input type="email" value="ahmet.yilmaz@email.com" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefon</label>
+                                    <input type="tel" value="+90 532 123 4567" readonly>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Doğum Tarihi</label>
+                                <input type="date" value="1990-05-15" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label>Cinsiyet</label>
+                                <select readonly>
+                                    <option selected>Erkek</option>
+                                    <option>Kadın</option>
+                                </select>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn btn-primary save-btn" style="display: none;">Kaydet</button>
+                                <button class="btn btn-secondary cancel-btn" style="display: none;">İptal</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Orders Tab -->
+                    <div class="tab-content" id="orders">
+                        <div class="content-header">
+                            <h2>Siparişlerim</h2>
+                        </div>
+                        <div class="orders-list">
+                            <div class="order-item">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <h3>Sipariş #ACB-2024-001</h3>
+                                        <p>15 Mart 2024</p>
+                                    </div>
+                                    <div class="order-status delivered">
+                                        <i class="fas fa-check-circle"></i>
+                                        Teslim Edildi
+                                    </div>
+                                </div>
+                                <div class="order-products">
+                                    <div class="order-product">
+                                        <div class="product-image">
+                                            <div class="product-placeholder">
+                                                <i class="fas fa-tshirt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>Klasik Erkek Gömleği</h4>
+                                            <p>Beden: L, Renk: Mavi</p>
+                                            <span class="product-price">139.90 TL</span>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <span>Adet: 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="order-product">
+                                        <div class="product-image">
+                                            <div class="product-placeholder">
+                                                <i class="fas fa-shoe-prints"></i>
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>Sneaker Ayakkabı</h4>
+                                            <p>Beden: 40, Renk: Beyaz</p>
+                                            <span class="product-price">259.90 TL</span>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <span>Adet: 1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-footer">
+                                    <div class="order-total">
+                                        <span>Toplam: 399.80 TL</span>
+                                    </div>
+                                    <div class="order-actions">
+                                        <button class="btn btn-secondary">Tekrar Sipariş Ver</button>
+                                        <button class="btn btn-primary">Değerlendir</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-item">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <h3>Sipariş #ACB-2024-002</h3>
+                                        <p>10 Mart 2024</p>
+                                    </div>
+                                    <div class="order-status processing">
+                                        <i class="fas fa-clock"></i>
+                                        Hazırlanıyor
+                                    </div>
+                                </div>
+                                <div class="order-products">
+                                    <div class="order-product">
+                                        <div class="product-image">
+                                            <div class="product-placeholder">
+                                                <i class="fas fa-female"></i>
+                                            </div>
+                                        </div>
+                                        <div class="product-details">
+                                            <h4>Kadın Yaz Elbisesi</h4>
+                                            <p>Beden: M, Renk: Sarı</p>
+                                            <span class="product-price">179.90 TL</span>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <span>Adet: 1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-footer">
+                                    <div class="order-total">
+                                        <span>Toplam: 179.90 TL</span>
+                                    </div>
+                                    <div class="order-actions">
+                                        <button class="btn btn-secondary">Siparişi İptal Et</button>
+                                        <button class="btn btn-primary">Takip Et</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wishlist Tab -->
+                    <div class="tab-content" id="wishlist">
+                        <div class="content-header">
+                            <h2>Favorilerim</h2>
+                            <span class="wishlist-count">(5 ürün)</span>
+                        </div>
+                        <div class="wishlist-grid">
+                            <div class="wishlist-item">
+                                <div class="product-image">
+                                    <div class="product-placeholder">
+                                        <i class="fas fa-tshirt"></i>
+                                    </div>
+                                    <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Erkek Kravat</h3>
+                                    <p class="product-category">Aksesuar</p>
+                                    <div class="product-price">
+                                        <span class="old-price">89.90 TL</span>
+                                        <span class="new-price">67.90 TL</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Sepete Ekle</button>
+                                </div>
+                            </div>
+
+                            <div class="wishlist-item">
+                                <div class="product-image">
+                                    <div class="product-placeholder">
+                                        <i class="fas fa-gem"></i>
+                                    </div>
+                                    <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Kadın Kolye</h3>
+                                    <p class="product-category">Aksesuar</p>
+                                    <div class="product-price">
+                                        <span class="old-price">129.90 TL</span>
+                                        <span class="new-price">103.90 TL</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Sepete Ekle</button>
+                                </div>
+                            </div>
+
+                            <div class="wishlist-item">
+                                <div class="product-image">
+                                    <div class="product-placeholder">
+                                        <i class="fas fa-shopping-bag"></i>
+                                    </div>
+                                    <button class="remove-wishlist"><i class="fas fa-times"></i></button>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Deri Cüzdan</h3>
+                                    <p class="product-category">Aksesuar</p>
+                                    <div class="product-price">
+                                        <span class="old-price">159.90 TL</span>
+                                        <span class="new-price">111.90 TL</span>
+                                    </div>
+                                    <button class="add-to-cart-btn">Sepete Ekle</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Addresses Tab -->
+                    <div class="tab-content" id="addresses">
+                        <div class="content-header">
+                            <h2>Adreslerim</h2>
+                            <button class="add-address-btn">Yeni Adres Ekle</button>
+                        </div>
+                        <div class="addresses-list">
+                            <div class="address-item">
+                                <div class="address-header">
+                                    <h3>Ev Adresi</h3>
+                                    <span class="default-badge">Varsayılan</span>
+                                </div>
+                                <div class="address-content">
+                                    <p>Ahmet Yılmaz</p>
+                                    <p>Atatürk Mahallesi, Cumhuriyet Caddesi No:123</p>
+                                    <p>Kadıköy, İstanbul 34700</p>
+                                    <p>Telefon: +90 532 123 4567</p>
+                                </div>
+                                <div class="address-actions">
+                                    <button class="btn btn-secondary">Düzenle</button>
+                                    <button class="btn btn-danger">Sil</button>
+                                </div>
+                            </div>
+
+                            <div class="address-item">
+                                <div class="address-header">
+                                    <h3>İş Adresi</h3>
+                                </div>
+                                <div class="address-content">
+                                    <p>Ahmet Yılmaz</p>
+                                    <p>Levent Mahallesi, Büyükdere Caddesi No:45</p>
+                                    <p>Beşiktaş, İstanbul 34330</p>
+                                    <p>Telefon: +90 212 555 0123</p>
+                                </div>
+                                <div class="address-actions">
+                                    <button class="btn btn-secondary">Düzenle</button>
+                                    <button class="btn btn-danger">Sil</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings Tab -->
+                    <div class="tab-content" id="settings">
+                        <div class="content-header">
+                            <h2>Hesap Ayarları</h2>
+                        </div>
+                        <div class="settings-sections">
+                            <div class="settings-section">
+                                <h3>Şifre Değiştir</h3>
+                                <form class="password-form">
+                                    <div class="form-group">
+                                        <label>Mevcut Şifre</label>
+                                        <input type="password" placeholder="Mevcut şifrenizi girin">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Yeni Şifre</label>
+                                        <input type="password" placeholder="Yeni şifrenizi girin">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Yeni Şifre (Tekrar)</label>
+                                        <input type="password" placeholder="Yeni şifrenizi tekrar girin">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Şifreyi Değiştir</button>
+                                </form>
+                            </div>
+
+                            <div class="settings-section">
+                                <h3>Bildirim Ayarları</h3>
+                                <div class="notification-settings">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" checked>
+                                        <span>E-posta bildirimleri</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" checked>
+                                        <span>SMS bildirimleri</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox">
+                                        <span>Push bildirimleri</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" checked>
+                                        <span>Kampanya ve indirim bildirimleri</span>
+                                    </label>
+                                </div>
+                                <button class="btn btn-primary">Ayarları Kaydet</button>
+                            </div>
+
+                            <div class="settings-section">
+                                <h3>Hesap Silme</h3>
+                                <p class="warning-text">Bu işlem geri alınamaz. Tüm verileriniz kalıcı olarak silinecektir.</p>
+                                <button class="btn btn-danger">Hesabımı Sil</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Modern giyim tasarımında kalite ve güvenin adresi. 15+ yıllık deneyimimizle sizlere hizmet veriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="products.html?category=erkek">Erkek Giyim</a></li>
+                        <li><a href="products.html?category=kadin">Kadın Giyim</a></li>
+                        <li><a href="products.html?category=cocuk">Çocuk Giyim</a></li>
+                        <li><a href="products.html?category=ayakkabi">Ayakkabı</a></li>
+                        <li><a href="products.html?category=aksesuar">Aksesuar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

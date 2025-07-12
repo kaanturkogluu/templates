@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hizmetler.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iletisim.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>İletişim</h1>
+                <p>Bizimle iletişime geçin, size en uygun çözümü sunalım</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 (212) 555 0123</p>
+                    <p>+90 (212) 555 0124</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com</p>
+                    <p>destek@acboztech.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Beşiktaş Mahallesi</p>
+                    <p>İstanbul, Türkiye</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                    <p>Cumartesi: 09:00 - 14:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-form-map">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Bize Ulaşın</h2>
+                    <p>Formu doldurarak bizimle iletişime geçin. En kısa sürede size dönüş yapacağız.</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Konu Seçiniz</option>
+                                <option value="konut-satisi">Konut Satışı</option>
+                                <option value="konut-kiralama">Konut Kiralama</option>
+                                <option value="emlak-degerleme">Emlak Değerleme</option>
+                                <option value="danismanlik">Danışmanlık</option>
+                                <option value="genel">Genel Bilgi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Mesaj Gönder
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-map-section">
+                    <h2>Konumumuz</h2>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.9633698339308!2d28.9839!3d41.0421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzMxLjYiTiAyOMKwNTknMDIuMCJF!5e0!3m2!1str!2str!4v1234567890"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches -->
+    <section class="branches">
+        <div class="container">
+            <div class="section-header">
+                <h2>Şubelerimiz</h2>
+                <p>Türkiye genelinde hizmet veren şubelerimiz</p>
+            </div>
+            <div class="branches-grid">
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <h3>İstanbul - Beşiktaş</h3>
+                        <span class="branch-type">Merkez Ofis</span>
+                    </div>
+                    <div class="branch-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Beşiktaş Mahallesi, İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 (212) 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> besiktas@acboztech.com</p>
+                    </div>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <h3>Ankara - Çankaya</h3>
+                        <span class="branch-type">Şube</span>
+                    </div>
+                    <div class="branch-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Çankaya Mahallesi, Ankara</p>
+                        <p><i class="fas fa-phone"></i> +90 (312) 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> ankara@acboztech.com</p>
+                    </div>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <h3>İzmir - Konak</h3>
+                        <span class="branch-type">Şube</span>
+                    </div>
+                    <div class="branch-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Konak Mahallesi, İzmir</p>
+                        <p><i class="fas fa-phone"></i> +90 (232) 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> izmir@acboztech.com</p>
+                    </div>
+                </div>
+                <div class="branch-card">
+                    <div class="branch-header">
+                        <h3>Antalya - Muratpaşa</h3>
+                        <span class="branch-type">Şube</span>
+                    </div>
+                    <div class="branch-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Muratpaşa Mahallesi, Antalya</p>
+                        <p><i class="fas fa-phone"></i> +90 (242) 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> antalya@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sık Sorulan Sorular</h2>
+                <p>Müşterilerimizin en çok sorduğu sorular ve cevapları</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Konut satış süreci nasıl işliyor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Konut satış sürecimiz şu şekilde işler: Önce konutunuzu değerlendiririz, profesyonel fotoğraflar çekeriz, pazarlama stratejisi belirleriz ve potansiyel alıcılarla eşleştiririz. Tüm süreç boyunca size rehberlik ederiz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kiralama hizmetleriniz nelerdir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kiralama hizmetlerimiz arasında kiracı değerlendirme, kira takibi, sigorta hizmetleri ve hukuki danışmanlık bulunmaktadır. Hem ev sahipleri hem de kiracılar için kapsamlı hizmet sunuyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Emlak değerleme raporu ne kadar sürede hazırlanır?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Emlak değerleme raporu genellikle 3-5 iş günü içerisinde hazırlanır. Detaylı analiz ve piyasa araştırması gerektiren durumlarda süre 1 haftaya kadar uzayabilir.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Hangi bölgelerde hizmet veriyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Türkiye genelinde 25 şubemiz bulunmaktadır. İstanbul, Ankara, İzmir, Antalya, Bursa, Adana gibi büyük şehirlerde ve çevre illerde hizmet veriyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Türkiye'nin en güvenilir emlak danışmanlığı. 15 yıllık deneyimimizle hayalinizdeki eve kavuşmanızda yanınızdayız.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li><a href="hizmetler.html">Konut Satışı</a></li>
+                        <li><a href="hizmetler.html">Konut Kiralama</a></li>
+                        <li><a href="hizmetler.html">Emlak Değerleme</a></li>
+                        <li><a href="hizmetler.html">Danışmanlık</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +90 (212) 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Beşiktaş, İstanbul</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Modern Giyim</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="account.html" class="nav-icon"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Ürünlerimiz</h1>
+            <p>10.000+ ürün çeşidi ile her tarza uygun seçenekler</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>Kategori:</label>
+                    <select id="category-filter">
+                        <option value="">Tüm Kategoriler</option>
+                        <option value="erkek">Erkek Giyim</option>
+                        <option value="kadin">Kadın Giyim</option>
+                        <option value="cocuk">Çocuk Giyim</option>
+                        <option value="ayakkabi">Ayakkabı</option>
+                        <option value="aksesuar">Aksesuar</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Fiyat Aralığı:</label>
+                    <select id="price-filter">
+                        <option value="">Tüm Fiyatlar</option>
+                        <option value="0-100">0 - 100 TL</option>
+                        <option value="100-300">100 - 300 TL</option>
+                        <option value="300-500">300 - 500 TL</option>
+                        <option value="500+">500 TL+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sıralama:</label>
+                    <select id="sort-filter">
+                        <option value="popular">En Popüler</option>
+                        <option value="price-low">Fiyat (Düşük-Yüksek)</option>
+                        <option value="price-high">Fiyat (Yüksek-Düşük)</option>
+                        <option value="new">En Yeni</option>
+                        <option value="discount">En Çok İndirim</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Beden:</label>
+                    <div class="size-filters">
+                        <label><input type="checkbox" value="xs"> XS</label>
+                        <label><input type="checkbox" value="s"> S</label>
+                        <label><input type="checkbox" value="m"> M</label>
+                        <label><input type="checkbox" value="l"> L</label>
+                        <label><input type="checkbox" value="xl"> XL</label>
+                        <label><input type="checkbox" value="xxl"> XXL</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <div class="results-info">
+                    <span>1.247 ürün bulundu</span>
+                </div>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                    <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="products-container">
+                <!-- Erkek Giyim Ürünleri -->
+                <div class="product-card" data-category="erkek" data-price="139.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-badge">%30 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Klasik Erkek Gömleği</h3>
+                        <p class="product-category">Erkek Giyim</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #1e3a8a;"></span>
+                            <span class="color-dot" style="background: #374151;"></span>
+                            <span class="color-dot" style="background: #f59e0b;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">199.90 TL</span>
+                            <span class="new-price">139.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="erkek" data-price="89.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-badge">%40 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Basic Erkek Tişört</h3>
+                        <p class="product-category">Erkek Giyim</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #ffffff; border: 1px solid #e5e7eb;"></span>
+                            <span class="color-dot" style="background: #000000;"></span>
+                            <span class="color-dot" style="background: #ef4444;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">149.90 TL</span>
+                            <span class="new-price">89.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="erkek" data-price="299.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-badge">%25 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Slim Fit Erkek Pantolonu</h3>
+                        <p class="product-category">Erkek Giyim</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #374151;"></span>
+                            <span class="color-dot" style="background: #1e3a8a;"></span>
+                            <span class="color-dot" style="background: #6b7280;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>28</span>
+                            <span>30</span>
+                            <span>32</span>
+                            <span>34</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">399.90 TL</span>
+                            <span class="new-price">299.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <!-- Kadın Giyim Ürünleri -->
+                <div class="product-card" data-category="kadin" data-price="179.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <div class="product-badge">%40 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kadın Yaz Elbisesi</h3>
+                        <p class="product-category">Kadın Giyim</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #f59e0b;"></span>
+                            <span class="color-dot" style="background: #ef4444;"></span>
+                            <span class="color-dot" style="background: #8b5cf6;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">299.90 TL</span>
+                            <span class="new-price">179.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="kadin" data-price="129.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <div class="product-badge">%35 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kadın Bluz</h3>
+                        <p class="product-category">Kadın Giyim</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #ffffff; border: 1px solid #e5e7eb;"></span>
+                            <span class="color-dot" style="background: #f59e0b;"></span>
+                            <span class="color-dot" style="background: #10b981;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">199.90 TL</span>
+                            <span class="new-price">129.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="kadin" data-price="159.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <div class="product-badge">%30 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kadın Pantolon</h3>
+                        <p class="product-category">Kadın Giyim</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #374151;"></span>
+                            <span class="color-dot" style="background: #1e3a8a;"></span>
+                            <span class="color-dot" style="background: #6b7280;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>36</span>
+                            <span>38</span>
+                            <span>40</span>
+                            <span>42</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">229.90 TL</span>
+                            <span class="new-price">159.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <!-- Çocuk Giyim Ürünleri -->
+                <div class="product-card" data-category="cocuk" data-price="119.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="product-badge">%25 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Çocuk Eşofman Takımı</h3>
+                        <p class="product-category">Çocuk Giyim</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #1e3a8a;"></span>
+                            <span class="color-dot" style="background: #ef4444;"></span>
+                            <span class="color-dot" style="background: #10b981;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>3-4</span>
+                            <span>5-6</span>
+                            <span>7-8</span>
+                            <span>9-10</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">159.90 TL</span>
+                            <span class="new-price">119.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <!-- Ayakkabı Ürünleri -->
+                <div class="product-card" data-category="ayakkabi" data-price="259.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <div class="product-badge">%35 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sneaker Ayakkabı</h3>
+                        <p class="product-category">Ayakkabı</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #ffffff; border: 1px solid #e5e7eb;"></span>
+                            <span class="color-dot" style="background: #000000;"></span>
+                            <span class="color-dot" style="background: #1e3a8a;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>36</span>
+                            <span>37</span>
+                            <span>38</span>
+                            <span>39</span>
+                            <span>40</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">399.90 TL</span>
+                            <span class="new-price">259.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="ayakkabi" data-price="189.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <div class="product-badge">%40 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kadın Topuklu Ayakkabı</h3>
+                        <p class="product-category">Ayakkabı</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #000000;"></span>
+                            <span class="color-dot" style="background: #8b5cf6;"></span>
+                            <span class="color-dot" style="background: #ef4444;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>35</span>
+                            <span>36</span>
+                            <span>37</span>
+                            <span>38</span>
+                            <span>39</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">319.90 TL</span>
+                            <span class="new-price">189.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <!-- Aksesuar Ürünleri -->
+                <div class="product-card" data-category="aksesuar" data-price="89.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="product-badge">%20 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Deri Çanta</h3>
+                        <p class="product-category">Aksesuar</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #8b4513;"></span>
+                            <span class="color-dot" style="background: #000000;"></span>
+                            <span class="color-dot" style="background: #1e3a8a;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>Tek Beden</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">112.90 TL</span>
+                            <span class="new-price">89.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="aksesuar" data-price="49.90">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="product-badge">%30 İndirim</div>
+                        <div class="product-actions">
+                            <button class="action-btn" title="Favorilere Ekle"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn" title="Hızlı Görünüm"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kolye Seti</h3>
+                        <p class="product-category">Aksesuar</p>
+                        <div class="product-colors">
+                            <span class="color-dot" style="background: #fbbf24;"></span>
+                            <span class="color-dot" style="background: #8b5cf6;"></span>
+                            <span class="color-dot" style="background: #10b981;"></span>
+                        </div>
+                        <div class="product-sizes">
+                            <span>Tek Beden</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">71.90 TL</span>
+                            <span class="new-price">49.90 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Yeni Ürünlerden Haberdar Olun</h2>
+                <p>E-posta listemize katılın ve yeni koleksiyonlarımızdan ilk siz haberdar olun.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresinizi girin" required>
+                    <button type="submit" class="btn btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Modern giyim tasarımında kalite ve güvenin adresi. 15+ yıllık deneyimimizle sizlere hizmet veriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="products.html?category=erkek">Erkek Giyim</a></li>
+                        <li><a href="products.html?category=kadin">Kadın Giyim</a></li>
+                        <li><a href="products.html?category=cocuk">Çocuk Giyim</a></li>
+                        <li><a href="products.html?category=ayakkabi">Ayakkabı</a></li>
+                        <li><a href="products.html?category=aksesuar">Aksesuar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

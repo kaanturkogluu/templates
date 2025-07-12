@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hizmetler.html" class="nav-link active">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iletisim.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <h1>Hizmetlerimiz</h1>
+                <p>Kapsamlı emlak çözümleri ile hayalinizdeki eve kavuşun</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="main-services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Konut Satışı</h3>
+                    <p>Daire, villa, müstakil ev gibi çeşitli konut tiplerinde satış hizmeti sunuyoruz. Uzman ekibimiz size en uygun seçenekleri bulmanızda yardımcı olur.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Ücretsiz değerleme</li>
+                        <li><i class="fas fa-check"></i> Profesyonel fotoğraflama</li>
+                        <li><i class="fas fa-check"></i> Pazarlama desteği</li>
+                        <li><i class="fas fa-check"></i> Hukuki danışmanlık</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Konut Kiralama</h3>
+                    <p>Kısa ve uzun dönem kiralama hizmetleri ile ihtiyacınıza uygun konut seçenekleri sunuyoruz. Güvenilir kiracı ve ev sahipleri ile çalışıyoruz.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Detaylı kiralama sözleşmesi</li>
+                        <li><i class="fas fa-check"></i> Kiracı değerlendirme</li>
+                        <li><i class="fas fa-check"></i> Kira takibi</li>
+                        <li><i class="fas fa-check"></i> Sigorta hizmetleri</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Emlak Değerleme</h3>
+                    <p>Uzman değerleme ekibimiz ile gayrimenkulünüzün gerçek piyasa değerini belirliyoruz. Detaylı raporlama ve analiz hizmeti sunuyoruz.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Detaylı piyasa analizi</li>
+                        <li><i class="fas fa-check"></i> Karşılaştırmalı değerleme</li>
+                        <li><i class="fas fa-check"></i> Yatırım danışmanlığı</li>
+                        <li><i class="fas fa-check"></i> Raporlama hizmeti</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Emlak Danışmanlığı</h3>
+                    <p>Emlak yatırımlarınızda size rehberlik ediyoruz. Piyasa analizi, yatırım stratejileri ve risk değerlendirmesi konularında uzman danışmanlık.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Yatırım stratejisi</li>
+                        <li><i class="fas fa-check"></i> Piyasa analizi</li>
+                        <li><i class="fas fa-check"></i> Risk değerlendirmesi</li>
+                        <li><i class="fas fa-check"></i> Portföy yönetimi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Search -->
+    <section class="property-search">
+        <div class="container">
+            <div class="search-header">
+                <h2>Konut Arama</h2>
+                <p>Filtreleri kullanarak size en uygun konutu bulun</p>
+            </div>
+            <div class="search-filters">
+                <div class="filter-group">
+                    <label>Konut Tipi</label>
+                    <select class="filter-select">
+                        <option value="">Tümü</option>
+                        <option value="daire">Daire</option>
+                        <option value="villa">Villa</option>
+                        <option value="mustakil">Müstakil Ev</option>
+                        <option value="yazlik">Yazlık</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>İşlem Tipi</label>
+                    <select class="filter-select">
+                        <option value="">Tümü</option>
+                        <option value="satis">Satış</option>
+                        <option value="kiralama">Kiralama</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Şehir</label>
+                    <select class="filter-select">
+                        <option value="">Tümü</option>
+                        <option value="istanbul">İstanbul</option>
+                        <option value="ankara">Ankara</option>
+                        <option value="izmir">İzmir</option>
+                        <option value="antalya">Antalya</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Fiyat Aralığı</label>
+                    <select class="filter-select">
+                        <option value="">Tümü</option>
+                        <option value="0-500000">0 - 500.000 TL</option>
+                        <option value="500000-1000000">500.000 - 1.000.000 TL</option>
+                        <option value="1000000-2000000">1.000.000 - 2.000.000 TL</option>
+                        <option value="2000000+">2.000.000 TL+</option>
+                    </select>
+                </div>
+                <button class="search-filter-btn">
+                    <i class="fas fa-search"></i> Ara
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings -->
+    <section class="property-listings">
+        <div class="container">
+            <div class="listings-header">
+                <h2>Konut Listesi</h2>
+                <p>Size özel seçilmiş konut seçenekleri</p>
+            </div>
+            <div class="listings-grid">
+                <div class="listing-card">
+                    <div class="listing-image">
+                        <div class="listing-badge">Satılık</div>
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop" alt="Modern Daire">
+                    </div>
+                    <div class="listing-content">
+                        <h3>Modern Daire - Beşiktaş</h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> Beşiktaş, İstanbul</p>
+                        <div class="listing-details">
+                            <span><i class="fas fa-bed"></i> 3 Yatak</span>
+                            <span><i class="fas fa-bath"></i> 2 Banyo</span>
+                            <span><i class="fas fa-ruler-combined"></i> 120m²</span>
+                        </div>
+                        <div class="listing-price">
+                            <span class="price">₺2.500.000</span>
+                        </div>
+                        <button class="listing-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image">
+                        <div class="listing-badge">Kiralık</div>
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop" alt="Lüks Villa">
+                    </div>
+                    <div class="listing-content">
+                        <h3>Lüks Villa - Çeşme</h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> Çeşme, İzmir</p>
+                        <div class="listing-details">
+                            <span><i class="fas fa-bed"></i> 4 Yatak</span>
+                            <span><i class="fas fa-bath"></i> 3 Banyo</span>
+                            <span><i class="fas fa-ruler-combined"></i> 250m²</span>
+                        </div>
+                        <div class="listing-price">
+                            <span class="price">₺15.000/ay</span>
+                        </div>
+                        <button class="listing-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image">
+                        <div class="listing-badge">Satılık</div>
+                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&h=300&fit=crop" alt="Bahçeli Ev">
+                    </div>
+                    <div class="listing-content">
+                        <h3>Bahçeli Ev - Ankara</h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> Çankaya, Ankara</p>
+                        <div class="listing-details">
+                            <span><i class="fas fa-bed"></i> 5 Yatak</span>
+                            <span><i class="fas fa-bath"></i> 3 Banyo</span>
+                            <span><i class="fas fa-ruler-combined"></i> 180m²</span>
+                        </div>
+                        <div class="listing-price">
+                            <span class="price">₺3.200.000</span>
+                        </div>
+                        <button class="listing-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image">
+                        <div class="listing-badge">Kiralık</div>
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop" alt="Stüdyo Daire">
+                    </div>
+                    <div class="listing-content">
+                        <h3>Stüdyo Daire - Kadıköy</h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> Kadıköy, İstanbul</p>
+                        <div class="listing-details">
+                            <span><i class="fas fa-bed"></i> 1 Yatak</span>
+                            <span><i class="fas fa-bath"></i> 1 Banyo</span>
+                            <span><i class="fas fa-ruler-combined"></i> 45m²</span>
+                        </div>
+                        <div class="listing-price">
+                            <span class="price">₺8.500/ay</span>
+                        </div>
+                        <button class="listing-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image">
+                        <div class="listing-badge">Satılık</div>
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop" alt="Bahçeli Villa">
+                    </div>
+                    <div class="listing-content">
+                        <h3>Bahçeli Villa - Bodrum</h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> Bodrum, Muğla</p>
+                        <div class="listing-details">
+                            <span><i class="fas fa-bed"></i> 6 Yatak</span>
+                            <span><i class="fas fa-bath"></i> 4 Banyo</span>
+                            <span><i class="fas fa-ruler-combined"></i> 300m²</span>
+                        </div>
+                        <div class="listing-price">
+                            <span class="price">₺5.800.000</span>
+                        </div>
+                        <button class="listing-btn">Detayları Gör</button>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image">
+                        <div class="listing-badge">Kiralık</div>
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop" alt="Lüks Daire">
+                    </div>
+                    <div class="listing-content">
+                        <h3>Lüks Daire - Nişantaşı</h3>
+                        <p class="listing-location"><i class="fas fa-map-marker-alt"></i> Nişantaşı, İstanbul</p>
+                        <div class="listing-details">
+                            <span><i class="fas fa-bed"></i> 4 Yatak</span>
+                            <span><i class="fas fa-bath"></i> 3 Banyo</span>
+                            <span><i class="fas fa-ruler-combined"></i> 160m²</span>
+                        </div>
+                        <div class="listing-price">
+                            <span class="price">₺25.000/ay</span>
+                        </div>
+                        <button class="listing-btn">Detayları Gör</button>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more">
+                <button class="btn btn-primary">Daha Fazla Konut Yükle</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ek Hizmetlerimiz</h2>
+                <p>Emlak süreçlerinizi kolaylaştıran ek hizmetlerimiz</p>
+            </div>
+            <div class="additional-services-grid">
+                <div class="additional-service-card">
+                    <div class="additional-service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Profesyonel Fotoğraflama</h3>
+                    <p>Konutunuzun en iyi açılarını yakalayan profesyonel fotoğraf çekimi hizmeti.</p>
+                </div>
+                <div class="additional-service-card">
+                    <div class="additional-service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Hukuki Danışmanlık</h3>
+                    <p>Emlak hukuku konularında uzman avukatlarımızla hukuki danışmanlık hizmeti.</p>
+                </div>
+                <div class="additional-service-card">
+                    <div class="additional-service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sigorta Hizmetleri</h3>
+                    <p>Konut sigortası ve kira sigortası konularında uzman danışmanlık.</p>
+                </div>
+                <div class="additional-service-card">
+                    <div class="additional-service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Bakım ve Onarım</h3>
+                    <p>Konutunuzun bakım ve onarım ihtiyaçları için güvenilir hizmet sağlayıcıları.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Türkiye'nin en güvenilir emlak danışmanlığı. 15 yıllık deneyimimizle hayalinizdeki eve kavuşmanızda yanınızdayız.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li><a href="hizmetler.html">Konut Satışı</a></li>
+                        <li><a href="hizmetler.html">Konut Kiralama</a></li>
+                        <li><a href="hizmetler.html">Emlak Değerleme</a></li>
+                        <li><a href="hizmetler.html">Danışmanlık</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +90 (212) 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Beşiktaş, İstanbul</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acboztech Pastane - Taze ve Lezzetli Ürünler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Pastane & Fırın</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="tel:+902125550123" class="nav-icon"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Taze ve Lezzetli Ürünler</h1>
+                <p>1985'ten beri geleneksel tariflerle modern teknikleri birleştirerek, her gün taze ve kaliteli ürünler üretiyoruz.</p>
+                <div class="hero-features">
+                    <span><i class="fas fa-clock"></i> Her Gün Taze</span>
+                    <span><i class="fas fa-leaf"></i> Doğal Malzemeler</span>
+                    <span><i class="fas fa-heart"></i> Sevgiyle Üretilir</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">Menüyü Görüntüle</a>
+                    <a href="contact.html" class="btn btn-outline">Sipariş Ver</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <i class="fas fa-birthday-cake"></i>
+                    <p>Taze Ekmekler</p>
+                    <span>Günlük Üretim</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ürün Kategorilerimiz</h2>
+                <p>Her damak zevkine uygun lezzetli seçenekler</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3>Taze Ekmekler</h3>
+                    <p>Geleneksel tariflerle üretilen çeşitli ekmekler</p>
+                    <div class="category-products">
+                        <span>15+ Çeşit</span>
+                    </div>
+                    <a href="products.html?category=bread" class="category-link">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Pastalar</h3>
+                    <p>Özel günleriniz için özel tasarım pastalar</p>
+                    <div class="category-products">
+                        <span>25+ Çeşit</span>
+                    </div>
+                    <a href="products.html?category=cakes" class="category-link">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3>Kurabiyeler</h3>
+                    <p>El yapımı, doğal malzemelerle üretilen kurabiyeler</p>
+                    <div class="category-products">
+                        <span>20+ Çeşit</span>
+                    </div>
+                    <a href="products.html?category=cookies" class="category-link">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-muffin"></i>
+                    </div>
+                    <h3>Muffin & Cupcake</h3>
+                    <p>Renkli ve lezzetli muffin çeşitleri</p>
+                    <div class="category-products">
+                        <span>12+ Çeşit</span>
+                    </div>
+                    <a href="products.html?category=muffins" class="category-link">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-croissant"></i>
+                    </div>
+                    <h3>Hamur İşleri</h3>
+                    <p>Fransız usulü hamur işleri ve börekler</p>
+                    <div class="category-products">
+                        <span>18+ Çeşit</span>
+                    </div>
+                    <a href="products.html?category=pastries" class="category-link">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3>Tatlılar</h3>
+                    <p>Geleneksel Türk tatlıları ve dondurma</p>
+                    <div class="category-products">
+                        <span>30+ Çeşit</span>
+                    </div>
+                    <a href="products.html?category=desserts" class="category-link">İncele</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Günlük Taze Üretim</h3>
+                    <p>Her sabah 05:00'te başlayan üretim ile günlük taze ürünler sunuyoruz.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Doğal Malzemeler</h3>
+                    <p>Yerel çiftçilerden temin ettiğimiz doğal ve kaliteli malzemeler kullanıyoruz.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Hızlı Teslimat</h3>
+                    <p>İstanbul içi 2 saat içinde, diğer şehirlere 24 saat içinde teslimat.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Kalite Garantisi</h3>
+                    <p>38 yıllık deneyimimizle kalite ve lezzet garantisi veriyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>38 Yıllık Lezzet Deneyimi</h2>
+                    <p>1985 yılında İstanbul'da küçük bir fırın olarak başladığımız yolculuğumuzda, bugün Türkiye'nin önde gelen pastane zincirlerinden biri haline geldik. Geleneksel tarifleri modern tekniklerle birleştirerek, her gün binlerce müşterimize taze ve lezzetli ürünler sunuyoruz.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>38</h3>
+                            <p>Yıllık Deneyim</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>25</h3>
+                            <p>Şube</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>Ürün Çeşidi</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50K+</h3>
+                            <p>Mutlu Müşteri</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <i class="fas fa-store"></i>
+                        <p>İlk Mağazamız</p>
+                        <span>1985 - İstanbul</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hizmetlerimiz</h2>
+                <p>İhtiyaçlarınıza özel çözümler sunuyoruz</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Özel Gün Pastaları</h3>
+                    <p>Doğum günü, düğün, nişan gibi özel günleriniz için özel tasarım pastalar hazırlıyoruz.</p>
+                    <div class="service-highlight">
+                        <span>Özel Tasarım</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Toplu Siparişler</h3>
+                    <p>Şirket toplantıları, etkinlikler ve organizasyonlar için toplu sipariş hizmeti.</p>
+                    <div class="service-highlight">
+                        <span>Toplu İndirim</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Kurumsal Teslimat</h3>
+                    <p>Ofislerinize düzenli ekmek ve hamur işi teslimatı ile hizmet veriyoruz.</p>
+                    <div class="service-highlight">
+                        <span>Düzenli Teslimat</span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-primary">Tüm Hizmetlerimizi İnceleyin</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Öne Çıkan Ürünlerimiz</h2>
+                <p>En çok tercih edilen lezzetlerimiz</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="product-badge">Popüler</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Çikolatalı Pasta</h3>
+                        <p class="product-category">Pastalar</p>
+                        <div class="product-price">
+                            <span class="price">85.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <div class="product-badge">Taze</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Köy Ekmeği</h3>
+                        <p class="product-category">Ekmekler</p>
+                        <div class="product-price">
+                            <span class="price">12.50 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                        <div class="product-badge">El Yapımı</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Çikolatalı Kurabiye</h3>
+                        <p class="product-category">Kurabiyeler</p>
+                        <div class="product-price">
+                            <span class="price">45.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-croissant"></i>
+                        </div>
+                        <div class="product-badge">Fransız</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kruvasan</h3>
+                        <p class="product-category">Hamur İşleri</p>
+                        <div class="product-price">
+                            <span class="price">18.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-cta">
+                <a href="products.html" class="btn btn-outline">Tüm Ürünlerimizi İnceleyin</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Müşteri Yorumları</h2>
+                <p>Müşterilerimizin deneyimleri</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Doğum günüm için özel pasta sipariş ettim. Hem görünümü hem lezzeti muhteşemdi. Kesinlikle tavsiye ederim!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ayşe Yılmaz</h4>
+                            <span>İstanbul</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Her sabah taze ekmek alıyorum. Köy ekmeği gerçekten çok lezzetli. 5 yıldır müşterileriyim."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mehmet Demir</h4>
+                            <span>Ankara</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Şirket toplantılarımız için düzenli sipariş veriyoruz. Hem kaliteli hem de zamanında teslimat yapıyorlar."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Fatma Özkan</h4>
+                            <span>İzmir</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Özel Tekliflerden Haberdar Olun</h2>
+                <p>Yeni ürünlerimiz ve özel kampanyalarımızdan ilk siz haberdar olun.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresinizi girin" required>
+                    <button type="submit" class="btn btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>38 yıllık deneyimimizle geleneksel lezzetleri modern tekniklerle buluşturuyoruz. Her gün taze ve kaliteli ürünler üretiyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="menu.html">Menü</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ürün Kategorileri</h4>
+                    <ul>
+                        <li><a href="products.html?category=bread">Taze Ekmekler</a></li>
+                        <li><a href="products.html?category=cakes">Pastalar</a></li>
+                        <li><a href="products.html?category=cookies">Kurabiyeler</a></li>
+                        <li><a href="products.html?category=muffins">Muffin & Cupcake</a></li>
+                        <li><a href="products.html?category=pastries">Hamur İşleri</a></li>
+                        <li><a href="products.html?category=desserts">Tatlılar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                        <p><i class="fas fa-clock"></i> Her Gün 06:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Pastane. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

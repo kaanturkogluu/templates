@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .wedding-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .wedding-gallery img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            transition: transform 0.3s;
+        }
+        .wedding-gallery img:hover {
+            transform: scale(1.04);
+        }
+        .services-section {
+            margin-top: 4rem;
+        }
+        .service-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .service-card-custom {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 2rem;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: box-shadow 0.3s;
+        }
+        .service-card-custom:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+        }
+        .service-card-custom h3 {
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        .service-card-custom .icon {
+            font-size: 2.2rem;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            .wedding-gallery img { height: 180px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Acboztech</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hizmetler.html" class="nav-link active">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iletisim.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Hizmetlerimiz</h1>
+            <p>Acboztech olarak, en özel anlarınızı ölümsüzleştirmek için profesyonel fotoğrafçılık ve video hizmetleri sunuyoruz. Düğün, portre, kurumsal ve etkinlik çekimlerinde uzmanız.</p>
+        </div>
+    </section>
+
+    <!-- Düğün Fotoğrafları Galerisi -->
+    <section class="container">
+        <h2 class="section-title">Düğün Fotoğraflarımızdan Seçmeler</h2>
+        <div class="wedding-gallery">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Düğün Fotoğrafı 1">
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" alt="Düğün Fotoğrafı 2">
+        </div>
+    </section>
+
+    <!-- Hizmet Kartları ve Açıklamalar -->
+    <section class="container services-section">
+        <h2 class="section-title">Fotoğrafçılık ve Video Hizmetlerimiz</h2>
+        <div class="service-cards-grid">
+            <div class="service-card-custom">
+                <span class="icon"><i class="fas fa-heart"></i></span>
+                <h3>Düğün Fotoğrafçılığı</h3>
+                <p>Hayatınızın en özel gününü, doğal ve yaratıcı karelerle ölümsüzleştiriyoruz. Dış çekim, düğün hikayesi ve albüm tasarımı ile tam hizmet.</p>
+            </div>
+            <div class="service-card-custom">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <h3>Portre & Aile Çekimi</h3>
+                <p>Kişisel portreler, aile ve çocuk çekimleriyle anılarınızı sıcak ve samimi karelere dönüştürüyoruz.</p>
+            </div>
+            <div class="service-card-custom">
+                <span class="icon"><i class="fas fa-briefcase"></i></span>
+                <h3>Kurumsal Fotoğrafçılık</h3>
+                <p>Şirketinizin profesyonel imajını güçlendiren ekip, ürün ve etkinlik fotoğrafları. Marka kimliğinize uygun çekimler.</p>
+            </div>
+            <div class="service-card-custom">
+                <span class="icon"><i class="fas fa-calendar"></i></span>
+                <h3>Etkinlik Fotoğrafçılığı</h3>
+                <p>Doğum günü, mezuniyet, açılış ve özel etkinlikler için anı yakalayan profesyonel çekimler.</p>
+            </div>
+            <div class="service-card-custom">
+                <span class="icon"><i class="fas fa-video"></i></span>
+                <h3>Video Prodüksiyon</h3>
+                <p>Düğün klipleri, tanıtım filmleri ve etkinlik videoları. 4K kalite ve profesyonel kurgu ile hizmetinizdeyiz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fiyatlandırma ve Paketler -->
+    <section class="container services-section">
+        <h2 class="section-title">Paketler & Fiyatlar</h2>
+        <div class="service-cards-grid">
+            <div class="service-card-custom">
+                <h3>Başlangıç Paketi</h3>
+                <ul>
+                    <li>2 saat çekim</li>
+                    <li>50 düzenlenmiş fotoğraf</li>
+                    <li>Dijital teslimat</li>
+                </ul>
+                <div class="price" style="margin-top:1rem;">₺800</div>
+            </div>
+            <div class="service-card-custom">
+                <h3>Profesyonel Paket</h3>
+                <ul>
+                    <li>8 saat çekim</li>
+                    <li>200 düzenlenmiş fotoğraf</li>
+                    <li>Albüm tasarımı</li>
+                    <li>3 gün teslimat</li>
+                </ul>
+                <div class="price" style="margin-top:1rem;">₺1,500</div>
+            </div>
+            <div class="service-card-custom">
+                <h3>Premium Paket</h3>
+                <ul>
+                    <li>Sınırsız çekim</li>
+                    <li>500+ düzenlenmiş fotoğraf</li>
+                    <li>Lüks albüm</li>
+                    <li>1 gün teslimat</li>
+                    <li>Video dahil</li>
+                </ul>
+                <div class="price" style="margin-top:1rem;">₺3,000</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Profesyonel fotoğrafçılık hizmetleri ile anılarınızı ölümsüzleştiriyoruz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-phone"></i> +90 555 123 45 67</p>
+                    <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

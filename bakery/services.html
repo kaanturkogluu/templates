@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz - Acboztech Pastane</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Pastane & Fırın</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link active">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="tel:+902125550123" class="nav-icon"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hizmetlerimiz</h1>
+            <p>İhtiyaçlarınıza özel çözümler sunuyoruz</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Özel Gün Pastaları</h3>
+                    <p>Doğum günü, düğün, nişan, yıldönümü gibi özel günleriniz için özel tasarım pastalar hazırlıyoruz. Her pasta, sizin isteklerinize göre özel olarak tasarlanır ve üretilir.</p>
+                    <ul class="service-features">
+                        <li>Özel tasarım ve dekorasyon</li>
+                        <li>Çeşitli boyut seçenekleri</li>
+                        <li>Farklı tat ve dolgu seçenekleri</li>
+                        <li>Özel şekil ve tema tasarımları</li>
+                        <li>Profesyonel fotoğraf çekimi</li>
+                    </ul>
+                    <div class="service-highlight">
+                        <span>Özel Tasarım</span>
+                    </div>
+                </div>
+
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Toplu Siparişler</h3>
+                    <p>Şirket toplantıları, etkinlikler, organizasyonlar ve özel günler için toplu sipariş hizmeti veriyoruz. Büyük miktarlarda siparişlerde özel indirimler sunuyoruz.</p>
+                    <ul class="service-features">
+                        <li>Şirket toplantıları için özel menüler</li>
+                        <li>Etkinlik ve organizasyon hizmetleri</li>
+                        <li>Toplu indirim avantajları</li>
+                        <li>Zamanında teslimat garantisi</li>
+                        <li>Özel paketleme seçenekleri</li>
+                    </ul>
+                    <div class="service-highlight">
+                        <span>Toplu İndirim</span>
+                    </div>
+                </div>
+
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Kurumsal Teslimat</h3>
+                    <p>Ofislerinize düzenli ekmek ve hamur işi teslimatı ile hizmet veriyoruz. Haftalık veya aylık programlar ile sürekli taze ürün temini sağlıyoruz.</p>
+                    <ul class="service-features">
+                        <li>Düzenli teslimat programları</li>
+                        <li>Ofis kahvaltı paketleri</li>
+                        <li>Özel kurumsal menüler</li>
+                        <li>Esnek sipariş sistemi</li>
+                        <li>Fatura ve ödeme kolaylığı</li>
+                    </ul>
+                    <div class="service-highlight">
+                        <span>Düzenli Teslimat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="detailed-services">
+        <div class="container">
+            <div class="services-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="catering">Catering Hizmetleri</button>
+                    <button class="tab-btn" data-tab="delivery">Teslimat Hizmetleri</button>
+                    <button class="tab-btn" data-tab="custom">Özel Üretim</button>
+                    <button class="tab-btn" data-tab="consulting">Danışmanlık</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="catering">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Catering Hizmetleri</h3>
+                                <p>Özel etkinlikleriniz için profesyonel catering hizmeti sunuyoruz. Düğün, nişan, kurumsal etkinlikler ve özel kutlamalar için kapsamlı menü seçenekleri.</p>
+                                <ul>
+                                    <li>Düğün ve nişan organizasyonları</li>
+                                    <li>Kurumsal etkinlikler</li>
+                                    <li>Özel kutlama organizasyonları</li>
+                                    <li>Profesyonel servis ekibi</li>
+                                    <li>Özel menü tasarımı</li>
+                                </ul>
+                                <div class="price-range">
+                                    <span class="price-tag">Başlangıç: 500 TL/kişi</span>
+                                </div>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-utensils"></i>
+                                    <p>Catering</p>
+                                    <span>Profesyonel Hizmet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="delivery">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Teslimat Hizmetleri</h3>
+                                <p>İstanbul içi 2 saat içinde, diğer şehirlere 24 saat içinde teslimat yapıyoruz. Özel paketleme ile ürünlerinizin taze kalmasını sağlıyoruz.</p>
+                                <ul>
+                                    <li>İstanbul içi 2 saat teslimat</li>
+                                    <li>Diğer şehirlere 24 saat teslimat</li>
+                                    <li>Özel paketleme hizmeti</li>
+                                    <li>Soğuk zincir koruması</li>
+                                    <li>Online takip sistemi</li>
+                                </ul>
+                                <div class="price-range">
+                                    <span class="price-tag">Teslimat: 15-50 TL</span>
+                                </div>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-truck"></i>
+                                    <p>Teslimat</p>
+                                    <span>Hızlı ve Güvenli</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="custom">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Özel Üretim</h3>
+                                <p>Özel tarifleriniz ve isteklerinize göre üretim yapıyoruz. Alerjik durumlar, özel diyetler ve kişisel tercihler için özel çözümler sunuyoruz.</p>
+                                <ul>
+                                    <li>Glutensiz ürünler</li>
+                                    <li>Vegan ve vejetaryen seçenekler</li>
+                                    <li>Şekersiz ürünler</li>
+                                    <li>Özel tarif üretimi</li>
+                                    <li>Kişisel diyet programları</li>
+                                </ul>
+                                <div class="price-range">
+                                    <span class="price-tag">Özel Fiyatlandırma</span>
+                                </div>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-cog"></i>
+                                    <p>Özel Üretim</p>
+                                    <span>Kişiye Özel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="consulting">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Danışmanlık Hizmetleri</h3>
+                                <p>Pastane ve fırın işletmeciliği konusunda 38 yıllık deneyimimizi paylaşıyoruz. Yeni işletme açmak isteyenlere kapsamlı danışmanlık hizmeti veriyoruz.</p>
+                                <ul>
+                                    <li>İşletme kurulum danışmanlığı</li>
+                                    <li>Menü planlama ve optimizasyon</li>
+                                    <li>Kalite kontrol sistemleri</li>
+                                    <li>Personel eğitimi</li>
+                                    <li>Operasyonel süreç danışmanlığı</li>
+                                </ul>
+                                <div class="price-range">
+                                    <span class="price-tag">Saatlik: 500 TL</span>
+                                </div>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <p>Danışmanlık</p>
+                                    <span>Uzman Desteği</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hizmet Sürecimiz</h2>
+                <p>Nasıl çalışıyoruz</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>İletişim</h3>
+                        <p>İhtiyaçlarınızı dinliyor ve size en uygun çözümü öneriyoruz.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Planlama</h3>
+                        <p>Detaylı planlama yaparak hizmet sürecini belirliyoruz.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Üretim</h3>
+                        <p>Kaliteli malzemelerle özenle üretim yapıyoruz.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Teslimat</h3>
+                        <p>Zamanında ve güvenli teslimat yapıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ek Hizmetlerimiz</h2>
+                <p>İhtiyaçlarınız için ek çözümler</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Hediye Paketleri</h3>
+                    <p>Özel günler için hazırladığımız hediye paketleri ile sevdiklerinizi mutlu edin.</p>
+                    <div class="service-highlight">
+                        <span>Özel Tasarım</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Abonelik Hizmetleri</h3>
+                    <p>Düzenli ürün teslimatı için abonelik hizmetlerimizden yararlanın.</p>
+                    <div class="service-highlight">
+                        <span>Düzenli Teslimat</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobil Uygulama</h3>
+                    <p>Kolay sipariş ve takip için mobil uygulamamızı kullanın.</p>
+                    <div class="service-highlight">
+                        <span>Kolay Kullanım</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Ödeme Seçenekleri</h3>
+                    <p>Nakit, kredi kartı ve online ödeme seçenekleri ile kolay ödeme.</p>
+                    <div class="service-highlight">
+                        <span>Güvenli Ödeme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Hizmetlerimizden Yararlanın</h2>
+                <p>İhtiyaçlarınıza özel çözümler için bizimle iletişime geçin.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">İletişime Geçin</a>
+                    <a href="tel:+902125550123" class="btn btn-outline">Hemen Ara</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>38 yıllık deneyimimizle geleneksel lezzetleri modern tekniklerle buluşturuyoruz. Her gün taze ve kaliteli ürünler üretiyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="menu.html">Menü</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ürün Kategorileri</h4>
+                    <ul>
+                        <li><a href="products.html?category=bread">Taze Ekmekler</a></li>
+                        <li><a href="products.html?category=cakes">Pastalar</a></li>
+                        <li><a href="products.html?category=cookies">Kurabiyeler</a></li>
+                        <li><a href="products.html?category=muffins">Muffin & Cupcake</a></li>
+                        <li><a href="products.html?category=pastries">Hamur İşleri</a></li>
+                        <li><a href="products.html?category=desserts">Tatlılar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                        <p><i class="fas fa-clock"></i> Her Gün 06:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Pastane. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

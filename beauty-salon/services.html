@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz - Acboztech Güzellik Salonu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-spa"></i> Acboztech</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link active">Hizmetler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hizmetlerimiz</h1>
+            <p>Profesyonel güzellik hizmetlerimiz ve fiyatlarımız</p>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <section class="service-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="hair-services">Saç Hizmetleri</button>
+                <button class="tab-btn" data-category="makeup-services">Makyaj Hizmetleri</button>
+                <button class="tab-btn" data-category="skin-services">Cilt Bakımı</button>
+                <button class="tab-btn" data-category="nail-services">Tırnak Bakımı</button>
+                <button class="tab-btn" data-category="special-services">Özel Hizmetler</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair Services -->
+    <section class="service-section active" id="hair-services">
+        <div class="container">
+            <h2 class="section-title">Saç Hizmetlerimiz</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Saç Kesimi</h3>
+                        <p>Profesyonel saç kesimi ve şekillendirme</p>
+                        <span class="price">₺150</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Saç Boyama</h3>
+                        <p>Profesyonel saç boyama ve renklendirme</p>
+                        <span class="price">₺300</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Fön & Şekillendirme</h3>
+                        <p>Özel günler için fön ve şekillendirme</p>
+                        <span class="price">₺120</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Saç Bakımı</h3>
+                        <p>Derin saç bakımı ve nemlendirme</p>
+                        <span class="price">₺200</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Keratin Bakımı</h3>
+                        <p>Keratin ile saç düzleştirme ve bakım</p>
+                        <span class="price">₺500</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Düğün Saçı</h3>
+                        <p>Özel günler için saç tasarımı</p>
+                        <span class="price">₺400</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Makeup Services -->
+    <section class="service-section" id="makeup-services">
+        <div class="container">
+            <h2 class="section-title">Makyaj Hizmetlerimiz</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Günlük Makyaj</h3>
+                        <p>Doğal ve hafif günlük makyaj</p>
+                        <span class="price">₺150</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Akşam Makyajı</h3>
+                        <p>Özel akşamlar için şık makyaj</p>
+                        <span class="price">₺250</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Düğün Makyajı</h3>
+                        <p>Gelin ve düğün makyajı</p>
+                        <span class="price">₺600</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Fotoğraf Makyajı</h3>
+                        <p>Fotoğraf çekimleri için özel makyaj</p>
+                        <span class="price">₺300</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skin Services -->
+    <section class="service-section" id="skin-services">
+        <div class="container">
+            <h2 class="section-title">Cilt Bakım Hizmetlerimiz</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Derin Temizlik</h3>
+                        <p>Profesyonel cilt temizliği ve bakım</p>
+                        <span class="price">₺200</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Anti-Aging Bakım</h3>
+                        <p>Yaşlanma karşıtı cilt bakımı</p>
+                        <span class="price">₺350</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Peeling</h3>
+                        <p>Kimyasal ve mekanik peeling</p>
+                        <span class="price">₺250</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Maske Bakımı</h3>
+                        <p>Özel maskeler ile cilt bakımı</p>
+                        <span class="price">₺180</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nail Services -->
+    <section class="service-section" id="nail-services">
+        <div class="container">
+            <h2 class="section-title">Tırnak Bakım Hizmetlerimiz</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Manikür</h3>
+                        <p>Profesyonel el bakımı ve oje</p>
+                        <span class="price">₺100</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Pedikür</h3>
+                        <p>Ayak bakımı ve oje</p>
+                        <span class="price">₺120</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Gel Oje</h3>
+                        <p>Uzun süreli gel oje uygulaması</p>
+                        <span class="price">₺200</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Akrilik Tırnak</h3>
+                        <p>Akrilik tırnak uzatma ve şekillendirme</p>
+                        <span class="price">₺300</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Services -->
+    <section class="service-section" id="special-services">
+        <div class="container">
+            <h2 class="section-title">Özel Hizmetlerimiz</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Paket Hizmetler</h3>
+                        <p>Saç, makyaj ve cilt bakımı paketi</p>
+                        <span class="price">₺500</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Ev Hizmeti</h3>
+                        <p>Özel günler için ev hizmeti</p>
+                        <span class="price">₺800</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="service-item-content">
+                        <h3>Grup Hizmetleri</h3>
+                        <p>Düğün ve özel günler için grup hizmeti</p>
+                        <span class="price">₺1200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">Özel Tekliflerimiz</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Öğrenci İndirimi</h3>
+                    <p>Tüm hizmetlerde %20 öğrenci indirimi</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Doğum Günü İndirimi</h3>
+                    <p>Doğum gününüzde %15 indirim</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Sadık Müşteri</h3>
+                    <p>Düzenli müşterilerimize özel fiyatlar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-spa"></i> Acboztech</h3>
+                    <p>Güzelliğinizi keşfetmenin en iyi yolu.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Beşiktaş, İstanbul</p>
+                    <p><i class="fas fa-phone"></i> +90 212 123 45 67</p>
+                    <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Çalışma Saatleri</h4>
+                    <p>Pazartesi - Cumartesi: 09:00 - 20:00</p>
+                    <p>Pazar: 10:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Güzellik Salonu. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

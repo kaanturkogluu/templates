@@ -1,0 +1,821 @@
+/* Acboztech Elektronik Mağazası - styles.css */
+:root {
+  --primary: #181A20;
+  --secondary: #1976D2;
+  --background: #F3F6F9;
+  --white: #fff;
+  --accent: #00E676;
+  --danger: #FF1744;
+  --warning: #FFD600;
+  --text: #23272F;
+  --muted: #7B809A;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background: linear-gradient(90deg, #181A20 60%, #1976D2 100%);
+  color: var(--white);
+  box-shadow: 0 2px 16px rgba(24,26,32,0.13);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0 0.7rem 0;
+  min-height: 64px;
+}
+.logo {
+  font-size: 2.1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  text-shadow: 0 2px 12px rgba(0,230,118,0.13);
+  margin-right: 2.5rem;
+  transition: color 0.2s;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  background: rgba(24,26,32,0.85);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.10);
+  backdrop-filter: blur(4px);
+  align-items: center;
+}
+nav ul li {
+  position: relative;
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+  outline: none;
+  position: relative;
+  display: inline-block;
+}
+nav a:focus {
+  box-shadow: 0 0 0 2px var(--accent);
+  background: rgba(0,230,118,0.10);
+}
+nav a.active, nav a:hover {
+  color: var(--accent);
+  background: rgba(25,118,210,0.10);
+}
+nav a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: var(--accent);
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  transform: translateX(-50%);
+  transition: width 0.25s cubic-bezier(.4,0,.2,1);
+}
+nav a.active::after, nav a:hover::after {
+  width: 60%;
+}
+
+/* Mobil menü açıldığında arka plan overlay */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(24,26,32,0.45);
+  z-index: 99;
+  transition: opacity 0.2s;
+}
+.hero {
+  background: linear-gradient(90deg, var(--secondary) 60%, var(--accent) 100%);
+  color: var(--white);
+  padding: 3.5rem 0 2.5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2.2rem;
+  color: var(--white);
+}
+.btn {
+  background: var(--danger);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(255,23,68,0.08);
+}
+.btn:hover {
+  background: var(--warning);
+  color: var(--primary);
+}
+.features {
+  background: var(--white);
+  padding: 2.5rem 0;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.feature {
+  background: var(--background);
+  border-radius: 10px;
+  padding: 1.7rem;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.07);
+  text-align: center;
+  border-left: 5px solid var(--secondary);
+}
+.brands {
+  background: var(--secondary);
+  color: var(--white);
+  padding: 2.2rem 0;
+  text-align: center;
+}
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+.brands-list span {
+  background: var(--white);
+  color: var(--secondary);
+  padding: 0.6rem 1.3rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.09);
+}
+.about-short, .about-main {
+  background: var(--white);
+  padding: 2.7rem 0;
+}
+.about-short ul, .about-main ul {
+  list-style: disc inside;
+  margin: 1.2rem 0 0 0;
+  padding: 0 0 0 1.2rem;
+}
+.about-main h2 {
+  margin-top: 2.2rem;
+}
+.services-main {
+  background: var(--white);
+  padding: 2.7rem 0;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.2rem;
+  margin-top: 2.2rem;
+}
+.service {
+  background: var(--background);
+  border-radius: 10px;
+  padding: 1.7rem;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.07);
+  text-align: center;
+  border-left: 5px solid var(--accent);
+}
+.contact-main {
+  background: var(--white);
+  padding: 2.7rem 0;
+}
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  margin-bottom: 2.2rem;
+  justify-content: space-between;
+}
+.contact-info > div {
+  flex: 1 1 200px;
+  background: var(--background);
+  border-radius: 10px;
+  padding: 1.2rem 1.7rem;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.07);
+}
+.contact-form {
+  background: var(--background);
+  border-radius: 10px;
+  padding: 2.2rem 1.7rem;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.contact-form input, .contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  font-family: inherit;
+  resize: vertical;
+}
+.contact-form button {
+  margin-top: 0.5rem;
+}
+footer {
+  background: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1.3rem 0 1.1rem 0;
+  margin-top: 2.2rem;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  margin-left: 1rem;
+  z-index: 20;
+}
+.burger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--danger);
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+/* SLIDER */
+.slider {
+  margin: 2.5rem auto 0 auto;
+  max-width: 900px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(25,118,210,0.10);
+}
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  left: 0;
+  top: 0;
+  background: var(--primary);
+  transition: opacity 0.5s;
+}
+.slide.active {
+  display: block;
+  position: relative;
+  opacity: 1;
+  z-index: 2;
+}
+.slide img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+.slide-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(24,26,32,0.85) 60%, rgba(24,26,32,0.1) 100%);
+  color: var(--white);
+  padding: 1.2rem 2rem 1.5rem 2rem;
+}
+.slide-caption h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.slide-caption p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--white);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+  border: 2px solid var(--secondary);
+}
+.slider-dot.active {
+  background: var(--accent);
+  opacity: 1;
+  border-color: var(--danger);
+}
+
+/* POPÜLER ÜRÜNLER */
+.products {
+  background: var(--background);
+  padding: 2.7rem 0 2.2rem 0;
+}
+.products h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.2rem;
+}
+.product-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.08);
+  padding: 1.5rem 1.2rem 1.7rem 1.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.product-card:hover {
+  box-shadow: 0 6px 24px rgba(25,118,210,0.16);
+  transform: translateY(-4px) scale(1.03);
+}
+.product-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.product-card h3 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.product-card p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin-bottom: 0.7rem;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--danger);
+  margin-bottom: 0.7rem;
+}
+.old-price {
+  font-size: 1rem;
+  color: var(--muted);
+  text-decoration: line-through;
+  margin-left: 0.5rem;
+}
+.product-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* KAMPANYALAR */
+.campaigns {
+  background: var(--secondary);
+  color: var(--white);
+  padding: 2.2rem 0;
+}
+.campaigns h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.campaigns-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.campaign {
+  background: var(--white);
+  color: var(--primary);
+  border-radius: 10px;
+  padding: 1.2rem 2rem;
+  min-width: 240px;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.09);
+  position: relative;
+  text-align: center;
+}
+.badge {
+  display: inline-block;
+  background: var(--danger);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 16px;
+  padding: 0.3rem 1.1rem;
+  margin-bottom: 0.7rem;
+}
+.campaign .badge {
+  background: var(--accent);
+  color: var(--primary);
+}
+.campaign:nth-child(2) .badge {
+  background: var(--warning);
+  color: var(--primary);
+}
+.campaign:nth-child(3) .badge {
+  background: var(--danger);
+  color: var(--white);
+}
+
+/* MÜŞTERİ YORUMLARI */
+.testimonials {
+  background: var(--background);
+  padding: 2.7rem 0;
+}
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.testimonial {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.07);
+  padding: 1.5rem 2rem;
+  min-width: 220px;
+  max-width: 340px;
+  text-align: center;
+  font-style: italic;
+  color: var(--primary);
+}
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-style: normal;
+  font-size: 0.98rem;
+}
+
+/* BLOG & HABERLER */
+.blog-news {
+  background: var(--white);
+  padding: 2.7rem 0;
+}
+.blog-news h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.blog-post {
+  background: var(--background);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.07);
+  padding: 1.5rem 2rem;
+  min-width: 220px;
+  max-width: 340px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-post h3 {
+  margin: 0 0 0.7rem 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+.blog-post p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin-bottom: 1.2rem;
+}
+.blog-post .btn {
+  align-self: flex-start;
+  font-size: 0.98rem;
+  padding: 0.5rem 1.2rem;
+}
+
+/* HAKKIMIZDA - ZAMAN ÇİZELGESİ */
+.about-timeline {
+  margin: 2.2rem 0 2.5rem 0;
+}
+.about-timeline h2 {
+  color: var(--secondary);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.about-timeline ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-timeline li {
+  position: relative;
+  padding-left: 2.2rem;
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
+}
+.timeline-year {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--primary);
+  border-radius: 8px;
+  padding: 0.2rem 0.7rem;
+  font-size: 1rem;
+}
+
+/* HAKKIMIZDA - EKİP */
+.about-team {
+  margin: 2.5rem 0;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-top: 1.2rem;
+}
+.team-member {
+  background: var(--background);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.07);
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  min-width: 160px;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-member img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+  border: 3px solid var(--accent);
+}
+.team-member span {
+  font-weight: 600;
+  color: var(--primary);
+}
+.team-member small {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* HAKKIMIZDA - SOSYAL SORUMLULUK */
+.about-social {
+  margin: 2.5rem 0 0 0;
+  background: var(--background);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.07);
+}
+
+/* HİZMETLER - İKONLAR, TABLO, SSS */
+.service-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+.advantages {
+  margin: 2.5rem 0;
+}
+.advantages table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--background);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.07);
+}
+.advantages th, .advantages td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+.advantages th {
+  background: var(--secondary);
+  color: var(--white);
+  font-weight: 700;
+}
+.advantages tr:last-child td {
+  border-bottom: none;
+}
+.faq {
+  margin: 2.5rem 0 0 0;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.faq-item {
+  background: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.07);
+  padding: 1rem 1.2rem;
+}
+.faq-item strong {
+  color: var(--secondary);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+/* İLETİŞİM - HIZLI KUTULAR, SOSYAL MEDYA */
+.quick-contact {
+  margin: 2.5rem 0 0 0;
+}
+.quick-contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+.quick-box {
+  background: var(--background);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(25,118,210,0.07);
+  padding: 1rem 1.2rem;
+  min-width: 120px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quick-box span {
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
+}
+.social-media {
+  margin: 2.2rem 0 0 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.10);
+}
+.social-icon:hover {
+  transform: scale(1.1) rotate(-5deg);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 1000px) {
+  .slider, .slide img {
+    height: 220px;
+  }
+  .slide {
+    height: 220px;
+  }
+}
+@media (max-width: 800px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .features-grid, .services-list {
+    grid-template-columns: 1fr;
+  }
+  .contact-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  nav ul {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: rgba(24,26,32,0.97);
+    flex-direction: column;
+    width: 220px;
+    padding: 1.2rem 0;
+    gap: 0;
+    box-shadow: 0 2px 16px rgba(24,26,32,0.18);
+    display: none;
+    z-index: 110;
+    border-radius: 0 0 16px 16px;
+  }
+  nav ul.open {
+    display: flex;
+  }
+  .nav-overlay.open {
+    display: block;
+  }
+  nav ul li {
+    margin: 0;
+    padding: 0.8rem 1.7rem;
+    border-bottom: 1px solid var(--secondary);
+  }
+  .burger {
+    display: flex;
+  }
+  .slider, .slide img {
+    height: 160px;
+  }
+  .slide {
+    height: 160px;
+  }
+  .products-grid, .campaigns-list, .testimonials-list, .blog-list {
+    flex-direction: column;
+    display: flex;
+    gap: 1.2rem;
+  }
+  .team-list, .quick-contact-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 98%;
+    padding: 0 0.5rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+  }
+} 

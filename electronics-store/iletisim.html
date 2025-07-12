@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | Acboztech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Acboztech</div>
+      <div class="burger" tabindex="0" aria-label="Menüyü Aç/Kapat" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="iletisim.html" class="active">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-overlay"></div>
+  </header>
+  <main>
+    <section class="contact-main">
+      <div class="container">
+        <h1>İletişim</h1>
+        <div class="contact-info">
+          <div>
+            <h2>Mağaza Adresimiz</h2>
+            <p>Acboztech Elektronik Mağazası<br>İstiklal Caddesi No:123, Beyoğlu, İstanbul</p>
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center=41.0369,28.9850&zoom=15&size=300x120&markers=color:red%7C41.0369,28.9850&key=AIzaSyDUMMYKEY" alt="Google Maps" style="width:100%;border-radius:8px;margin-top:0.5rem;">
+          </div>
+          <div>
+            <h2>Telefon</h2>
+            <p>+90 212 123 45 67</p>
+            <a href="https://wa.me/902121234567" class="btn" target="_blank" style="margin-top:0.5rem;background:#25D366;">WhatsApp'tan Yaz</a>
+          </div>
+          <div>
+            <h2>E-posta</h2>
+            <p>info@acboztech.com</p>
+            <a href="mailto:info@acboztech.com" class="btn" style="margin-top:0.5rem;background:#1976D2;">E-posta Gönder</a>
+          </div>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <h2>Bize Ulaşın</h2>
+          <label for="name">Adınız Soyadınız</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">E-posta</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Mesajınız</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn">Gönder</button>
+        </form>
+        <div class="quick-contact">
+          <h2>Hızlı İletişim</h2>
+          <div class="quick-contact-list">
+            <div class="quick-box">
+              <span>📞</span>
+              <p>7/24 Canlı Destek</p>
+            </div>
+            <div class="quick-box">
+              <span>💬</span>
+              <p>WhatsApp Hattı</p>
+            </div>
+            <div class="quick-box">
+              <span>📧</span>
+              <p>E-posta ile Destek</p>
+            </div>
+            <div class="quick-box">
+              <span>📱</span>
+              <p>Sosyal Medya</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="#" aria-label="Instagram" class="social-icon" style="background:#E1306C;">&#x1F4F7;</a>
+          <a href="#" aria-label="Facebook" class="social-icon" style="background:#1877F3;">&#x1F426;</a>
+          <a href="#" aria-label="Twitter" class="social-icon" style="background:#1DA1F2;">&#x1F426;</a>
+          <a href="#" aria-label="YouTube" class="social-icon" style="background:#FF0000;">&#x1F4FA;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Acboztech Elektronik Mağazası. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

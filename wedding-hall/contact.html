@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Düğün Salonu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Düğün Salonu</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin, düğününüzü planlamaya başlayın</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 212 555 0123</p>
+                    <p>+90 532 555 0123</p>
+                    <span>Pazartesi - Pazar: 09:00 - 22:00</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com</p>
+                    <p>rezervasyon@acboztech.com</p>
+                    <span>24 saat içinde yanıt veriyoruz</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Acboztech Düğün Salonu</p>
+                    <p>Bağdat Caddesi No: 123</p>
+                    <p>Kadıköy, İstanbul, Türkiye</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                    <p>Cumartesi: 10:00 - 16:00</p>
+                    <p>Pazar: Randevu ile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Bize Ulaşın</h2>
+                    <p>Düğününüz hakkında bilgi almak veya rezervasyon yaptırmak için formu doldurun. En kısa sürede size dönüş yapacağız.</p>
+                </div>
+                <form class="contact-form-element">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Düğün Tarihi</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Misafir Sayısı</label>
+                        <select id="guests" name="guests">
+                            <option value="">Seçiniz</option>
+                            <option value="50-100">50-100 kişi</option>
+                            <option value="100-200">100-200 kişi</option>
+                            <option value="200-300">200-300 kişi</option>
+                            <option value="300-500">300-500 kişi</option>
+                            <option value="500+">500+ kişi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="package">İlgilendiğiniz Paket</label>
+                        <select id="package" name="package">
+                            <option value="">Seçiniz</option>
+                            <option value="bronz">Bronz Paket</option>
+                            <option value="silver">Gümüş Paket</option>
+                            <option value="gold">Altın Paket</option>
+                            <option value="custom">Özel Paket</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesajınız *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Düğününüz hakkında detayları paylaşın..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Konumumuz</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <h3>Harita</h3>
+                    <p>Acboztech Düğün Salonu - Bağdat Caddesi, Kadıköy, İstanbul</p>
+                    <a href="#" class="btn btn-outline">Yol Tarifi Al</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Rezervasyon için ne kadar önceden başvurmalıyım?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Özellikle yaz aylarında yoğunluk yaşandığı için en az 6 ay önceden rezervasyon yapmanızı öneriyoruz. Popüler tarihler için 1 yıl önceden başvuru yapabilirsiniz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Menü seçenekleriniz nelerdir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Geleneksel Türk mutfağından uluslararası lezzetlere kadar geniş bir menü yelpazemiz bulunmaktadır. Vejetaryen, vegan ve özel diyet gereksinimleri için de seçeneklerimiz mevcuttur.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Otopark hizmetiniz var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, 200 araç kapasiteli ücretsiz otoparkımız bulunmaktadır. Ayrıca valet parking hizmeti de sunuyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Dış mekan düğün seçeneğiniz var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, bahçe düğünleri için özel dış mekan alanımız bulunmaktadır. Yaz aylarında popüler olan bu seçenek için önceden rezervasyon yapmanızı öneriyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Hemen Rezervasyon Yapın</h2>
+                <p>Hayalinizdeki düğünü gerçekleştirmek için bugün bizimle iletişime geçin.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+902125550123" class="btn btn-primary">Hemen Ara</a>
+                    <a href="mailto:info@acboztech.com" class="btn btn-secondary">E-posta Gönder</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech Düğün Salonu</h3>
+                    <p>Hayalinizdeki düğünü gerçekleştirmek için buradayız. Modern tesislerimiz ve uzman ekibimizle unutulmaz anlar yaşatıyoruz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                    <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Düğün Salonu. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

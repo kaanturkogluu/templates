@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Haberler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Modern Giyim</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link active">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="account.html" class="nav-icon"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Blog & Haberler</h1>
+            <p>Moda trendleri, stil önerileri ve güncel haberler</p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <div class="article-placeholder">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="article-category">Moda Trendleri</div>
+                </div>
+                <div class="featured-text">
+                    <h2>2024 İlkbahar-Yaz Moda Trendleri</h2>
+                    <p class="article-meta">
+                        <span class="author"><i class="fas fa-user"></i> Ayşe Demir</span>
+                        <span class="date"><i class="fas fa-calendar"></i> 20 Mart 2024</span>
+                        <span class="read-time"><i class="fas fa-clock"></i> 5 dk okuma</span>
+                    </p>
+                    <p class="article-excerpt">
+                        2024 ilkbahar-yaz sezonunda öne çıkan moda trendleri neler? Pastel tonlar, doğal dokular ve sürdürülebilir moda anlayışı bu sezonun öne çıkan özellikleri. İşte bu sezon gardırobunuzda bulunması gereken trend parçalar...
+                    </p>
+                    <a href="#" class="read-more-btn">Devamını Oku</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="categories-nav">
+                <button class="category-btn active" data-category="all">Tümü</button>
+                <button class="category-btn" data-category="trends">Moda Trendleri</button>
+                <button class="category-btn" data-category="style">Stil Önerileri</button>
+                <button class="category-btn" data-category="news">Haberler</button>
+                <button class="category-btn" data-category="tips">Bakım İpuçları</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles -->
+    <section class="blog-articles">
+        <div class="container">
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="blog-article" data-category="trends">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="article-category">Moda Trendleri</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Erkek Giyimde Minimalist Yaklaşım</h3>
+                        <p class="article-meta">
+                            <span class="author">Mehmet Kaya</span>
+                            <span class="date">18 Mart 2024</span>
+                        </p>
+                        <p class="article-excerpt">
+                            Minimalist erkek giyim anlayışı günümüzde büyük popülerlik kazanıyor. Sade çizgiler, nötr renkler ve kaliteli kumaşlar ile oluşturulan kombinler hem şık hem de pratik...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">3 dk okuma</span>
+                            <a href="#" class="read-more">Devamını Oku</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-article" data-category="style">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <div class="article-category">Stil Önerileri</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Ofis Giyiminde Şık Kombinler</h3>
+                        <p class="article-meta">
+                            <span class="author">Zeynep Arslan</span>
+                            <span class="date">16 Mart 2024</span>
+                        </p>
+                        <p class="article-excerpt">
+                            Ofis ortamında hem profesyonel hem de şık görünmek için dikkat edilmesi gereken noktalar. Doğru renk kombinleri ve uyumlu parçalar ile mükemmel ofis stili...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">4 dk okuma</span>
+                            <a href="#" class="read-more">Devamını Oku</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-article" data-category="news">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="article-category">Haberler</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Sürdürülebilir Moda Hareketi</h3>
+                        <p class="article-meta">
+                            <span class="author">Elif Yıldız</span>
+                            <span class="date">14 Mart 2024</span>
+                        </p>
+                        <p class="article-excerpt">
+                            Dünya genelinde sürdürülebilir moda hareketi hızla yayılıyor. Çevre dostu üretim yöntemleri ve geri dönüştürülebilir malzemeler ile moda sektörü yeşil dönüşüm yaşıyor...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">6 dk okuma</span>
+                            <a href="#" class="read-more">Devamını Oku</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-article" data-category="tips">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="article-category">Bakım İpuçları</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Kıyafetlerinizi Uzun Süre Yeni Tutmanın Yolları</h3>
+                        <p class="article-meta">
+                            <span class="author">Fatma Özkan</span>
+                            <span class="date">12 Mart 2024</span>
+                        </p>
+                        <p class="article-excerpt">
+                            Kıyafetlerinizin ömrünü uzatmak ve her zaman yeni görünmelerini sağlamak için uygulayabileceğiniz pratik yöntemler. Doğru yıkama ve saklama teknikleri...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">5 dk okuma</span>
+                            <a href="#" class="read-more">Devamını Oku</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="blog-article" data-category="trends">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <div class="article-category">Moda Trendleri</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>2024 Ayakkabı Trendleri</h3>
+                        <p class="article-meta">
+                            <span class="author">Can Demir</span>
+                            <span class="date">10 Mart 2024</span>
+                        </p>
+                        <p class="article-excerpt">
+                            Bu sezon öne çıkan ayakkabı modelleri ve renkleri. Chunky sneaker'lardan platform ayakkabılara, retro modellerden modern tasarımlara kadar tüm trendler...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">4 dk okuma</span>
+                            <a href="#" class="read-more">Devamını Oku</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="blog-article" data-category="style">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="article-category">Stil Önerileri</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Çocuk Giyiminde Rahatlık ve Şıklık</h3>
+                        <p class="article-meta">
+                            <span class="author">Selin Korkmaz</span>
+                            <span class="date">8 Mart 2024</span>
+                        </p>
+                        <p class="article-excerpt">
+                            Çocukların hem rahat hem de şık giyinmesi için öneriler. Doğal kumaşlar, uygun beden seçimi ve çocukların hareket özgürlüğünü kısıtlamayan tasarımlar...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">3 dk okuma</span>
+                            <a href="#" class="read-more">Devamını Oku</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="blog-article" data-category="news">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="article-category">Haberler</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Acboztech Yeni Mağaza Açıyor</h3>
+                        <p class="article-meta">
+                            <span class="author">Acboztech</span>
+                            <span class="date">6 Mart 2024</span>
+                        </p>
+                        <p class="article-excerpt">
+                            Acboztech olarak İstanbul'un yeni merkezi olan Maslak'ta yeni mağazamızı açıyoruz. Modern tasarım anlayışı ve geniş ürün yelpazemizle hizmetinizdeyiz...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">2 dk okuma</span>
+                            <a href="#" class="read-more">Devamını Oku</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="blog-article" data-category="tips">
+                    <div class="article-image">
+                        <div class="article-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="article-category">Bakım İpuçları</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>Renk Kombinasyonu Kuralları</h3>
+                        <p class="article-meta">
+                            <span class="author">Merve Aksoy</span>
+                            <span class="date">4 Mart 2024</span>
+                        </p>
+                        <p class="article-excerpt">
+                            Renk teorisi ve moda kombinasyonları. Hangi renklerin birbirleriyle uyumlu olduğu ve nasıl kombin yapılacağı hakkında detaylı rehber...
+                        </p>
+                        <div class="article-footer">
+                            <span class="read-time">7 dk okuma</span>
+                            <a href="#" class="read-more">Devamını Oku</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Blog Güncellemelerinden Haberdar Olun</h2>
+                <p>Yeni blog yazılarımızdan ve moda haberlerinden ilk siz haberdar olun.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresinizi girin" required>
+                    <button type="submit" class="btn btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Modern giyim tasarımında kalite ve güvenin adresi. 15+ yıllık deneyimimizle sizlere hizmet veriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="products.html?category=erkek">Erkek Giyim</a></li>
+                        <li><a href="products.html?category=kadin">Kadın Giyim</a></li>
+                        <li><a href="products.html?category=cocuk">Çocuk Giyim</a></li>
+                        <li><a href="products.html?category=ayakkabi">Ayakkabı</a></li>
+                        <li><a href="products.html?category=aksesuar">Aksesuar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

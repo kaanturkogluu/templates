@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Modern Giyim</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link active">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="campaigns.html" class="nav-link">Kampanyalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="nav-icon"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hizmetlerimiz</h1>
+            <p>Kapsamlı giyim çözümleri ve profesyonel hizmetlerimizle yanınızdayız</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ana Hizmetlerimiz</h2>
+                <p>Her ihtiyacınıza uygun çözümler sunuyoruz</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Mağaza Alışverişi</h3>
+                    <p>50+ mağazamızda kişisel alışveriş deneyimi yaşayın. Uzman satış danışmanlarımız size en uygun ürünleri önerir ve deneme imkanı sunar.</p>
+                    <ul class="service-features">
+                        <li>Ücretsiz deneme kabinleri</li>
+                        <li>Kişisel stil danışmanlığı</li>
+                        <li>Beden rehberi ve ölçü alma</li>
+                        <li>Hızlı ödeme seçenekleri</li>
+                        <li>Sezon sonu indirimler</li>
+                        <li>Sadakat programı puanları</li>
+                    </ul>
+                </div>
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Online Alışveriş</h3>
+                    <p>E-ticaret sitemizden 7/24 alışveriş yapabilirsiniz. Güvenli ödeme sistemleri ve hızlı teslimat ile kapınıza kadar geliyoruz.</p>
+                    <ul class="service-features">
+                        <li>7/24 online alışveriş</li>
+                        <li>Güvenli ödeme sistemleri</li>
+                        <li>150 TL üzeri ücretsiz kargo</li>
+                        <li>30 gün iade garantisi</li>
+                        <li>12 aya kadar taksit</li>
+                        <li>Canlı destek hizmeti</li>
+                    </ul>
+                </div>
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-tape"></i>
+                    </div>
+                    <h3>Özel Dikim</h3>
+                    <p>Özel ölçülerinize göre dikim hizmeti sunuyoruz. Profesyonel terzilerimiz ile tam size uygun giysiler tasarlıyoruz.</p>
+                    <ul class="service-features">
+                        <li>Kişisel ölçü alma</li>
+                        <li>Özel tasarım seçenekleri</li>
+                        <li>Premium kumaş seçimi</li>
+                        <li>3-7 gün teslimat</li>
+                        <li>Ücretsiz düzenleme</li>
+                        <li>Garantili işçilik</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="detailed-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Detaylı Hizmetlerimiz</h2>
+                <p>Her kategori için özel çözümler</p>
+            </div>
+            <div class="services-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="erkek">Erkek Giyim</button>
+                    <button class="tab-btn" data-tab="kadin">Kadın Giyim</button>
+                    <button class="tab-btn" data-tab="cocuk">Çocuk Giyim</button>
+                    <button class="tab-btn" data-tab="ayakkabi">Ayakkabı</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="erkek">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Erkek Giyim Koleksiyonu</h3>
+                                <p>Modern erkek giyim anlayışımızla, her yaştan erkeğe uygun şık ve konforlu seçenekler sunuyoruz. Günlük giyimden resmi kıyafetlere kadar geniş ürün yelpazemizle tarzınızı tamamlıyoruz.</p>
+                                <ul>
+                                    <li><strong>Gömlekler:</strong> Klasik, slim fit, kısa kollu, uzun kollu</li>
+                                    <li><strong>Pantolonlar:</strong> Klasik, slim, skinny, cargo, şort</li>
+                                    <li><strong>Ceketler:</strong> Blazer, spor ceket, takım elbise</li>
+                                    <li><strong>Tişörtler:</strong> Basic, polo, V yaka, yuvarlak yaka</li>
+                                    <li><strong>Dış Giyim:</strong> Mont, kaban, yağmurluk, deri ceket</li>
+                                    <li><strong>Spor Giyim:</strong> Eşofman, şort, atlet, spor ayakkabı</li>
+                                    <li><strong>İç Giyim:</strong> Boxer, atlet, pijama, bornoz</li>
+                                    <li><strong>Aksesuarlar:</strong> Kravat, kemer, çorap, şapka</li>
+                                </ul>
+                                <div class="price-range">
+                                    <span class="price-tag">Fiyat Aralığı: 29.90 TL - 1.299 TL</span>
+                                </div>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-male"></i>
+                                    <p>Erkek Giyim</p>
+                                    <span>%40 İndirim</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="kadin">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Kadın Giyim Koleksiyonu</h3>
+                                <p>Kadınların zarafetini ve güzelliğini ön plana çıkaran tasarımlarımızla, her tarza uygun şık seçenekler sunuyoruz. Günlük giyimden özel gün kıyafetlerine kadar geniş koleksiyonumuzla yanınızdayız.</p>
+                                <ul>
+                                    <li><strong>Elbiseler:</strong> Günlük, abiye, mini, maxi, midi</li>
+                                    <li><strong>Bluzlar:</strong> Klasik, crop, tunik, gömlek bluz</li>
+                                    <li><strong>Pantolonlar:</strong> Klasik, skinny, mom fit, palazzo</li>
+                                    <li><strong>Etekler:</strong> Kalem, midi, maxi, mini, pli</li>
+                                    <li><strong>Dış Giyim:</strong> Mont, kaban, hırka, blazer</li>
+                                    <li><strong>Spor Giyim:</strong> Tayt, eşofman, şort, spor sütyen</li>
+                                    <li><strong>İç Giyim:</strong> Sutyen, külot, pijama, bornoz</li>
+                                    <li><strong>Aksesuarlar:</strong> Çanta, kemer, şal, takı</li>
+                                </ul>
+                                <div class="price-range">
+                                    <span class="price-tag">Fiyat Aralığı: 39.90 TL - 1.599 TL</span>
+                                </div>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-female"></i>
+                                    <p>Kadın Giyim</p>
+                                    <span>%50 İndirim</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="cocuk">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Çocuk Giyim Koleksiyonu</h3>
+                                <p>Çocukların rahatlığını ve güvenliğini ön planda tutan tasarımlarımızla, her yaştan çocuğa uygun renkli ve eğlenceli seçenekler sunuyoruz. Kaliteli kumaşlar ve güvenli üretim süreçleri ile çocuklarınızın sağlığını koruyoruz.</p>
+                                <ul>
+                                    <li>Bebek giyimi (0-24 ay)</li>
+                                    <li>Küçük çocuk giyimi (2-6 yaş)</li>
+                                    <li>Büyük çocuk giyimi (7-14 yaş)</li>
+                                    <li>Okul üniforması</li>
+                                    <li>Özel gün kıyafetleri</li>
+                                </ul>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-child"></i>
+                                    <p>Çocuk Giyim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="ayakkabi">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Ayakkabı Koleksiyonu</h3>
+                                <p>Konforlu ve şık ayakkabı koleksiyonumuzla, her tarza uygun seçenekler sunuyoruz. Günlük kullanımdan özel günlere kadar geniş yelpazemizle ayaklarınızın rahatlığını sağlıyoruz.</p>
+                                <ul>
+                                    <li>Günlük ayakkabı (sneaker, loafer)</li>
+                                    <li>Resmi ayakkabı (oxford, derby)</li>
+                                    <li>Spor ayakkabı (koşu, fitness)</li>
+                                    <li>Bot ve çizme</li>
+                                    <li>Sandalet ve terlik</li>
+                                </ul>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-shoe-prints"></i>
+                                    <p>Ayakkabı</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Alışveriş Sürecimiz</h2>
+                <p>Kolay ve hızlı alışveriş deneyimi</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Ürün Seçimi</h3>
+                        <p>Geniş koleksiyonumuzdan size en uygun ürünü seçin.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Deneme</h3>
+                        <p>Mağazalarımızda ücretsiz deneme imkanından yararlanın.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Ödeme</h3>
+                        <p>Güvenli ödeme sistemlerimizle kolayca ödeme yapın.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Teslimat</h3>
+                        <p>Hızlı teslimat ile ürününüzü kapınızda alın.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ek Hizmetlerimiz</h2>
+                <p>Müşteri memnuniyeti için ekstra hizmetler</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Ücretsiz Kargo</h3>
+                    <p>150 TL üzeri alışverişlerinizde ücretsiz kargo hizmeti.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Kolay İade</h3>
+                    <p>30 gün içinde ücretsiz iade ve değişim garantisi.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Taksitli Ödeme</h3>
+                    <p>12 aya kadar taksitli ödeme seçenekleri.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>7/24 Destek</h3>
+                    <p>Müşteri hizmetlerimiz her zaman yanınızda.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Hediye Paketi</h3>
+                    <p>Özel günler için ücretsiz hediye paketi hizmeti.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Sadakat Programı</h3>
+                    <p>Alışverişlerinizden puan kazanın ve indirimlerden yararlanın.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Hizmetlerimizi Keşfedin</h2>
+                <p>Kaliteli ürünlerimiz ve profesyonel hizmetimizle tanışın.</p>
+                <a href="contact.html" class="btn btn-primary">İletişime Geçin</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Modern giyim tasarımında kalite ve güvenin adresi. 15+ yıllık deneyimimizle sizlere hizmet veriyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="services.html">Erkek Giyim</a></li>
+                        <li><a href="services.html">Kadın Giyim</a></li>
+                        <li><a href="services.html">Çocuk Giyim</a></li>
+                        <li><a href="services.html">Ayakkabı</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and panes
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.remove('active'));
+
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                // Show corresponding pane
+                const targetTab = button.getAttribute('data-tab');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

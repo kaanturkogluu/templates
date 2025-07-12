@@ -1,0 +1,538 @@
+/* Acboztech Resort Styles - Modern, Responsive, Coastal Palette */
+:root {
+  --color-main: #3454d1;
+  --color-accent: #ffd700;
+  --color-bg: #f5f6fa;
+  --color-dark: #22223b;
+  --color-coral: #ff6f61;
+  --font-main: 'Montserrat', 'Roboto', 'Segoe UI', Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-dark);
+  min-height: 100vh;
+}
+
+header {
+  background: var(--color-main);
+  box-shadow: 0 2px 8px rgba(52,73,94,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-main);
+  letter-spacing: 2px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a:focus {
+  color: var(--color-accent);
+}
+
+/* Font imports for modern look */
+body, html {
+  font-family: 'Montserrat', 'Roboto', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Sticky Transparent Navbar */
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 8px rgba(52,73,94,0.07);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+/* Hamburger Menu */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 6px;
+}
+.nav-toggle span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--color-main);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Hero Section with Background Image and Overlay */
+.hero-image {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(120deg, rgba(52,84,209,0.7) 60%, rgba(245,246,250,0.5) 100%);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: var(--color-accent);
+  text-shadow: 0 2px 8px rgba(52,73,94,0.18);
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  background: var(--color-main);
+  color: var(--color-accent);
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: var(--color-accent);
+  color: var(--color-main);
+}
+
+.highlights {
+  background: var(--color-main);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.highlights h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+}
+.highlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.card {
+  background: var(--color-bg);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(52,73,94,0.08);
+  padding: 1.5rem;
+  max-width: 300px;
+  flex: 1 1 250px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+.card h3 {
+  color: var(--color-coral);
+  margin-top: 0;
+}
+.card:hover, .card:focus-within {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(52,73,94,0.15);
+}
+
+/* Weather & Reviews Section */
+.weather-reviews {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2.5rem auto;
+  max-width: 1100px;
+}
+.weather-widget, .reviews-widget {
+  background: var(--color-bg);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(52,73,94,0.08);
+  padding: 2rem 1.5rem;
+  min-width: 260px;
+  flex: 1 1 320px;
+}
+.weather-widget h2, .reviews-widget h2 {
+  color: var(--color-main);
+  margin-top: 0;
+}
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.weather-temp {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-coral);
+}
+.weather-desc {
+  font-weight: 500;
+}
+.weather-location {
+  color: var(--color-dark);
+  font-size: 1rem;
+}
+.review-card {
+  background: var(--color-bg);
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(52,73,94,0.05);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-main);
+}
+.review-name {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+.review-rating {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+}
+.review-text {
+  font-style: italic;
+  color: var(--color-dark);
+}
+.review-source {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Instagram Gallery */
+.instagram-gallery {
+  background: var(--color-bg);
+  padding: 2.5rem 1rem 2rem 1rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.instagram-gallery h2 {
+  color: var(--color-main);
+  margin-bottom: 1.5rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(52,73,94,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.gallery-grid img:hover, .gallery-grid img:focus {
+  transform: scale(1.07);
+  box-shadow: 0 4px 16px rgba(52,73,94,0.18);
+}
+.btn-secondary {
+  background: var(--color-accent);
+  color: var(--color-main);
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background: var(--color-main);
+  color: var(--color-accent);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(90deg, var(--color-main) 60%, var(--color-coral) 100%);
+  color: var(--color-accent);
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-radius: 16px;
+  margin: 2.5rem auto 0 auto;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(52,73,94,0.10);
+}
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.btn-whatsapp {
+  background: #25d366;
+  color: var(--color-dark);
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s;
+}
+.btn-whatsapp:hover, .btn-whatsapp:focus {
+  background: #128c7e;
+  color: var(--color-accent);
+}
+
+/* Footer Social Icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.footer-social a {
+  color: var(--color-accent);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.footer-social a:hover, .footer-social a:focus {
+  opacity: 1;
+}
+
+footer {
+  background: var(--color-main);
+  color: var(--color-accent);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+/* About Page */
+.about-main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--color-bg);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(52,73,94,0.07);
+  padding: 2rem;
+}
+.about-intro h1 {
+  color: var(--color-main);
+  margin-bottom: 1rem;
+}
+.about-mission-vision {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.about-block {
+  flex: 1 1 250px;
+  background: var(--color-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(52,73,94,0.05);
+}
+.about-values ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+/* Services Page */
+.services-main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: var(--color-bg);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(52,73,94,0.07);
+  padding: 2rem;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.service-card {
+  background: var(--color-bg);
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(52,73,94,0.05);
+  padding: 1.5rem;
+  flex: 1 1 250px;
+  min-width: 220px;
+  max-width: 300px;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.service-card h2 {
+  color: var(--color-main);
+  margin-top: 0;
+}
+.service-card:hover, .service-card:focus-within {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(52,73,94,0.13);
+}
+
+/* Contact Page */
+.contact-main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--color-bg);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(52,73,94,0.07);
+  padding: 2rem;
+}
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.contact-details, .contact-form {
+  flex: 1 1 300px;
+  background: var(--color-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(52,73,94,0.05);
+}
+.contact-details h2, .contact-form h2 {
+  color: var(--color-main);
+  margin-top: 0;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form input, .contact-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-main);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-main);
+  resize: none;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: 2px solid var(--color-coral);
+  border-color: var(--color-coral);
+}
+.contact-form button {
+  align-self: flex-end;
+}
+.map-container {
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(52,73,94,0.07);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .highlight-cards, .services-list, .about-mission-vision, .contact-info, .weather-reviews {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .weather-reviews {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .navbar .nav-links {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem 0.5rem;
+  }
+  .hero {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .highlights, .about-main, .services-main, .contact-main, .instagram-gallery, .cta-section {
+    padding: 1rem 0.5rem;
+  }
+  .card, .service-card, .about-block, .contact-details, .contact-form {
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} 

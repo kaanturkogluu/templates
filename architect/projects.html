@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Mimari Tasarım</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link active">Projeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Projelerimiz</h1>
+            <p>Başarıyla tamamladığımız örnek projelerimizi keşfedin</p>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="konut">Konut</button>
+                <button class="filter-btn" data-filter="ticari">Ticari</button>
+                <button class="filter-btn" data-filter="kentsel">Kentsel</button>
+                <button class="filter-btn" data-filter="ic-mimari">İç Mimari</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <div class="container">
+            <div class="projects-container">
+                <!-- Konut Projeleri -->
+                <div class="project-card" data-category="konut">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-home"></i>
+                            <p>Modern Villa</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Levent Villa Projesi</h3>
+                                <p>Modern ve lüks villa tasarımı</p>
+                                <span class="project-category">Konut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Levent Villa Projesi</h3>
+                        <p>İstanbul'un prestijli Levent bölgesinde yer alan 450m² modern villa projesi. Minimalist tasarım anlayışı ile lüks yaşam alanları oluşturuldu.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> İstanbul, Levent</span>
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-ruler-combined"></i> 450m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="konut">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-building"></i>
+                            <p>Rezidans</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Beşiktaş Rezidans</h3>
+                                <p>Lüks rezidans kompleksi</p>
+                                <span class="project-category">Konut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Beşiktaş Rezidans Kompleksi</h3>
+                        <p>120 dairelik lüks rezidans projesi. Yeşil alanları, sosyal tesisleri ve modern yaşam konsepti ile öne çıkan proje.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> İstanbul, Beşiktaş</span>
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-ruler-combined"></i> 15.000m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ticari Projeler -->
+                <div class="project-card" data-category="ticari">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-briefcase"></i>
+                            <p>Ofis Binası</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Maslak Plaza</h3>
+                                <p>Modern ofis kompleksi</p>
+                                <span class="project-category">Ticari</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Maslak Plaza Ofis Kompleksi</h3>
+                        <p>25 katlı modern ofis binası. Enerji verimli tasarım, akıllı bina sistemleri ve çevre dostu yaklaşım ile öne çıkan proje.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> İstanbul, Maslak</span>
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-ruler-combined"></i> 45.000m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ticari">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-bag"></i>
+                            <p>AVM</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Kadıköy AVM</h3>
+                                <p>Modern alışveriş merkezi</p>
+                                <span class="project-category">Ticari</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kadıköy Modern AVM</h3>
+                        <p>200 mağazalık modern alışveriş merkezi. Yenilikçi tasarım, geniş sosyal alanlar ve sürdürülebilir mimari yaklaşım.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> İstanbul, Kadıköy</span>
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-ruler-combined"></i> 85.000m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kentsel Projeler -->
+                <div class="project-card" data-category="kentsel">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-city"></i>
+                            <p>Kentsel Tasarım</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Esenyurt Kentsel Dönüşüm</h3>
+                                <p>Kentsel dönüşüm projesi</p>
+                                <span class="project-category">Kentsel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Esenyurt Kentsel Dönüşüm Projesi</h3>
+                        <p>5000 konutluk kentsel dönüşüm projesi. Yeşil alanlar, sosyal tesisler ve modern yaşam konsepti ile örnek proje.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> İstanbul, Esenyurt</span>
+                            <span><i class="fas fa-calendar"></i> 2021-2023</span>
+                            <span><i class="fas fa-ruler-combined"></i> 250.000m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="kentsel">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tree"></i>
+                            <p>Park Tasarımı</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Maltepe Sahil Parkı</h3>
+                                <p>Kıyı park tasarımı</p>
+                                <span class="project-category">Kentsel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Maltepe Sahil Parkı</h3>
+                        <p>5 km uzunluğunda sahil parkı projesi. Rekreasyon alanları, bisiklet yolları ve çevre dostu tasarım yaklaşımı.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> İstanbul, Maltepe</span>
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-ruler-combined"></i> 50.000m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İç Mimari Projeler -->
+                <div class="project-card" data-category="ic-mimari">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-couch"></i>
+                            <p>İç Tasarım</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Lüks Daire İç Tasarımı</h3>
+                                <p>Modern iç mimari</p>
+                                <span class="project-category">İç Mimari</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nişantaşı Lüks Daire İç Tasarımı</h3>
+                        <p>180m² lüks daire iç mimari projesi. Modern mobilya tasarımları, akıllı ev sistemleri ve özel dekorasyon çözümleri.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> İstanbul, Nişantaşı</span>
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-ruler-combined"></i> 180m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ic-mimari">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-store"></i>
+                            <p>Mağaza Tasarımı</p>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <h3>Butik Mağaza Tasarımı</h3>
+                                <p>Modern mağaza iç tasarımı</p>
+                                <span class="project-category">İç Mimari</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bağdat Caddesi Butik Mağaza</h3>
+                        <p>200m² butik mağaza iç tasarımı. Marka kimliğini yansıtan özel tasarım, vitrin düzenlemeleri ve müşteri deneyimi odaklı yaklaşım.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> İstanbul, Kadıköy</span>
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-ruler-combined"></i> 200m²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Tamamlanan Proje</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Mutlu Müşteri</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Ödül</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20+</h3>
+                    <p>Yıllık Deneyim</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Projenizi Hayata Geçirelim</h2>
+                <p>Benzer projeler için bizimle iletişime geçin ve hayalinizdeki projeyi gerçeğe dönüştürelim.</p>
+                <a href="contact.html" class="btn btn-primary">Ücretsiz Danışmanlık</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Modern mimari tasarımda yenilikçi çözümler sunan güvenilir partneriniz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="projects.html">Projeler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="services.html">Konut Tasarımı</a></li>
+                        <li><a href="services.html">Ticari Projeler</a></li>
+                        <li><a href="services.html">Kentsel Tasarım</a></li>
+                        <li><a href="services.html">İç Mimari</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

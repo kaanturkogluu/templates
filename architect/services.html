@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Mimari Tasarım</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link active">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hizmetlerimiz</h1>
+            <p>Kapsamlı mimari çözümler ve profesyonel tasarım hizmetleri</p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ana Hizmet Alanlarımız</h2>
+                <p>Her proje türü için özel çözümler geliştiriyoruz</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Konut Tasarımı</h3>
+                    <p>Modern ve fonksiyonel konut projeleri tasarlıyoruz. Villa, daire, rezidans ve özel konut projelerinde uzmanlaşmış ekibimiz, yaşam alanlarınızı dönüştürüyor.</p>
+                    <ul class="service-features">
+                        <li>Villa ve özel konut tasarımı</li>
+                        <li>Rezidans projeleri</li>
+                        <li>Apartman ve site tasarımı</li>
+                        <li>Bahçe ve peyzaj tasarımı</li>
+                    </ul>
+                </div>
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Ticari Projeler</h3>
+                    <p>Ofis, mağaza, otel ve ticari yapılar için özel tasarımlar geliştiriyoruz. İşletmenizin ihtiyaçlarını anlayarak, verimli ve estetik çözümler sunuyoruz.</p>
+                    <ul class="service-features">
+                        <li>Ofis binaları ve iş merkezleri</li>
+                        <li>Mağaza ve showroom tasarımı</li>
+                        <li>Otel ve restoran projeleri</li>
+                        <li>Endüstriyel yapılar</li>
+                    </ul>
+                </div>
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Kentsel Tasarım</h3>
+                    <p>Şehir planlaması ve kentsel dönüşüm projelerinde uzmanlaşmış ekibimiz, sürdürülebilir ve yaşanabilir kentler tasarlıyor.</p>
+                    <ul class="service-features">
+                        <li>Şehir planlaması</li>
+                        <li>Kentsel dönüşüm projeleri</li>
+                        <li>Meydan ve park tasarımı</li>
+                        <li>Altyapı planlaması</li>
+                    </ul>
+                </div>
+                <div class="service-card large">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>İç Mimari</h3>
+                    <p>Fonksiyonel ve estetik iç mekan tasarımları ile yaşam alanlarınızı daha güzel ve kullanışlı hale getiriyoruz.</p>
+                    <ul class="service-features">
+                        <li>Konut iç mimarisi</li>
+                        <li>Ofis iç tasarımı</li>
+                        <li>Mağaza dekorasyonu</li>
+                        <li>Mobilya tasarımı</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="detailed-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Detaylı Hizmetlerimiz</h2>
+                <p>Proje sürecinin her aşamasında yanınızdayız</p>
+            </div>
+            <div class="services-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="planning">Proje Planlama</button>
+                    <button class="tab-btn" data-tab="design">Tasarım</button>
+                    <button class="tab-btn" data-tab="construction">İnşaat</button>
+                    <button class="tab-btn" data-tab="consulting">Danışmanlık</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="planning">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Proje Planlama ve Analiz</h3>
+                                <p>Her projenin başarısı, doğru planlama ile başlar. Ekibimiz, projenizin ihtiyaçlarını analiz ederek en uygun çözümleri geliştirir.</p>
+                                <ul>
+                                    <li>İhtiyaç analizi ve program geliştirme</li>
+                                    <li>Arazi analizi ve değerlendirme</li>
+                                    <li>Bütçe planlaması ve maliyet analizi</li>
+                                    <li>Zaman planlaması ve proje takvimi</li>
+                                    <li>Yasal gereklilikler ve izin süreçleri</li>
+                                </ul>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <p>Proje Planlama</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="design">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Mimari Tasarım ve Çizim</h3>
+                                <p>Modern tasarım araçları kullanarak, vizyonunuzu gerçeğe dönüştüren detaylı çizimler ve 3D modeller hazırlıyoruz.</p>
+                                <ul>
+                                    <li>Konsept tasarım ve eskiz çalışmaları</li>
+                                    <li>Detaylı mimari çizimler</li>
+                                    <li>3D modelleme ve görselleştirme</li>
+                                    <li>Malzeme ve renk seçimi</li>
+                                    <li>Teknik detay çizimleri</li>
+                                </ul>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-drafting-compass"></i>
+                                    <p>Mimari Tasarım</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="construction">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>İnşaat Yönetimi ve Denetim</h3>
+                                <p>Projenizin inşaat sürecinde, kalite standartlarını koruyarak zamanında tamamlanmasını sağlıyoruz.</p>
+                                <ul>
+                                    <li>İnşaat yönetimi ve koordinasyon</li>
+                                    <li>Kalite kontrol ve denetim</li>
+                                    <li>Malzeme seçimi ve tedarik</li>
+                                    <li>İş güvenliği ve sağlık denetimi</li>
+                                    <li>Proje teslimi ve kabul süreçleri</li>
+                                </ul>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-hard-hat"></i>
+                                    <p>İnşaat Yönetimi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="consulting">
+                        <div class="service-detail">
+                            <div class="service-info">
+                                <h3>Mimari Danışmanlık</h3>
+                                <p>Mevcut projeleriniz için profesyonel danışmanlık hizmetleri sunuyoruz.</p>
+                                <ul>
+                                    <li>Mevcut yapı analizi ve değerlendirme</li>
+                                    <li>Renovasyon ve restorasyon önerileri</li>
+                                    <li>Enerji verimliliği danışmanlığı</li>
+                                    <li>Sürdürülebilirlik değerlendirmesi</li>
+                                    <li>Yasal uyumluluk danışmanlığı</li>
+                                </ul>
+                            </div>
+                            <div class="service-image">
+                                <div class="service-placeholder">
+                                    <i class="fas fa-comments"></i>
+                                    <p>Danışmanlık</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Çalışma Sürecimiz</h2>
+                <p>Projelerinizi nasıl hayata geçiriyoruz</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>İlk Görüşme</h3>
+                        <p>Projenizin ihtiyaçlarını ve beklentilerinizi dinliyor, genel bir vizyon oluşturuyoruz.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Analiz ve Planlama</h3>
+                        <p>Arazi analizi, ihtiyaç değerlendirmesi ve detaylı proje planlaması yapıyoruz.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Konsept Tasarım</h3>
+                        <p>Vizyonunuzu yansıtan özgün konsept tasarımlar geliştiriyoruz.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Detay Tasarım</h3>
+                        <p>Teknik detaylar, malzeme seçimleri ve uygulama çizimleri hazırlıyoruz.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Uygulama</h3>
+                        <p>Projenizi kalite standartlarında, zamanında tamamlıyoruz.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Teslim ve Takip</h3>
+                        <p>Projenizi teslim ediyor ve sonrasında destek hizmetleri sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Projenizi Hayata Geçirelim</h2>
+                <p>Mimari vizyonunuzu gerçeğe dönüştürmek için bizimle iletişime geçin.</p>
+                <a href="contact.html" class="btn btn-primary">Ücretsiz Danışmanlık</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Modern mimari tasarımda yenilikçi çözümler sunan güvenilir partneriniz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="projects.html">Projeler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="services.html">Konut Tasarımı</a></li>
+                        <li><a href="services.html">Ticari Projeler</a></li>
+                        <li><a href="services.html">Kentsel Tasarım</a></li>
+                        <li><a href="services.html">İç Mimari</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

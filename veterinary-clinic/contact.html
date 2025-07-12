@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Veteriner Kliniği</title>
+    <meta name="description" content="Acboztech Veteriner Kliniği ile iletişime geçin. Adres, telefon, e-posta ve randevu formu. Evcil hayvanınız için veteriner hizmetleri.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-paw"></i>
+                    <span>Acboztech</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin, evcil hayvanınızın sağlığı için buradayız</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Veteriner Caddesi No:123<br>Şişli / İstanbul<br>Türkiye</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p><a href="tel:+905551234567">+90 555 123 45 67</a></p>
+                    <p><a href="tel:+902121234567">+90 212 123 45 67</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p><a href="mailto:info@acboztech.com">info@acboztech.com</a></p>
+                    <p><a href="mailto:randevu@acboztech.com">randevu@acboztech.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p><strong>Pazartesi - Cuma:</strong><br>08:00 - 20:00</p>
+                    <p><strong>Cumartesi:</strong><br>09:00 - 18:00</p>
+                    <p><strong>Pazar:</strong><br>10:00 - 16:00</p>
+                    <p><strong>Acil Durumlar:</strong><br>7/24 Hizmet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map -->
+    <section class="contact-form-map">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Randevu ve İletişim Formu</h2>
+                    <p>Evcil hayvanınız için randevu almak veya sorularınızı sormak için aşağıdaki formu doldurabilirsiniz. En kısa sürede size dönüş yapacağız.</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pet-type">Evcil Hayvan Türü</label>
+                            <select id="pet-type" name="pet-type">
+                                <option value="">Seçiniz</option>
+                                <option value="dog">Köpek</option>
+                                <option value="cat">Kedi</option>
+                                <option value="bird">Kuş</option>
+                                <option value="rabbit">Tavşan</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pet-name">Evcil Hayvan Adı</label>
+                            <input type="text" id="pet-name" name="pet-name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Hizmet Türü</label>
+                            <select id="service" name="service">
+                                <option value="">Seçiniz</option>
+                                <option value="general">Genel Muayene</option>
+                                <option value="vaccine">Aşı</option>
+                                <option value="surgery">Cerrahi İşlem</option>
+                                <option value="emergency">Acil Müdahale</option>
+                                <option value="home-visit">Ev Ziyareti</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="appointment-date">Tercih Edilen Tarih</label>
+                            <input type="date" id="appointment-date" name="appointment-date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Evcil hayvanınızın durumu ve ihtiyaçlarınız hakkında bilgi veriniz..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Mesaj Gönder
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="map-section">
+                    <h2>Konum</h2>
+                    <p>Kliniğimiz İstanbul Şişli'de merkezi bir konumda bulunmaktadır. Toplu taşıma araçları ile kolayca ulaşabilirsiniz.</p>
+                    
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Harita burada görüntülenecek</p>
+                        <p>Veteriner Caddesi No:123, Şişli/İstanbul</p>
+                    </div>
+                    
+                    <div class="transportation-info">
+                        <h3>Ulaşım Bilgileri</h3>
+                        <div class="transport-item">
+                            <i class="fas fa-subway"></i>
+                            <span>Metro: Şişli-Mecidiyeköy hattı</span>
+                        </div>
+                        <div class="transport-item">
+                            <i class="fas fa-bus"></i>
+                            <span>Otobüs: 54, 74, 129 numaralı hatlar</span>
+                        </div>
+                        <div class="transport-item">
+                            <i class="fas fa-car"></i>
+                            <span>Otopark: Kliniğimizde ücretsiz otopark mevcuttur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="emergency-text">
+                    <h2>Acil Durumlar İçin</h2>
+                    <p>Evcil hayvanınız acil bir durum yaşıyorsa, lütfen hemen arayın. 7/24 acil veteriner hizmeti veriyoruz.</p>
+                    <div class="emergency-buttons">
+                        <a href="tel:+905551234567" class="btn btn-emergency">
+                            <i class="fas fa-phone"></i>
+                            Acil Çağrı: +90 555 123 45 67
+                        </a>
+                        <a href="tel:+902121234567" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Sabit Hat: +90 212 123 45 67
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Randevu nasıl alabilirim?</h3>
+                    <p>Telefon, e-posta veya web sitemizdeki iletişim formu ile randevu alabilirsiniz. Acil durumlar için 7/24 hizmet veriyoruz.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Ev ziyareti hizmeti veriyor musunuz?</h3>
+                    <p>Evet, evcil hayvanınızın kendi ortamında daha rahat hissetmesi için ev ziyareti hizmeti sunuyoruz.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Hangi hayvan türleri için hizmet veriyorsunuz?</h3>
+                    <p>Köpek, kedi, kuş, tavşan ve diğer evcil hayvanlar için kapsamlı veteriner hizmetleri sunuyoruz.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Ödeme seçenekleriniz nelerdir?</h3>
+                    <p>Nakit, kredi kartı ve banka kartı ile ödeme yapabilirsiniz. Ayrıca taksit seçenekleri de mevcuttur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        <span>Acboztech</span>
+                    </div>
+                    <p>Evcil hayvanınızın sağlığı için profesyonel veteriner hizmetleri sunuyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Hizmetlerimiz</h3>
+                    <ul>
+                        <li><a href="services.html">Genel Muayene</a></li>
+                        <li><a href="services.html">Aşı Hizmetleri</a></li>
+                        <li><a href="services.html">Cerrahi İşlemler</a></li>
+                        <li><a href="services.html">Ev Ziyareti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim Bilgileri</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Veteriner Caddesi No:123, İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 555 123 45 67</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                        <p><i class="fas fa-clock"></i> 7/24 Hizmet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Veteriner Kliniği. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

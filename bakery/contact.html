@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Pastane</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Pastane & Fırın</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="tel:+902125550123" class="nav-icon"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Merkez Mahallesi, Lezzet Sokak No: 123<br>Kadıköy, İstanbul, Türkiye</p>
+                    <a href="https://maps.google.com" target="_blank" class="contact-link">Haritada Göster</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 212 555 0123<br>+90 532 555 0123</p>
+                    <a href="tel:+902125550123" class="contact-link">Hemen Ara</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com<br>siparis@acboztech.com</p>
+                    <a href="mailto:info@acboztech.com" class="contact-link">E-posta Gönder</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Pazar<br>06:00 - 22:00</p>
+                    <span class="contact-note">Her gün açığız!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Mesaj Gönderin</h2>
+                    <p>Sorularınız, önerileriniz veya sipariş talepleriniz için bizimle iletişime geçin.</p>
+                    
+                    <form class="contact-form-element">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Konu Seçin</option>
+                                <option value="siparis">Sipariş</option>
+                                <option value="bilgi">Bilgi Talebi</option>
+                                <option value="oneri">Öneri</option>
+                                <option value="sikayet">Şikayet</option>
+                                <option value="isbirligi">İş Birliği</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                E-posta listesine abone olmak istiyorum
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+
+                <div class="contact-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Hızlı İletişim</h3>
+                        <div class="quick-contact">
+                            <a href="tel:+902125550123" class="quick-link">
+                                <i class="fas fa-phone"></i>
+                                <span>Hemen Ara</span>
+                            </a>
+                            <a href="https://wa.me/905325550123" class="quick-link">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="mailto:info@acboztech.com" class="quick-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>E-posta</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Sık Sorulan Sorular</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <h4>Minimum sipariş tutarı var mı?</h4>
+                                <p>Hayır, minimum sipariş tutarı yoktur. Her miktarda sipariş verebilirsiniz.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Teslimat süresi ne kadar?</h4>
+                                <p>İstanbul içi 2 saat, diğer şehirlere 24 saat içinde teslimat yapıyoruz.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4>Özel pasta siparişi verebilir miyim?</h4>
+                                <p>Evet, özel tasarım pastalar için en az 3 gün önceden sipariş vermeniz gerekiyor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-content">
+                <h2>Mağazalarımız</h2>
+                <p>25 şubemizle İstanbul genelinde hizmet veriyoruz</p>
+                
+                <div class="branches-grid">
+                    <div class="branch-card">
+                        <h3>Kadıköy Şubesi</h3>
+                        <p>Merkez Mahallesi, Lezzet Sokak No: 123</p>
+                        <span class="branch-status open">Açık</span>
+                    </div>
+
+                    <div class="branch-card">
+                        <h3>Beşiktaş Şubesi</h3>
+                        <p>Levent Mahallesi, Fırın Caddesi No: 45</p>
+                        <span class="branch-status open">Açık</span>
+                    </div>
+
+                    <div class="branch-card">
+                        <h3>Şişli Şubesi</h3>
+                        <p>Teşvikiye Mahallesi, Ekmek Sokak No: 67</p>
+                        <span class="branch-status open">Açık</span>
+                    </div>
+
+                    <div class="branch-card">
+                        <h3>Bakırköy Şubesi</h3>
+                        <p>Ataköy Mahallesi, Pastane Caddesi No: 89</p>
+                        <span class="branch-status open">Açık</span>
+                    </div>
+                </div>
+
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>İnteraktif Harita</p>
+                    <span>Google Maps entegrasyonu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-media-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sosyal Medyada Bizi Takip Edin</h2>
+                <p>En güncel haberler ve özel kampanyalar için sosyal medya hesaplarımızı takip edin</p>
+            </div>
+            <div class="social-grid">
+                <a href="#" class="social-card facebook">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Günlük paylaşımlar ve etkinlikler</p>
+                    <span class="social-followers">15K Takipçi</span>
+                </a>
+
+                <a href="#" class="social-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Lezzetli fotoğraflar ve videolar</p>
+                    <span class="social-followers">25K Takipçi</span>
+                </a>
+
+                <a href="#" class="social-card twitter">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter</h3>
+                    <p>Anlık haberler ve duyurular</p>
+                    <span class="social-followers">8K Takipçi</span>
+                </a>
+
+                <a href="#" class="social-card youtube">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Tarif videoları ve tanıtımlar</p>
+                    <span class="social-followers">12K Abone</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Özel Tekliflerden Haberdar Olun</h2>
+                <p>Yeni ürünlerimiz ve özel kampanyalarımızdan ilk siz haberdar olun.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresinizi girin" required>
+                    <button type="submit" class="btn btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>38 yıllık deneyimimizle geleneksel lezzetleri modern tekniklerle buluşturuyoruz. Her gün taze ve kaliteli ürünler üretiyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="menu.html">Menü</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ürün Kategorileri</h4>
+                    <ul>
+                        <li><a href="products.html?category=bread">Taze Ekmekler</a></li>
+                        <li><a href="products.html?category=cakes">Pastalar</a></li>
+                        <li><a href="products.html?category=cookies">Kurabiyeler</a></li>
+                        <li><a href="products.html?category=muffins">Muffin & Cupcake</a></li>
+                        <li><a href="products.html?category=pastries">Hamur İşleri</a></li>
+                        <li><a href="products.html?category=desserts">Tatlılar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                        <p><i class="fas fa-clock"></i> Her Gün 06:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Pastane. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

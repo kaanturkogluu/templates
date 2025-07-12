@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz - Acboztech Pastane</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Pastane & Fırın</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menü</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-bag"></i></a>
+                    <a href="tel:+902125550123" class="nav-icon"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Ürünlerimiz</h1>
+            <p>150+ çeşit taze ve lezzetli ürün</p>
+        </div>
+    </section>
+
+    <!-- Product Filters -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label>Kategori:</label>
+                    <select id="categoryFilter">
+                        <option value="">Tüm Kategoriler</option>
+                        <option value="bread">Taze Ekmekler</option>
+                        <option value="cakes">Pastalar</option>
+                        <option value="cookies">Kurabiyeler</option>
+                        <option value="muffins">Muffin & Cupcake</option>
+                        <option value="pastries">Hamur İşleri</option>
+                        <option value="desserts">Tatlılar</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Fiyat:</label>
+                    <select id="priceFilter">
+                        <option value="">Tüm Fiyatlar</option>
+                        <option value="0-20">0 - 20 TL</option>
+                        <option value="20-50">20 - 50 TL</option>
+                        <option value="50-100">50 - 100 TL</option>
+                        <option value="100+">100+ TL</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Sıralama:</label>
+                    <select id="sortFilter">
+                        <option value="popular">Popülerlik</option>
+                        <option value="price-low">Fiyat (Düşük-Yüksek)</option>
+                        <option value="price-high">Fiyat (Yüksek-Düşük)</option>
+                        <option value="name">İsim (A-Z)</option>
+                    </select>
+                </div>
+                
+                <button class="clear-filters">Filtreleri Temizle</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Bread Products -->
+                <div class="product-card" data-category="bread" data-price="12.50">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <div class="product-badge">Taze</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Köy Ekmeği</h3>
+                        <p class="product-category">Ekmekler</p>
+                        <div class="product-price">
+                            <span class="price">12.50 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread" data-price="15.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <div class="product-badge">Çok Satan</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tam Buğday Ekmeği</h3>
+                        <p class="product-category">Ekmekler</p>
+                        <div class="product-price">
+                            <span class="price">15.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread" data-price="18.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Çavdar Ekmeği</h3>
+                        <p class="product-category">Ekmekler</p>
+                        <div class="product-price">
+                            <span class="price">18.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <!-- Cake Products -->
+                <div class="product-card" data-category="cakes" data-price="85.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="product-badge">Popüler</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Çikolatalı Pasta</h3>
+                        <p class="product-category">Pastalar</p>
+                        <div class="product-price">
+                            <span class="price">85.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cakes" data-price="95.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="product-badge">Yeni</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vanilyalı Pasta</h3>
+                        <p class="product-category">Pastalar</p>
+                        <div class="product-price">
+                            <span class="price">95.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cakes" data-price="120.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Meyveli Pasta</h3>
+                        <p class="product-category">Pastalar</p>
+                        <div class="product-price">
+                            <span class="price">120.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <!-- Cookie Products -->
+                <div class="product-card" data-category="cookies" data-price="45.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                        <div class="product-badge">El Yapımı</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Çikolatalı Kurabiye</h3>
+                        <p class="product-category">Kurabiyeler</p>
+                        <div class="product-price">
+                            <span class="price">45.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cookies" data-price="35.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Yulaflı Kurabiye</h3>
+                        <p class="product-category">Kurabiyeler</p>
+                        <div class="product-price">
+                            <span class="price">35.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cookies" data-price="40.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fındıklı Kurabiye</h3>
+                        <p class="product-category">Kurabiyeler</p>
+                        <div class="product-price">
+                            <span class="price">40.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <!-- Muffin Products -->
+                <div class="product-card" data-category="muffins" data-price="25.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-muffin"></i>
+                        </div>
+                        <div class="product-badge">Taze</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Çikolatalı Muffin</h3>
+                        <p class="product-category">Muffin & Cupcake</p>
+                        <div class="product-price">
+                            <span class="price">25.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="muffins" data-price="22.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-muffin"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mavi Bölgeli Muffin</h3>
+                        <p class="product-category">Muffin & Cupcake</p>
+                        <div class="product-price">
+                            <span class="price">22.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="muffins" data-price="28.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-muffin"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vanilyalı Cupcake</h3>
+                        <p class="product-category">Muffin & Cupcake</p>
+                        <div class="product-price">
+                            <span class="price">28.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <!-- Pastry Products -->
+                <div class="product-card" data-category="pastries" data-price="18.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-croissant"></i>
+                        </div>
+                        <div class="product-badge">Fransız</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kruvasan</h3>
+                        <p class="product-category">Hamur İşleri</p>
+                        <div class="product-price">
+                            <span class="price">18.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pastries" data-price="20.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-croissant"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Börek</h3>
+                        <p class="product-category">Hamur İşleri</p>
+                        <div class="product-price">
+                            <span class="price">20.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pastries" data-price="25.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-croissant"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pogaca</h3>
+                        <p class="product-category">Hamur İşleri</p>
+                        <div class="product-price">
+                            <span class="price">25.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <!-- Dessert Products -->
+                <div class="product-card" data-category="desserts" data-price="35.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <div class="product-badge">Geleneksel</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Baklava</h3>
+                        <p class="product-category">Tatlılar</p>
+                        <div class="product-price">
+                            <span class="price">35.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="desserts" data-price="30.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Künefe</h3>
+                        <p class="product-category">Tatlılar</p>
+                        <div class="product-price">
+                            <span class="price">30.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="desserts" data-price="40.00">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dondurma</h3>
+                        <p class="product-category">Tatlılar</p>
+                        <div class="product-price">
+                            <span class="price">40.00 TL</span>
+                        </div>
+                        <button class="add-to-cart-btn">Sipariş Ver</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn next">Sonraki <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kategoriler</h2>
+                <p>Ürünlerimizi kategorilere göre keşfedin</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3>Taze Ekmekler</h3>
+                    <p>Geleneksel tariflerle üretilen çeşitli ekmekler</p>
+                    <div class="category-products">
+                        <span>15+ Çeşit</span>
+                    </div>
+                    <a href="#" class="category-link" data-category="bread">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Pastalar</h3>
+                    <p>Özel günleriniz için özel tasarım pastalar</p>
+                    <div class="category-products">
+                        <span>25+ Çeşit</span>
+                    </div>
+                    <a href="#" class="category-link" data-category="cakes">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3>Kurabiyeler</h3>
+                    <p>El yapımı, doğal malzemelerle üretilen kurabiyeler</p>
+                    <div class="category-products">
+                        <span>20+ Çeşit</span>
+                    </div>
+                    <a href="#" class="category-link" data-category="cookies">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-muffin"></i>
+                    </div>
+                    <h3>Muffin & Cupcake</h3>
+                    <p>Renkli ve lezzetli muffin çeşitleri</p>
+                    <div class="category-products">
+                        <span>12+ Çeşit</span>
+                    </div>
+                    <a href="#" class="category-link" data-category="muffins">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-croissant"></i>
+                    </div>
+                    <h3>Hamur İşleri</h3>
+                    <p>Fransız usulü hamur işleri ve börekler</p>
+                    <div class="category-products">
+                        <span>18+ Çeşit</span>
+                    </div>
+                    <a href="#" class="category-link" data-category="pastries">İncele</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3>Tatlılar</h3>
+                    <p>Geleneksel Türk tatlıları ve dondurma</p>
+                    <div class="category-products">
+                        <span>30+ Çeşit</span>
+                    </div>
+                    <a href="#" class="category-link" data-category="desserts">İncele</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Özel Tekliflerden Haberdar Olun</h2>
+                <p>Yeni ürünlerimiz ve özel kampanyalarımızdan ilk siz haberdar olun.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresinizi girin" required>
+                    <button type="submit" class="btn btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>38 yıllık deneyimimizle geleneksel lezzetleri modern tekniklerle buluşturuyoruz. Her gün taze ve kaliteli ürünler üretiyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="menu.html">Menü</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ürün Kategorileri</h4>
+                    <ul>
+                        <li><a href="products.html?category=bread">Taze Ekmekler</a></li>
+                        <li><a href="products.html?category=cakes">Pastalar</a></li>
+                        <li><a href="products.html?category=cookies">Kurabiyeler</a></li>
+                        <li><a href="products.html?category=muffins">Muffin & Cupcake</a></li>
+                        <li><a href="products.html?category=pastries">Hamur İşleri</a></li>
+                        <li><a href="products.html?category=desserts">Tatlılar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                        <p><i class="fas fa-clock"></i> Her Gün 06:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Pastane. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

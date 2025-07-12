@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Bal Üretimi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-bee"></i> Acboztech</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Hizmetler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">İletişim</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Acboztech Bal Üretimi<br>Arıcılık Mahallesi No: 45<br>Muğla, Türkiye</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 252 123 45 67</p>
+                    <p>+90 532 987 65 43</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com</p>
+                    <p>siparis@acboztech.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cuma: 08:00 - 18:00</p>
+                    <p>Cumartesi: 09:00 - 16:00</p>
+                    <p>Pazar: Kapalı</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Sipariş ve Bilgi Formu</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Konu Seçiniz</option>
+                                <option value="siparis">Bal Siparişi</option>
+                                <option value="toplu-siparis">Toplu Sipariş</option>
+                                <option value="genel">Genel Bilgi</option>
+                                <option value="kalite">Kalite Kontrol</option>
+                                <option value="oneri">Öneri/Şikayet</option>
+                                <option value="isbirligi">İş Birliği</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="product">Ürün Seçimi</label>
+                            <select id="product" name="product">
+                                <option value="">Ürün Seçiniz (Opsiyonel)</option>
+                                <option value="cam-bali">Çam Balı</option>
+                                <option value="kestane-bali">Kestane Balı</option>
+                                <option value="cicek-bali">Çiçek Balı</option>
+                                <option value="organik-bali">Organik Bal</option>
+                                <option value="propolis">Propolis</option>
+                                <option value="ari-sutu">Arı Sütü</option>
+                                <option value="polen">Polen</option>
+                                <option value="hediye-paketi">Hediye Paketi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Miktar (kg/adet)</label>
+                            <input type="number" id="quantity" name="quantity" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sipariş Ver / Mesaj Gönder</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <h2>Üretim Tesisimiz</h2>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Muğla, Türkiye</p>
+                        <p>Arıcılık Mahallesi No: 45</p>
+                    </div>
+                    <div class="directions">
+                        <h3>Nasıl Ulaşırım?</h3>
+                        <div class="direction-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h4>Araç ile</h4>
+                                <p>Muğla merkezden 15 dakika mesafede, işaretli yollarla kolayca ulaşabilirsiniz</p>
+                            </div>
+                        </div>
+                        <div class="direction-item">
+                            <i class="fas fa-bus"></i>
+                            <div>
+                                <h4>Otobüs</h4>
+                                <p>Muğla merkezden kalkan otobüslerle ulaşabilirsiniz</p>
+                            </div>
+                        </div>
+                        <div class="direction-item">
+                            <i class="fas fa-plane"></i>
+                            <div>
+                                <h4>Havalimanı</h4>
+                                <p>Muğla Havalimanı'ndan 30 dakika mesafede</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Balınız gerçekten doğal mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, tüm ballarımız %100 doğaldır. Hiçbir katkı maddesi, koruyucu veya şeker eklenmemiştir. TSE ve organik sertifikalarımızla kalitemizi garanti ediyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kargo ile teslimat yapıyor musunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, Türkiye genelinde güvenli kargo ile teslimat yapıyoruz. 24-48 saat içinde kapınıza teslim ediyoruz. Minimum sipariş tutarı 100 TL'dir.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bal nasıl saklanmalıdır?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Balınızı serin, kuru ve güneş ışığından uzak bir yerde saklayın. Oda sıcaklığında (18-22°C) saklanması idealdir. Buzdolabına koymaya gerek yoktur.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Toplu sipariş için indirim var mı?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, kurumsal müşteriler ve toplu siparişler için özel fiyatlandırma yapıyoruz. 10 kg üzeri siparişlerde %10, 50 kg üzeri siparişlerde %20 indirim uyguluyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bal kristalleşirse ne yapmalıyım?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Balın kristalleşmesi doğal bir süreçtir ve kalitesini etkilemez. Sıvı hale getirmek için 40°C'yi geçmeyen ılık suda bekletebilirsiniz. Mikrodalga kullanmayın.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Üretim tesisinizi ziyaret edebilir miyim?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, önceden randevu alarak üretim tesisimizi ziyaret edebilirsiniz. Arıcılık sürecimizi ve kalite kontrol yöntemlerimizi yakından görebilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <div class="container">
+            <h2 class="section-title">Sosyal Medyada Bizi Takip Edin</h2>
+            <div class="social-grid">
+                <div class="social-card">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Güncel ürünlerimizi ve arıcılık bilgilerini takip edin</p>
+                    <a href="#" class="btn btn-outline">Takip Et</a>
+                </div>
+                <div class="social-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Üretim sürecimizi ve doğal güzelliklerimizi keşfedin</p>
+                    <a href="#" class="btn btn-outline">Takip Et</a>
+                </div>
+                <div class="social-card">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Arıcılık videolarımızı ve eğitim içeriklerimizi izleyin</p>
+                    <a href="#" class="btn btn-outline">Abone Ol</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-bee"></i> Acboztech</h3>
+                    <p>Doğanın en saf armağanı, en kaliteli bal ürünleri.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Muğla, Türkiye</p>
+                    <p><i class="fas fa-phone"></i> +90 252 123 45 67</p>
+                    <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Çalışma Saatleri</h4>
+                    <p>Pazartesi - Cuma: 08:00 - 18:00</p>
+                    <p>Cumartesi: 09:00 - 16:00</p>
+                    <p>Pazar: Kapalı</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Bal Üretimi. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
