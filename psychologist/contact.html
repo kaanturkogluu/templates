@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Psikoloji</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Psikoloji</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin, size yardımcı olmaktan mutluluk duyarız</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 (212) 555 0123</p>
+                    <p>+90 (532) 555 0123</p>
+                    <span class="contact-note">Pazartesi - Cuma: 09:00 - 18:00</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com</p>
+                    <p>randevu@acboztech.com</p>
+                    <span class="contact-note">24 saat içinde yanıt veriyoruz</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Caferağa Mahallesi</p>
+                    <p>Moda Caddesi No: 123</p>
+                    <p>Kadıköy, İstanbul</p>
+                    <span class="contact-note">Metro ve otobüs duraklarına yakın</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                    <p>Cumartesi: 09:00 - 14:00</p>
+                    <p>Pazar: Kapalı</p>
+                    <span class="contact-note">Acil durumlar için 7/24 destek</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Bize Ulaşın</h2>
+                    <p>Randevu almak, bilgi edinmek veya herhangi bir sorunuz için aşağıdaki formu doldurabilirsiniz.</p>
+                    
+                    <form class="form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Hizmet Türü</label>
+                            <select id="service" name="service">
+                                <option value="">Seçiniz</option>
+                                <option value="individual">Bireysel Terapi</option>
+                                <option value="couple">Çift Terapisi</option>
+                                <option value="child">Çocuk ve Ergen Terapisi</option>
+                                <option value="family">Aile Terapisi</option>
+                                <option value="emdr">EMDR Terapisi</option>
+                                <option value="online">Online Terapi</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Lütfen yaşadığınız problemi kısaca açıklayın..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                <a href="#" class="privacy-link">Gizlilik Politikası</a>'nı okudum ve kabul ediyorum *
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Psikoloji ve ruh sağlığı ile ilgili güncellemelerden haberdar olmak istiyorum
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+                
+                <div class="contact-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Randevu Alma Süreci</h3>
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>İletişime Geçin</h4>
+                                    <p>Telefon, e-posta veya form ile bizimle iletişime geçin.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>İlk Görüşme</h4>
+                                    <p>Ücretsiz ilk görüşmede ihtiyaçlarınızı değerlendiririz.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Terapi Planı</h4>
+                                    <p>Size özel terapi planınızı oluştururuz.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Terapi Süreci</h4>
+                                    <p>Düzenli seanslarla iyileşme sürecinizi destekleriz.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Acil Durumlar</h3>
+                        <p>Kendinize veya başkalarına zarar verme düşünceniz varsa, lütfen hemen aşağıdaki numaraları arayın:</p>
+                        <div class="emergency-contacts">
+                            <div class="emergency-item">
+                                <strong>112</strong> - Acil Servis
+                            </div>
+                            <div class="emergency-item">
+                                <strong>155</strong> - Polis
+                            </div>
+                            <div class="emergency-item">
+                                <strong>184</strong> - Sağlık Bakanlığı
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Konumumuz</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map"></i>
+                    <h3>Kadıköy, İstanbul</h3>
+                    <p>Caferağa Mahallesi, Moda Caddesi No: 123</p>
+                    <div class="map-info">
+                        <div class="map-info-item">
+                            <i class="fas fa-subway"></i>
+                            <span>Kadıköy Metro İstasyonu - 5 dk yürüme</span>
+                        </div>
+                        <div class="map-info-item">
+                            <i class="fas fa-bus"></i>
+                            <span>Moda Otobüs Durağı - 2 dk yürüme</span>
+                        </div>
+                        <div class="map-info-item">
+                            <i class="fas fa-parking"></i>
+                            <span>Ücretsiz Otopark Mevcut</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>İlk randevu nasıl alabilirim?</h3>
+                    <p>Telefon, e-posta veya web sitemizdeki iletişim formu ile bizimle iletişime geçebilirsiniz. İlk görüşme ücretsizdir ve yaklaşık 30 dakika sürer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Online terapi seansları nasıl yapılır?</h3>
+                    <p>Güvenli video konferans platformları kullanarak online terapi seansları yapıyoruz. Teknik destek ekibimiz size yardımcı olur.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Ödeme yöntemleri nelerdir?</h3>
+                    <p>Nakit, kredi kartı, banka havalesi ve online ödeme yöntemlerini kabul ediyoruz. Paket seanslarda indirim uygulanmaktadır.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Sigorta kapsamında mısınız?</h3>
+                    <p>Bazı özel sigorta şirketleri ile anlaşmalıyız. Detaylı bilgi için lütfen bizimle iletişime geçin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech Psikoloji</h3>
+                    <p>Ruh sağlığınız için profesyonel destek ve uzman psikolojik danışmanlık hizmetleri.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li><a href="services.html">Bireysel Terapi</a></li>
+                        <li><a href="services.html">Çift Terapisi</a></li>
+                        <li><a href="services.html">Çocuk Terapisi</a></li>
+                        <li><a href="services.html">Aile Terapisi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +90 (212) 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kadıköy, İstanbul</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Psikoloji. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

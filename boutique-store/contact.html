@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Koleksiyon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Teşvikiye Mahallesi<br>Nişantaşı Caddesi No: 123<br>Şişli / İstanbul</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 212 555 0123<br>+90 212 555 0124</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com<br>siparis@acboztech.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cuma: 10:00 - 20:00<br>Cumartesi: 10:00 - 18:00<br>Pazar: 12:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2>Mesaj Gönderin</h2>
+                    <p>Sorularınız veya özel istekleriniz için bizimle iletişime geçin</p>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Adınız" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Soyadınız" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" placeholder="E-posta Adresiniz" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Telefon Numaranız" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Konu Seçiniz</option>
+                                <option value="general">Genel Bilgi</option>
+                                <option value="order">Sipariş Takibi</option>
+                                <option value="appointment">Randevu</option>
+                                <option value="complaint">Şikayet/Öneri</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mesajınız" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Mesaj Gönder</button>
+                    </form>
+                </div>
+                <div class="map-section">
+                    <h2>Mağazamızı Ziyaret Edin</h2>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Harita burada görüntülenecek</p>
+                        </div>
+                    </div>
+                    <div class="location-info">
+                        <h3>Nasıl Ulaşırım?</h3>
+                        <div class="transport-info">
+                            <div class="transport-item">
+                                <i class="fas fa-subway"></i>
+                                <div>
+                                    <h4>Metro</h4>
+                                    <p>M2 Osmanbey Metro İstasyonu'ndan 5 dakika yürüme mesafesi</p>
+                                </div>
+                            </div>
+                            <div class="transport-item">
+                                <i class="fas fa-bus"></i>
+                                <div>
+                                    <h4>Otobüs</h4>
+                                    <p>54, 74, 129 numaralı otobüslerle Teşvikiye durağında inin</p>
+                                </div>
+                            </div>
+                            <div class="transport-item">
+                                <i class="fas fa-car"></i>
+                                <div>
+                                    <h4>Araç</h4>
+                                    <p>Mağaza önünde ücretsiz otopark hizmeti sunuyoruz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sık Sorulan Sorular</h2>
+                <p>Müşterilerimizin en çok merak ettiği konular</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Özel tasarım kıyafetler ne kadar sürede hazır olur?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Özel tasarım kıyafetleriniz, sipariş tarihinden itibaren 2-3 hafta içinde hazır olur. Acil durumlar için hızlı teslimat seçeneği de sunuyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Değişim ve iade koşulları nelerdir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>14 gün içinde ücretsiz değişim ve iade hakkı sunuyoruz. Kıyafet orijinal durumunda ve etiketi çıkarılmamış olmalıdır.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Stil danışmanlığı hizmeti nasıl çalışır?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Önce randevu alırsınız, sonra stil danışmanımız sizinle buluşur. Kişisel analiz yapılır ve size uygun öneriler sunulur.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Online sipariş verebilir miyim?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, web sitemizden online sipariş verebilirsiniz. Güvenli ödeme sistemi ve hızlı teslimat garantisi sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-media-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sosyal Medyada Takip Edin</h2>
+                <p>En yeni koleksiyonlar ve moda ipuçları için bizi takip edin</p>
+            </div>
+            <div class="social-grid">
+                <div class="social-card">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Günlük paylaşımlar ve canlı yayınlar</p>
+                    <a href="#" class="social-link">@acboztech</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Etkinlikler ve özel kampanyalar</p>
+                    <a href="#" class="social-link">Acboztech Boutique</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>YouTube</h3>
+                    <p>Stil ipuçları ve koleksiyon tanıtımları</p>
+                    <a href="#" class="social-link">Acboztech Channel</a>
+                </div>
+                <div class="social-card">
+                    <div class="social-icon">
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                    <h3>Pinterest</h3>
+                    <p>Moda ilhamları ve trendler</p>
+                    <a href="#" class="social-link">Acboztech Style</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Zarafetin ve tarzın buluştuğu adres. Özel tasarım koleksiyonlarımızla tarzınızı yansıtın.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +90 212 555 0123</li>
+                        <li><i class="fas fa-envelope"></i> info@acboztech.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nişantaşı, İstanbul</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Çalışma Saatleri</h4>
+                    <ul>
+                        <li>Pazartesi - Cuma: 10:00 - 20:00</li>
+                        <li>Cumartesi: 10:00 - 18:00</li>
+                        <li>Pazar: 12:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

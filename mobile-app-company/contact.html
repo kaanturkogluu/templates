@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Projeniz hakkında konuşmak için bizimle iletişime geçin</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 212 555 0123</p>
+                    <p>+90 532 555 0123</p>
+                    <span class="contact-note">Pazartesi - Cuma: 09:00 - 18:00</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com</p>
+                    <p>proje@acboztech.com</p>
+                    <span class="contact-note">24 saat içinde yanıt alacaksınız</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Levent Mahallesi, Büyükdere Caddesi</p>
+                    <p>No: 123, Kat: 5, Beşiktaş</p>
+                    <span class="contact-note">İstanbul, Türkiye</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                    <p>Cumartesi: 10:00 - 14:00</p>
+                    <span class="contact-note">Pazar günleri kapalı</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Bize Ulaşın</h2>
+                    <p>Projeniz hakkında detaylı bilgi almak için formu doldurun. En kısa sürede size dönüş yapacağız.</p>
+                    
+                    <form class="form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Şirket Adı</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Hizmet Türü</label>
+                            <select id="service" name="service">
+                                <option value="">Seçiniz</option>
+                                <option value="ios">iOS Uygulama Geliştirme</option>
+                                <option value="android">Android Uygulama Geliştirme</option>
+                                <option value="cross-platform">Cross-Platform Geliştirme</option>
+                                <option value="ui-ux">UI/UX Tasarım</option>
+                                <option value="backend">Backend Geliştirme</option>
+                                <option value="maintenance">Bakım & Destek</option>
+                                <option value="consulting">Danışmanlık</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Bütçe Aralığı</label>
+                            <select id="budget" name="budget">
+                                <option value="">Seçiniz</option>
+                                <option value="10k-25k">10.000 - 25.000 TL</option>
+                                <option value="25k-50k">25.000 - 50.000 TL</option>
+                                <option value="50k-100k">50.000 - 100.000 TL</option>
+                                <option value="100k+">100.000 TL+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">Proje Süresi</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Seçiniz</option>
+                                <option value="1-2-months">1-2 Ay</option>
+                                <option value="2-4-months">2-4 Ay</option>
+                                <option value="4-6-months">4-6 Ay</option>
+                                <option value="6+months">6+ Ay</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Proje Detayları *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Projeniz hakkında detaylı bilgi verin..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contact-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Hızlı İletişim</h3>
+                        <p>Acil durumlar için WhatsApp üzerinden anında iletişime geçebilirsiniz.</p>
+                        <a href="https://wa.me/905325550123" class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp'tan Yazın
+                        </a>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Ücretsiz Danışmanlık</h3>
+                        <p>Projeniz için ücretsiz teknik danışmanlık alın. 30 dakikalık görüşme ile projenizi değerlendirelim.</p>
+                        <a href="#" class="btn btn-outline">Randevu Al</a>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                Twitter
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                                YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Ofisimizi Ziyaret Edin</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Levent, İstanbul</h3>
+                    <p>Büyükdere Caddesi, No: 123, Kat: 5</p>
+                    <p>Beşiktaş, İstanbul, Türkiye</p>
+                    <a href="https://maps.google.com" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-directions"></i>
+                        Yol Tarifi Al
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bir mobil uygulama geliştirme süreci ne kadar sürer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Uygulama geliştirme süreci, projenin karmaşıklığına ve özelliklerine göre değişir. Basit bir uygulama 1-2 ay, orta seviye bir uygulama 2-4 ay, karmaşık bir uygulama ise 4-6 ay sürebilir.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Hangi platformlar için uygulama geliştiriyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>iOS (iPhone/iPad), Android ve Cross-platform (React Native, Flutter) uygulamalar geliştiriyoruz. İhtiyacınıza göre en uygun platformu öneriyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Uygulama yayınlandıktan sonra destek sağlıyor musunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, uygulamanızın yayınlanmasından sonra da tam destek sağlıyoruz. Bakım, güncelleme, hata düzeltme ve yeni özellik geliştirme hizmetleri sunuyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proje maliyetini nasıl hesaplıyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Proje maliyeti, özellik sayısı, tasarım karmaşıklığı, geliştirme süresi ve platform sayısına göre belirlenir. Ücretsiz danışmanlık sonrası detaylı fiyat teklifi sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Mobil uygulama geliştirme konusunda uzmanlaşmış, yenilikçi çözümler sunan teknoloji şirketi.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="services.html">iOS Uygulama Geliştirme</a></li>
+                        <li><a href="services.html">Android Uygulama Geliştirme</a></li>
+                        <li><a href="services.html">Cross-Platform Geliştirme</a></li>
+                        <li><a href="services.html">UI/UX Tasarım</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Şirket</h4>
+                    <ul>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="about.html">Ekibimiz</a></li>
+                        <li><a href="contact.html">Kariyer</a></li>
+                        <li><a href="contact.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +90 212 555 0123</li>
+                        <li><i class="fas fa-envelope"></i> info@acboztech.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

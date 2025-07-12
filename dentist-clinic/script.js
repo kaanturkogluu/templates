@@ -27,15 +27,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add scroll effect to header
+// Add scroll effect to header - Updated for dental theme
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (window.scrollY > 100) {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
-        header.style.backdropFilter = 'blur(10px)';
+        header.classList.add('scrolled');
     } else {
-        header.style.background = '#fff';
-        header.style.backdropFilter = 'none';
+        header.classList.remove('scrolled');
     }
 });
 
@@ -82,7 +80,7 @@ document.querySelectorAll('.btn').forEach(button => {
     });
 });
 
-// Simple counter animation for statistics
+// Dental-themed counter animation for statistics
 function animateCounter(element, target, duration = 2000) {
     let start = 0;
     const increment = target / (duration / 16);
@@ -98,6 +96,15 @@ function animateCounter(element, target, duration = 2000) {
     }, 16);
 }
 
+// Dental-themed floating animation for icons
+function addFloatingAnimation() {
+    const icons = document.querySelectorAll('.feature-icon, .service-icon');
+    icons.forEach((icon, index) => {
+        icon.style.animationDelay = `${index * 0.2}s`;
+        icon.classList.add('floating');
+    });
+}
+
 // Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
@@ -109,17 +116,58 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
+            
+            // Add special animation for dental-themed elements
+            if (entry.target.classList.contains('feature-card') || 
+                entry.target.classList.contains('service-card')) {
+                entry.target.style.borderTop = '4px solid';
+                entry.target.style.borderImage = 'linear-gradient(45deg, #2196f3, #4caf50, #81c784) 1';
+            }
         }
     });
 }, observerOptions);
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.feature-card, .service-card, .testimonial-card');
+    const animatedElements = document.querySelectorAll('.feature-card, .service-card, .testimonial-card, .value-card');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
-}); 
+    
+    // Add floating animation to icons
+    addFloatingAnimation();
+    
+    // Add pulse animation to hero icon
+    const heroIcon = document.querySelector('.hero-placeholder i');
+    if (heroIcon) {
+        heroIcon.style.animation = 'pulse 2s ease-in-out infinite';
+    }
+    
+    // Add gradient text animation
+    const gradientTexts = document.querySelectorAll('.gradient-text');
+    gradientTexts.forEach(text => {
+        text.style.animation = 'gradientShift 3s ease infinite';
+    });
+});
+
+// Emergency contact highlight
+function highlightEmergencyContact() {
+    const emergencyPhone = document.querySelector('.emergency-phone');
+    if (emergencyPhone) {
+        emergencyPhone.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1)';
+            this.style.boxShadow = '0 10px 30px rgba(244, 67, 54, 0.4)';
+        });
+        
+        emergencyPhone.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+            this.style.boxShadow = '0 5px 15px rgba(244, 67, 54, 0.2)';
+        });
+    }
+}
+
+// Initialize emergency contact highlight
+document.addEventListener('DOMContentLoaded', highlightEmergencyContact); 

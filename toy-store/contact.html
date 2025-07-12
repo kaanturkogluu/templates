@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Çocukların Hayal Dünyası</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin, size yardımcı olmaktan mutluluk duyarız</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Bağdat Caddesi No:456<br>Kadıköy / İstanbul</p>
+                    <span class="contact-detail">Ana Mağaza</span>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>+90 216 555 0123<br>+90 216 555 0124</p>
+                    <span class="contact-detail">7/24 Hizmet</span>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com<br>destek@acboztech.com</p>
+                    <span class="contact-detail">Hızlı Yanıt</span>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cumartesi<br>09:00 - 21:00</p>
+                    <span class="contact-detail">Pazar: 10:00 - 18:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-content">
+                    <h2>Mesaj Gönderin</h2>
+                    <p>Sorularınız, önerileriniz veya şikayetleriniz için aşağıdaki formu kullanabilirsiniz. En kısa sürede size dönüş yapacağız.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Konu Seçiniz</option>
+                                <option value="siparis">Sipariş Hakkında</option>
+                                <option value="urun">Ürün Bilgisi</option>
+                                <option value="iade">İade/Değişim</option>
+                                <option value="oneri">Öneri/Şikayet</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Bültenimize abone olmak istiyorum
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+                
+                <div class="form-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Hızlı İletişim</h3>
+                        <div class="quick-contact">
+                            <div class="quick-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Telefon</h4>
+                                    <p>+90 212 555 0123</p>
+                                </div>
+                            </div>
+                            <div class="quick-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>E-posta</h4>
+                                    <p>info@acboztech.com</p>
+                                </div>
+                            </div>
+                            <div class="quick-item">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <h4>Canlı Destek</h4>
+                                    <p>Çevrimiçi sohbet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Mağazalarımız</h2>
+            <div class="stores-grid">
+                <div class="store-card">
+                    <div class="store-info">
+                        <h3>Ana Mağaza - Kadıköy</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Bağdat Caddesi No:456, Kadıköy/İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 216 555 0123</p>
+                        <p><i class="fas fa-clock"></i> Pazartesi - Cumartesi: 09:00 - 21:00</p>
+                        <a href="#" class="btn btn-secondary">Yol Tarifi</a>
+                    </div>
+                </div>
+                
+                <div class="store-card">
+                    <div class="store-info">
+                        <h3>Beşiktaş Şubesi</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Beşiktaş Meydanı No:78, Beşiktaş/İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 212 555 0123</p>
+                        <p><i class="fas fa-clock"></i> Pazartesi - Cumartesi: 09:00 - 21:00</p>
+                        <a href="#" class="btn btn-secondary">Yol Tarifi</a>
+                    </div>
+                </div>
+                
+                <div class="store-card">
+                    <div class="store-info">
+                        <h3>İzmir Şubesi</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Alsancak Mahallesi No:89, Konak/İzmir</p>
+                        <p><i class="fas fa-phone"></i> +90 232 555 0123</p>
+                        <p><i class="fas fa-clock"></i> Pazartesi - Cumartesi: 09:00 - 21:00</p>
+                        <a href="#" class="btn btn-secondary">Yol Tarifi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kargo süresi ne kadar?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>İstanbul içi aynı gün, Türkiye geneli 24 saat içinde teslimat yapıyoruz. 150 TL üzeri alışverişlerde kargo ücretsizdir. MNG Kargo, Yurtiçi Kargo ve Aras Kargo ile güvenli teslimat sağlıyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>İade koşulları nelerdir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>14 gün içinde koşulsuz iade hakkınız bulunmaktadır. Açılmamış ürünler için tam iade, kullanılmış ürünler için değerlendirme yapılır.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Hangi ödeme yöntemlerini kabul ediyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kredi kartı, banka kartı, havale/EFT ve kapıda ödeme seçeneklerini sunuyoruz. 12 taksit imkanı mevcuttur. Visa, Mastercard, American Express kartları kabul ediyoruz. Ayrıca PayTR, iyzico gibi güvenli ödeme sistemleri kullanıyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Oyuncaklar güvenli mi?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tüm oyuncaklarımız CE sertifikalı ve çocuk güvenliği standartlarına uygun olarak seçilmiştir. Güvenlik bizim önceliğimizdir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Çocukların hayal dünyasını zenginleştiren oyuncaklar ile 20 yıldır hizmetinizdeyiz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="services.html">0-2 Yaş</a></li>
+                        <li><a href="services.html">3-5 Yaş</a></li>
+                        <li><a href="services.html">6-8 Yaş</a></li>
+                        <li><a href="services.html">9-12 Yaş</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Bağdat Cad. No:456, İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 216 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

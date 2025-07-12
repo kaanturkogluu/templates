@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Çocukların Hayal Dünyası</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Ürünlerimiz</h1>
+            <p>15.000+ oyuncak çeşidi ile çocuklarınızın hayal dünyasını zenginleştirin</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="age-filter">Yaş Grubu:</label>
+                    <select id="age-filter" class="filter-select">
+                        <option value="">Tüm Yaşlar</option>
+                        <option value="0-2">0-2 Yaş</option>
+                        <option value="3-5">3-5 Yaş</option>
+                        <option value="6-8">6-8 Yaş</option>
+                        <option value="9-12">9-12 Yaş</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="brand-filter">Marka:</label>
+                    <select id="brand-filter" class="filter-select">
+                        <option value="">Tüm Markalar</option>
+                        <option value="lego">LEGO</option>
+                        <option value="fisher-price">Fisher-Price</option>
+                        <option value="mattel">Mattel</option>
+                        <option value="hasbro">Hasbro</option>
+                        <option value="ravensburger">Ravensburger</option>
+                        <option value="melissa-doug">Melissa & Doug</option>
+                        <option value="jellycat">Jellycat</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Fiyat Aralığı:</label>
+                    <select id="price-filter" class="filter-select">
+                        <option value="">Tüm Fiyatlar</option>
+                        <option value="0-100">0-100 TL</option>
+                        <option value="100-500">100-500 TL</option>
+                        <option value="500-1000">500-1000 TL</option>
+                        <option value="1000+">1000+ TL</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-filter">Sıralama:</label>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="popular">En Popüler</option>
+                        <option value="price-low">Fiyat (Düşük-Yüksek)</option>
+                        <option value="price-high">Fiyat (Yüksek-Düşük)</option>
+                        <option value="new">En Yeni</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- 0-2 Yaş Ürünleri -->
+                <div class="product-item" data-age="0-2" data-brand="fisher-price" data-price="150">
+                    <div class="product-image">
+                        <div class="product-emoji">🍼</div>
+                        <div class="product-badge">Yeni</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Fisher-Price Çıngırak Seti</h3>
+                        <p>Bebekler için güvenli ve eğitici çıngırak seti</p>
+                        <div class="product-meta">
+                            <span class="age-badge">0-2 yaş</span>
+                            <span class="brand-badge">Fisher-Price</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺89.90</span>
+                            <span class="old-price">₺119.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="0-2" data-brand="jellycat" data-price="1300">
+                    <div class="product-image">
+                        <div class="product-emoji">🐰</div>
+                        <div class="product-badge">Popüler</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Jellycat Bashful Bunny</h3>
+                        <p>Yumuşak ve güvenli peluş tavşan oyuncak</p>
+                        <div class="product-meta">
+                            <span class="age-badge">0-2 yaş</span>
+                            <span class="brand-badge">Jellycat</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺1.299.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="0-2" data-brand="skip-hop" data-price="450">
+                    <div class="product-image">
+                        <div class="product-emoji">🎪</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Skip Hop Bebek Aktivite Matı</h3>
+                        <p>Gelişimsel aktiviteler için bebek matı</p>
+                        <div class="product-meta">
+                            <span class="age-badge">0-2 yaş</span>
+                            <span class="brand-badge">Skip Hop</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺449.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3-5 Yaş Ürünleri -->
+                <div class="product-item" data-age="3-5" data-brand="melissa-doug" data-price="450">
+                    <div class="product-image">
+                        <div class="product-emoji">🚗</div>
+                        <div class="product-badge">İndirim</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Melissa & Doug Ahşap Araba Seti</h3>
+                        <p>Doğal ahşap oyuncak araba koleksiyonu (4 adet)</p>
+                        <div class="product-meta">
+                            <span class="age-badge">3-5 yaş</span>
+                            <span class="brand-badge">Melissa & Doug</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺449.90</span>
+                            <span class="old-price">₺599.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="3-5" data-brand="ravensburger" data-price="190">
+                    <div class="product-image">
+                        <div class="product-emoji">🧩</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Ravensburger Puzzle 24 Parça</h3>
+                        <p>Hayvanlar alemi temalı eğitici puzzle</p>
+                        <div class="product-meta">
+                            <span class="age-badge">3-5 yaş</span>
+                            <span class="brand-badge">Ravensburger</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺189.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="3-5" data-brand="mattel" data-price="350">
+                    <div class="product-image">
+                        <div class="product-emoji">🏎️</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Hot Wheels Araba Seti</h3>
+                        <p>10 adetlik Hot Wheels oyuncak araba koleksiyonu</p>
+                        <div class="product-meta">
+                            <span class="age-badge">3-5 yaş</span>
+                            <span class="brand-badge">Mattel</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺349.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6-8 Yaş Ürünleri -->
+                <div class="product-item" data-age="6-8" data-brand="lego" data-price="1200">
+                    <div class="product-image">
+                        <div class="product-emoji">🏗️</div>
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>LEGO City Polis Karakolu</h3>
+                        <p>743 parçalık polis karakolu yapı seti</p>
+                        <div class="product-meta">
+                            <span class="age-badge">6-8 yaş</span>
+                            <span class="brand-badge">LEGO</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺1.199.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="6-8" data-brand="hasbro" data-price="280">
+                    <div class="product-image">
+                        <div class="product-emoji">🎲</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Monopoly Junior</h3>
+                        <p>Çocuklar için özel tasarlanmış Monopoly oyunu</p>
+                        <div class="product-meta">
+                            <span class="age-badge">6-8 yaş</span>
+                            <span class="brand-badge">Hasbro</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺279.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="6-8" data-brand="thames-kosmos" data-price="850">
+                    <div class="product-image">
+                        <div class="product-emoji">🔬</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Thames & Kosmos Kimya Seti</h3>
+                        <p>Çocuklar için güvenli kimya deney seti</p>
+                        <div class="product-meta">
+                            <span class="age-badge">6-8 yaş</span>
+                            <span class="brand-badge">Thames & Kosmos</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺849.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9-12 Yaş Ürünleri -->
+                <div class="product-item" data-age="9-12" data-brand="lego" data-price="5000">
+                    <div class="product-image">
+                        <div class="product-emoji">🤖</div>
+                        <div class="product-badge">Premium</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>LEGO Mindstorms Robot Inventor</h3>
+                        <p>Çocuklar için robotik ve kodlama eğitimi seti</p>
+                        <div class="product-meta">
+                            <span class="age-badge">9-12 yaş</span>
+                            <span class="brand-badge">LEGO</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺4.999.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="9-12" data-brand="ravensburger" data-price="320">
+                    <div class="product-image">
+                        <div class="product-emoji">🧩</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Ravensburger Puzzle 1000 Parça</h3>
+                        <p>Manzara temalı 1000 parçalık puzzle</p>
+                        <div class="product-meta">
+                            <span class="age-badge">9-12 yaş</span>
+                            <span class="brand-badge">Ravensburger</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺319.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="9-12" data-brand="funko" data-price="180">
+                    <div class="product-image">
+                        <div class="product-emoji">🎭</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>Funko Pop Marvel Koleksiyonu</h3>
+                        <p>Marvel karakterleri Funko Pop seti (3 adet)</p>
+                        <div class="product-meta">
+                            <span class="age-badge">9-12 yaş</span>
+                            <span class="brand-badge">Funko</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺179.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item" data-age="9-12" data-brand="thinkfun" data-price="420">
+                    <div class="product-image">
+                        <div class="product-emoji">🧠</div>
+                    </div>
+                    <div class="product-details">
+                        <h3>ThinkFun Rush Hour</h3>
+                        <p>Strateji ve zeka geliştiren oyun</p>
+                        <div class="product-meta">
+                            <span class="age-badge">9-12 yaş</span>
+                            <span class="brand-badge">ThinkFun</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₺419.90</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Sepete Ekle</button>
+                            <button class="btn btn-secondary">İncele</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">4</button>
+                <button class="pagination-btn">5</button>
+                <button class="pagination-btn">Sonraki →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2 class="section-title">Öne Çıkan Kategoriler</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🎮</div>
+                    <h3>Elektronik Oyuncaklar</h3>
+                    <p>VTech, Osmo ve diğer eğitici elektronik oyuncaklar</p>
+                    <a href="#" class="category-link">Keşfet →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Sanat ve El Sanatları</h3>
+                    <p>Crayola, Art Attack ve yaratıcılık setleri</p>
+                    <a href="#" class="category-link">Keşfet →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🏃</div>
+                    <h3>Spor ve Aktif Oyunlar</h3>
+                    <p>Chicco, Hape ve fiziksel gelişim oyuncakları</p>
+                    <a href="#" class="category-link">Keşfet →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3>Eğitici Materyaller</h3>
+                    <p>Montessori, STEM ve öğrenme setleri</p>
+                    <a href="#" class="category-link">Keşfet →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Yeni Ürünlerden Haberdar Olun</h2>
+                <p>En yeni oyuncaklar ve özel indirimler için bültenimize abone olun.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresiniz" required>
+                    <button type="submit" class="btn btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Çocukların hayal dünyasını zenginleştiren oyuncaklar ile 25 yıldır hizmetinizdeyiz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategoriler</h4>
+                    <ul>
+                        <li><a href="products.html">0-2 Yaş</a></li>
+                        <li><a href="products.html">3-5 Yaş</a></li>
+                        <li><a href="products.html">6-8 Yaş</a></li>
+                        <li><a href="products.html">9-12 Yaş</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Bağdat Cad. No:456, İstanbul</p>
+                        <p><i class="fas fa-phone"></i> +90 216 555 0123</p>
+                        <p><i class="fas fa-envelope"></i> info@acboztech.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

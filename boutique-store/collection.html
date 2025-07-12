@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksiyon - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link active">Koleksiyon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Koleksiyonumuz</h1>
+            <p>Özel tasarım parçalarımızı keşfedin</p>
+        </div>
+    </section>
+
+    <!-- Collection Filter -->
+    <section class="collection-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="category-filter">Kategori:</label>
+                    <select id="category-filter">
+                        <option value="all">Tümü</option>
+                        <option value="dresses">Elbiseler</option>
+                        <option value="tops">Üst Giyim</option>
+                        <option value="bottoms">Alt Giyim</option>
+                        <option value="outerwear">Dış Giyim</option>
+                        <option value="accessories">Aksesuarlar</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Fiyat:</label>
+                    <select id="price-filter">
+                        <option value="all">Tümü</option>
+                        <option value="0-200">₺0 - ₺200</option>
+                        <option value="200-500">₺200 - ₺500</option>
+                        <option value="500-1000">₺500 - ₺1000</option>
+                        <option value="1000+">₺1000+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="size-filter">Beden:</label>
+                    <select id="size-filter">
+                        <option value="all">Tümü</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-filter">Sırala:</label>
+                    <select id="sort-filter">
+                        <option value="newest">En Yeni</option>
+                        <option value="price-low">Fiyat (Düşük-Yüksek)</option>
+                        <option value="price-high">Fiyat (Yüksek-Düşük)</option>
+                        <option value="name">İsim</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Ürün 1 -->
+                <div class="product-card" data-category="dresses" data-price="450" data-size="s,m,l">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=1" class="view-detail">Detayları Gör</a>
+                        </div>
+                        <div class="product-badge">Yeni</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Zarif Yaz Elbisesi</h3>
+                        <p class="product-description">Hafif ve nefes alabilir kumaştan üretilen şık yaz elbisesi</p>
+                        <div class="product-meta">
+                            <span class="product-price">₺450</span>
+                            <span class="product-sizes">S, M, L</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Sepete Ekle</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 2 -->
+                <div class="product-card" data-category="tops" data-price="280" data-size="xs,s,m,l,xl">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=2" class="view-detail">Detayları Gör</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bluz Tasarım</h3>
+                        <p class="product-description">Özel tasarım bluz, günlük kullanım için ideal</p>
+                        <div class="product-meta">
+                            <span class="product-price">₺280</span>
+                            <span class="product-sizes">XS, S, M, L, XL</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Sepete Ekle</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 3 -->
+                <div class="product-card" data-category="bottoms" data-price="320" data-size="s,m,l,xl">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=3" class="view-detail">Detayları Gör</a>
+                        </div>
+                        <div class="product-badge sale">%20 İndirim</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Yüksek Bel Pantolon</h3>
+                        <p class="product-description">Şık ve rahat yüksek bel pantolon</p>
+                        <div class="product-meta">
+                            <span class="product-price"><span class="old-price">₺400</span> ₺320</span>
+                            <span class="product-sizes">S, M, L, XL</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Sepete Ekle</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 4 -->
+                <div class="product-card" data-category="outerwear" data-price="650" data-size="m,l,xl">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=4" class="view-detail">Detayları Gör</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blazer Ceket</h3>
+                        <p class="product-description">Profesyonel görünüm için ideal blazer ceket</p>
+                        <div class="product-meta">
+                            <span class="product-price">₺650</span>
+                            <span class="product-sizes">M, L, XL</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Sepete Ekle</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 5 -->
+                <div class="product-card" data-category="accessories" data-price="120" data-size="one-size">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=5" class="view-detail">Detayları Gör</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Zarif Kolye</h3>
+                        <p class="product-description">El yapımı zarif kolye tasarımı</p>
+                        <div class="product-meta">
+                            <span class="product-price">₺120</span>
+                            <span class="product-sizes">Tek Beden</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Sepete Ekle</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 6 -->
+                <div class="product-card" data-category="dresses" data-price="780" data-size="s,m,l">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=6" class="view-detail">Detayları Gör</a>
+                        </div>
+                        <div class="product-badge">Özel</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Akşam Elbisesi</h3>
+                        <p class="product-description">Özel günler için tasarlanan zarif akşam elbisesi</p>
+                        <div class="product-meta">
+                            <span class="product-price">₺780</span>
+                            <span class="product-sizes">S, M, L</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Sepete Ekle</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 7 -->
+                <div class="product-card" data-category="tops" data-price="350" data-size="xs,s,m,l">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=7" class="view-detail">Detayları Gör</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>İpek Bluz</h3>
+                        <p class="product-description">Doğal ipek kumaştan üretilen şık bluz</p>
+                        <div class="product-meta">
+                            <span class="product-price">₺350</span>
+                            <span class="product-sizes">XS, S, M, L</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Sepete Ekle</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün 8 -->
+                <div class="product-card" data-category="accessories" data-price="85" data-size="one-size">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=8" class="view-detail">Detayları Gör</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Deri Çanta</h3>
+                        <p class="product-description">El yapımı deri çanta, günlük kullanım için ideal</p>
+                        <div class="product-meta">
+                            <span class="product-price">₺85</span>
+                            <span class="product-sizes">Tek Beden</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Sepete Ekle</button>
+                            <button class="wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn" id="load-more-btn">Daha Fazla Yükle</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Yeni Koleksiyonlardan Haberdar Olun</h2>
+                <p>E-posta listemize katılın ve özel indirimlerden ilk siz haberdar olun</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-posta adresiniz" required>
+                    <button type="submit">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Zarafetin ve tarzın buluştuğu adres. Özel tasarım koleksiyonlarımızla tarzınızı yansıtın.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="collection.html">Koleksiyon</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +90 212 555 0123</li>
+                        <li><i class="fas fa-envelope"></i> info@acboztech.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nişantaşı, İstanbul</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Çalışma Saatleri</h4>
+                    <ul>
+                        <li>Pazartesi - Cuma: 10:00 - 20:00</li>
+                        <li>Cumartesi: 10:00 - 18:00</li>
+                        <li>Pazar: 12:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

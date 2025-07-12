@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarif Yaz Elbisesi - Acboztech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Koleksiyon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Ana Sayfa</a>
+                <span class="separator">/</span>
+                <a href="collection.html">Koleksiyon</a>
+                <span class="separator">/</span>
+                <span class="current">Zarif Yaz Elbisesi</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-content">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <div class="image-placeholder large"></div>
+                        <div class="product-badge">Yeni</div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <div class="image-placeholder small"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="image-placeholder small"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="image-placeholder small"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="image-placeholder small"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-detail">
+                    <h1>Zarif Yaz Elbisesi</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">(12 değerlendirme)</span>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">₺450</span>
+                        <span class="old-price">₺550</span>
+                        <span class="discount">%18 İndirim</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Hafif ve nefes alabilir kumaştan üretilen şık yaz elbisesi. Özel tasarım detayları ve zarif kesimi ile her ortamda şık görünüm sağlar. Pamuk ve polyester karışımı kumaştan üretilmiştir.</p>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="size-selection">
+                        <h3>Beden Seçin</h3>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="s">S</button>
+                            <button class="size-btn active" data-size="m">M</button>
+                            <button class="size-btn" data-size="l">L</button>
+                        </div>
+                        <div class="size-guide">
+                            <a href="#" class="size-guide-link">Beden Rehberi</a>
+                        </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="color-selection">
+                        <h3>Renk Seçin</h3>
+                        <div class="color-options">
+                            <button class="color-btn active" data-color="navy" style="background-color: #1e3a8a;"></button>
+                            <button class="color-btn" data-color="pink" style="background-color: #ec4899;"></button>
+                            <button class="color-btn" data-color="white" style="background-color: #ffffff; border: 1px solid #ddd;"></button>
+                        </div>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div class="quantity-selection">
+                        <h3>Adet</h3>
+                        <div class="quantity-controls">
+                            <button class="qty-btn" id="decrease-qty">-</button>
+                            <input type="number" value="1" min="1" max="10" id="quantity-input">
+                            <button class="qty-btn" id="increase-qty">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart -->
+                    <div class="add-to-cart-section">
+                        <button class="add-to-cart-btn large">
+                            <i class="fas fa-shopping-cart"></i>
+                            Sepete Ekle
+                        </button>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                            Favorilere Ekle
+                        </button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Ücretsiz Kargo</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <span>14 Gün İade</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Güvenli Ödeme</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Açıklama</button>
+                    <button class="tab-btn" data-tab="specifications">Özellikler</button>
+                    <button class="tab-btn" data-tab="reviews">Yorumlar</button>
+                    <button class="tab-btn" data-tab="shipping">Kargo & İade</button>
+                </div>
+
+                <div class="tab-content">
+                    <!-- Description Tab -->
+                    <div class="tab-panel active" id="description">
+                        <h3>Ürün Açıklaması</h3>
+                        <p>Bu zarif yaz elbisesi, özel tasarım detayları ve kaliteli kumaş seçimi ile üretilmiştir. Hafif ve nefes alabilir yapısı sayesinde yaz aylarında rahatlıkla kullanabilirsiniz.</p>
+                        
+                        <h4>Öne Çıkan Özellikler:</h4>
+                        <ul>
+                            <li>%70 Pamuk, %30 Polyester karışımı</li>
+                            <li>Hafif ve nefes alabilir kumaş</li>
+                            <li>Özel tasarım detayları</li>
+                            <li>Zarif kesim</li>
+                            <li>Günlük kullanıma uygun</li>
+                        </ul>
+
+                        <h4>Bakım Talimatları:</h4>
+                        <ul>
+                            <li>30°C'de yıkayın</li>
+                            <li>Ütüleme sıcaklığı: Orta</li>
+                            <li>Kuru temizleme önerilmez</li>
+                            <li>Beyazlatıcı kullanmayın</li>
+                        </ul>
+                    </div>
+
+                    <!-- Specifications Tab -->
+                    <div class="tab-panel" id="specifications">
+                        <h3>Teknik Özellikler</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Kumaş:</span>
+                                <span class="spec-value">%70 Pamuk, %30 Polyester</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Ağırlık:</span>
+                                <span class="spec-value">180 gr/m²</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Uzunluk:</span>
+                                <span class="spec-value">Mid-calf (Orta baldır)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Siluet:</span>
+                                <span class="spec-value">A-line</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Yaka:</span>
+                                <span class="spec-value">V-yaka</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cep:</span>
+                                <span class="spec-value">Yan cepler</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Üretim:</span>
+                                <span class="spec-value">Türkiye</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Model:</span>
+                                <span class="spec-value">1.70 boy, 36 beden</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Tab -->
+                    <div class="tab-panel" id="reviews">
+                        <h3>Müşteri Yorumları</h3>
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-number">4.8</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="total-reviews">12 yorum</div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <h4>Ayşe Y.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">2 gün önce</span>
+                                </div>
+                                <p class="review-text">Harika bir elbise! Kumaşı çok kaliteli ve rahat. Tam beklediğim gibi geldi. Kesinlikle tavsiye ederim.</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <h4>Fatma D.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">1 hafta önce</span>
+                                </div>
+                                <p class="review-text">Güzel elbise ama biraz büyük geldi. Bir beden küçük almanızı öneririm.</p>
+                            </div>
+                        </div>
+
+                        <button class="write-review-btn">Yorum Yaz</button>
+                    </div>
+
+                    <!-- Shipping Tab -->
+                    <div class="tab-panel" id="shipping">
+                        <h3>Kargo ve İade Bilgileri</h3>
+                        
+                        <div class="shipping-info">
+                            <h4>Kargo Bilgileri</h4>
+                            <ul>
+                                <li><strong>Ücretsiz Kargo:</strong> ₺200 üzeri alışverişlerde</li>
+                                <li><strong>Standart Kargo:</strong> 1-3 iş günü (₺30)</li>
+                                <li><strong>Hızlı Kargo:</strong> Aynı gün teslimat (₺50)</li>
+                                <li><strong>Kapıda Ödeme:</strong> ₺10 ek ücret</li>
+                            </ul>
+                        </div>
+
+                        <div class="return-info">
+                            <h4>İade ve Değişim</h4>
+                            <ul>
+                                <li><strong>İade Süresi:</strong> 14 gün</li>
+                                <li><strong>Değişim:</strong> Ücretsiz</li>
+                                <li><strong>Koşullar:</strong> Etiketi çıkarılmamış, kullanılmamış olmalı</li>
+                                <li><strong>İade Kargo:</strong> Müşteri tarafından karşılanır</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>Benzer Ürünler</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=2" class="view-detail">Detayları Gör</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bluz Tasarım</h3>
+                        <div class="product-meta">
+                            <span class="product-price">₺280</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=6" class="view-detail">Detayları Gör</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Akşam Elbisesi</h3>
+                        <div class="product-meta">
+                            <span class="product-price">₺780</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder"></div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html?id=7" class="view-detail">Detayları Gör</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>İpek Bluz</h3>
+                        <div class="product-meta">
+                            <span class="product-price">₺350</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Acboztech</h3>
+                    <p>Zarafetin ve tarzın buluştuğu adres. Özel tasarım koleksiyonlarımızla tarzınızı yansıtın.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="collection.html">Koleksiyon</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +90 212 555 0123</li>
+                        <li><i class="fas fa-envelope"></i> info@acboztech.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nişantaşı, İstanbul</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Çalışma Saatleri</h4>
+                    <ul>
+                        <li>Pazartesi - Cuma: 10:00 - 20:00</li>
+                        <li>Cumartesi: 10:00 - 18:00</li>
+                        <li>Pazar: 12:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

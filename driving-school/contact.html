@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Acboztech Sürücü Kursu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Acboztech</h2>
+                    <span>Sürücü Kursu</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="courses.html" class="nav-link">Kurslar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="instructors.html" class="nav-link">Eğitmenler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">İletişim</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>İletişim</h1>
+                <p>Bizimle iletişime geçin, size yardımcı olalım</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Ana Sayfa</a>
+                    <span>/</span>
+                    <span>İletişim</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>Atatürk Caddesi No:123<br>Kadıköy/İstanbul</p>
+                    <a href="https://maps.google.com" target="_blank" class="contact-link">Haritada Göster</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>0216 555 0123</p>
+                    <a href="tel:02165550123" class="contact-link">Hemen Ara</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>info@acboztech.com</p>
+                    <a href="mailto:info@acboztech.com" class="contact-link">E-posta Gönder</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>Pazartesi - Cumartesi: 08:00-22:00<br>Pazar: 10:00-18:00</p>
+                    <span class="contact-note">7/24 Simülatör Erişimi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <h2>Bize Mesaj Gönderin</h2>
+                    <p>Herhangi bir sorunuz varsa, aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz. En kısa sürede size dönüş yapacağız.</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Konu</label>
+                            <select id="subject" name="subject">
+                                <option value="">Konu Seçin</option>
+                                <option value="kurs-bilgisi">Kurs Bilgisi</option>
+                                <option value="kayit">Kayıt İşlemleri</option>
+                                <option value="fiyat">Fiyat Bilgisi</option>
+                                <option value="egitmen">Eğitmen Bilgisi</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Kişisel verilerimin işlenmesine izin veriyorum *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Mesaj Gönder
+                        </button>
+                    </form>
+                </div>
+
+                <div class="map-container">
+                    <h2>Konumumuz</h2>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Google Harita</p>
+                        <span>Atatürk Caddesi No:123, Kadıköy/İstanbul</span>
+                    </div>
+                    <div class="map-info">
+                        <h3>Nasıl Ulaşırım?</h3>
+                        <div class="transport-info">
+                            <div class="transport-item">
+                                <i class="fas fa-subway"></i>
+                                <div>
+                                    <h4>Metro</h4>
+                                    <p>Kadıköy Metro İstasyonu'ndan 5 dakika yürüme mesafesi</p>
+                                </div>
+                            </div>
+                            <div class="transport-item">
+                                <i class="fas fa-bus"></i>
+                                <div>
+                                    <h4>Otobüs</h4>
+                                    <p>10A, 15F, 20D hatları ile ulaşabilirsiniz</p>
+                                </div>
+                            </div>
+                            <div class="transport-item">
+                                <i class="fas fa-car"></i>
+                                <div>
+                                    <h4>Araç</h4>
+                                    <p>Ücretsiz otopark hizmetimiz bulunmaktadır</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kurs ücretlerini taksitli ödeyebilir miyim?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, kurs ücretlerini taksitli olarak ödeyebilirsiniz. Size en uygun ödeme planını birlikte belirleyebiliriz. Kredi kartı ile 3, 6 veya 12 taksit seçeneklerimiz bulunmaktadır.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Hangi belgeleri getirmem gerekiyor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kayıt için kimlik fotokopisi, 2 adet vesikalık fotoğraf ve sağlık raporu gereklidir. Sağlık raporunu aile hekiminizden veya özel hastanelerden alabilirsiniz.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kurs süresi ne kadar?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kurs süresi ehliyet sınıfına göre değişmektedir. B sınıfı ehliyet için ortalama 2-3 ay, diğer sınıflar için 1-2 ay sürmektedir. Yoğun program seçeneklerimiz ile süreyi kısaltabilirsiniz.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Pratik dersler ne zaman yapılıyor?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pratik dersler hafta içi ve hafta sonu 08:00-22:00 saatleri arasında yapılmaktadır. Size en uygun zamanı belirleyerek ders programınızı oluşturabiliriz.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Sınav başarı oranınız nedir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>%98 başarı oranımız ile sektörde öncüyüz. Deneyimli eğitmenlerimiz ve modern eğitim yöntemlerimiz ile öğrencilerimizin başarısını garanti ediyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-media">
+        <div class="container">
+            <h2 class="section-title">Sosyal Medyada Bizi Takip Edin</h2>
+            <div class="social-grid">
+                <a href="#" class="social-card facebook">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Güncel haberler ve etkinlikler</p>
+                </a>
+                <a href="#" class="social-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Fotoğraf ve video paylaşımları</p>
+                </a>
+                <a href="#" class="social-card twitter">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter</h3>
+                    <p>Anlık güncellemeler</p>
+                </a>
+                <a href="#" class="social-card youtube">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Eğitim videoları ve içerikler</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Hemen Başvurun!</h2>
+                <p>Ücretsiz danışmanlık için hemen iletişime geçin ve size en uygun kurs paketini belirleyelim.</p>
+                <div class="cta-buttons">
+                    <a href="tel:02165550123" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Hemen Ara
+                    </a>
+                    <a href="courses.html" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Kursları İncele
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Acboztech</h3>
+                        <span>Sürücü Kursu</span>
+                    </div>
+                    <p>15 yıllık deneyimimiz ile güvenli sürüş eğitimi veriyoruz. Modern araçlar ve uzman eğitmenlerimiz ile ehliyet sahibi olmanın en güvenilir adresi.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="courses.html">Kurslar</a></li>
+                        <li><a href="instructors.html">Eğitmenler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kurslarımız</h4>
+                    <ul>
+                        <li><a href="courses.html">B Sınıfı Ehliyet</a></li>
+                        <li><a href="courses.html">C Sınıfı Ehliyet</a></li>
+                        <li><a href="courses.html">A Sınıfı Ehliyet</a></li>
+                        <li><a href="courses.html">D Sınıfı Ehliyet</a></li>
+                        <li><a href="courses.html">E Sınıfı Ehliyet</a></li>
+                        <li><a href="courses.html">Özel Sürüş Dersleri</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim Bilgileri</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Atatürk Caddesi No:123<br>Kadıköy/İstanbul</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>0216 555 0123</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@acboztech.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Pzt-Cmt: 08:00-22:00<br>Pazar: 10:00-18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Acboztech Sürücü Kursu. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
