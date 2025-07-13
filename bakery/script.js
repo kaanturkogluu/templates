@@ -162,14 +162,24 @@ addToCartButtons.forEach(button => {
     button.addEventListener('click', function() {
         const productCard = this.closest('.product-card');
         const productName = productCard.querySelector('h3').textContent;
+        const productPrice = productCard.querySelector('.price').textContent;
         
-        showNotification(`${productName} sepete eklendi!`, 'success');
+        showNotification(`${productName} sepete eklendi! Fiyat: ${productPrice}`, 'success');
         
         // Add animation to button
         this.style.transform = 'scale(0.95)';
         setTimeout(() => {
             this.style.transform = 'scale(1)';
         }, 150);
+        
+        // Update cart icon if exists
+        const cartIcon = document.querySelector('.nav-icon[href="cart.html"]');
+        if (cartIcon) {
+            cartIcon.style.animation = 'pulse 0.5s ease-in-out';
+            setTimeout(() => {
+                cartIcon.style.animation = '';
+            }, 500);
+        }
     });
 });
 
@@ -184,18 +194,52 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('animated');
         }
     });
 }, observerOptions);
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.category-card, .feature-card, .service-card, .team-member, .value-card, .contact-card, .social-card');
+    const animatedElements = document.querySelectorAll('.category-card, .feature-card, .service-card, .team-member, .value-card, .contact-card, .social-card, .product-card, .testimonial-card, .timeline-item, .process-step');
     
-    animatedElements.forEach(el => {
+    animatedElements.forEach((el, index) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(el);
+    });
+    
+    // Add staggered animation for hero elements
+    const heroElements = document.querySelectorAll('.hero h1, .hero p, .hero-features, .hero-buttons');
+    heroElements.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = `opacity 0.8s ease ${index * 0.2}s, transform 0.8s ease ${index * 0.2}s`;
+        setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, 100 + (index * 200));
+    });
+
+    // Add animation for page headers
+    const pageHeaders = document.querySelectorAll('.page-header h1, .page-header p');
+    pageHeaders.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = `opacity 0.6s ease ${index * 0.2}s, transform 0.6s ease ${index * 0.2}s`;
+        setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, 200 + (index * 200));
+    });
+
+    // Add animation for section headers
+    const sectionHeaders = document.querySelectorAll('.section-header h2, .section-header p');
+    sectionHeaders.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
         observer.observe(el);
     });
 });
